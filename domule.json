@@ -1546,122 +1546,246 @@
 			"builders": {
 				"creatureBuilder": {
 					"s": {
-						"name": "Taroc",
+						"name": "Zinland Tormoria",
 						"size": "M",
 						"type": "humanoid",
 						"source": "Domule",
 						"alignment": [
-							"N",
-							"E"
+							"C",
+							"N"
 						],
 						"ac": [
-							10
+							{
+								"ac": 14,
+								"from": [
+									"Robe of Sehanine"
+								]
+							}
 						],
 						"hp": {
-							"formula": "5d4 + 5",
-							"average": 17
+							"formula": "20d8 + 20",
+							"average": 110
 						},
 						"speed": {
 							"walk": 30
 						},
-						"str": 12,
-						"dex": 14,
+						"str": 8,
+						"dex": 10,
 						"con": 12,
-						"int": 10,
-						"wis": 10,
-						"cha": 10,
+						"int": 16,
+						"wis": 18,
+						"cha": 15,
 						"passive": 10,
-						"cr": "3",
-						"shortName": true,
-						"level": 5,
+						"cr": "0",
+						"shortName": "Zin",
+						"level": 20,
 						"languages": [
-							"Common,",
-							"Elvish"
+							"Common",
+							"Draconic",
+							"Elvish",
+							"Abyssal"
 						],
 						"languageTags": [
 							"C",
-							"E"
+							"DR",
+							"E",
+							"AB"
 						],
-						"save": {
-							"str": "+3",
-							"dex": "+4"
-						},
 						"skill": {
-							"animal handling": "+2",
-							"acrobatics": "+4",
-							"athletics": "+3",
-							"deception": "+2",
-							"sleight of hand": "+4"
+							"arcana": "+8",
+							"history": "+8",
+							"insight": "+9",
+							"medicine": "+9",
+							"religion": "+8"
+						},
+						"save": {
+							"wis": "+9",
+							"cha": "+7"
 						},
 						"spellcasting": [
 							{
-								"name": "Spells",
+								"name": "Spellcasting",
+								"headerEntries": [
+									"Zin is a 20-level spellcaster. Its spellcasting ability is Wisdom (spell save{@dc 20}, {@hit +12} to hit with spell attacks). Zin has the following 24 spells prepared:"
+								],
 								"spells": {
+									"0": {
+										"spells": [
+											"{@spell mending}",
+											"{@spell spare the dying}",
+											"{@spell toll the dead|XGE}",
+											"{@spell word of radiance|XGE}"
+										]
+									},
 									"1": {
 										"spells": [
-											"{@spell hunter's mark}",
-											"{@spell speak with animals}"
+											"{@spell bane}",
+											"{@spell command}",
+											"{@spell cure wounds}",
+											"{@spell false life}",
+											"{@spell healing word}"
 										],
 										"slots": 4
 									},
 									"2": {
 										"spells": [
-											"{@spell cordon of arrows}",
-											"{@spell spike growth}"
+											"{@spell blindness/deafness}",
+											"{@spell calm emotions}",
+											"{@spell enhance ability}",
+											"{@spell gentle repose}",
+											"{@spell ray of enfeeblement}",
+											"{@spell zone of truth}"
+										],
+										"slots": 3
+									},
+									"3": {
+										"spells": [
+											"{@spell bestow curse}",
+											"{@spell create food and water}",
+											"{@spell mass healing word}",
+											"{@spell remove curse}",
+											"{@spell revivify}",
+											"{@spell sending}",
+											"{@spell speak with dead}",
+											"{@spell tongues}",
+											"{@spell vampiric touch}"
+										],
+										"slots": 3
+									},
+									"4": {
+										"spells": [
+											"{@spell blight}",
+											"{@spell death ward}",
+											"{@spell guardian of faith}"
+										],
+										"slots": 4
+									},
+									"5": {
+										"spells": [
+											"{@spell antilife shell}",
+											"{@spell greater restoration}",
+											"{@spell insect plague}",
+											"{@spell mass cure wounds}",
+											"{@spell raise dead}",
+											"{@spell scrying}"
+										],
+										"slots": 3
+									},
+									"6": {
+										"spells": [
+											"{@spell heal}",
+											"{@spell heroes' feast}"
 										],
 										"slots": 2
+									},
+									"7": {
+										"spells": [
+											"{@spell regenerate}",
+											"{@spell resurrection}"
+										],
+										"slots": 2
+									},
+									"8": {
+										"spells": [
+											"{@spell control weather}"
+										],
+										"slots": 1
+									},
+									"9": {
+										"spells": [
+											"{@spell mass heal}",
+											"{@spell true resurrection}"
+										],
+										"slots": 1
 									}
 								},
+								"ability": "wis",
 								"type": "spellcasting"
 							}
 						],
-						"action": [
+						"trait": [
 							{
-								"name": "One-Handed Crossbow",
+								"name": "Fey Ancestry",
 								"entries": [
-									"{@atk rw} {@hit 4} to hit, range 60/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. One-Handed"
+									"The zin has advantage on saving throws against being {@condition charmed}, and magic can't put the zin to sleep."
+								]
+							},
+							{
+								"name": "Potent Spellcasting",
+								"entries": [
+									"Add your Wisdom modifier to the damage you deal with any cleric cantrip."
+								]
+							},
+							{
+								"name": "Keeper of Souls",
+								"entries": [
+									"When an enemy you can see dies within 30 feet of you, you or one ally of your choice that is within 30 feet of you regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren't {@condition incapacitated}. Once you use it, you can't do so again until the start of your next turn."
 								]
 							}
 						],
-						"damageTags": [
-							"P"
+						"traitTags": [
+							"Fey Ancestry"
 						],
-						"miscTags": [
-							"RW"
+						"action": [
+							{
+								"name": "Eyes of the Graves",
+								"entries": [
+									"As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
+									"You can use this feature a number of times equal to your Wisdom modifier (+4). You regain all expended uses when you finish a long rest."
+								]
+							},
+							{
+								"name": "Fey Step (Eladrin - Spring)",
+								"entries": [
+									"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest.",
+									"Spring. When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you."
+								]
+							}
 						],
-						"isNpc": true,
+						"reaction": [
+							{
+								"name": "Sentinel at Death's Door",
+								"entries": [
+									"As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any effects triggered by a critical hit are canceled.",
+									"You can use this feature a number of times equal to your Wisdom modifier (+4). You regain all expended uses when you finish a long rest."
+								]
+							}
+						],
 						"_pTypes": {
 							"type": "humanoid",
 							"tags": [],
 							"asText": "humanoid"
 						},
-						"_pCr": "3",
+						"_pCr": "0",
 						"_fCr": [
-							"3"
+							"0"
 						]
 					},
 					"m": {
 						"profSave": {
-							"str": 1,
-							"dex": 1
+							"wis": 1,
+							"cha": 1
 						},
 						"profSkill": {
-							"animal handling": 1,
-							"acrobatics": 1,
-							"athletics": 1,
-							"deception": 1,
-							"sleight of hand": 1
+							"arcana": 1,
+							"history": 1,
+							"insight": 1,
+							"medicine": 1,
+							"religion": 1
 						},
 						"autoCalc": {
-							"hpModifier": true,
-							"hpAverageSimple": false
+							"proficiency": false,
+							"hpAverageSimple": false,
+							"hpAverageComplex": true,
+							"hpModifier": true
 						},
-						"activeTab__input": 3,
+						"activeTab__input": 4,
 						"activeTab__output": 3,
-						"ixBrew": 0
+						"profBonus": 5,
+						"ixBrew": 1
 					},
 					"_m": {
-						"isEntrySaved": false
+						"isEntrySaved": true
 					}
 				},
 				"spellBuilder": {
@@ -1719,8 +1843,8 @@
 						10
 					],
 					"hp": {
-						"formula": "5d8 + 5",
-						"average": 4
+						"formula": "5d4 + 5",
+						"average": 17
 					},
 					"speed": {
 						"walk": 30
@@ -1791,7 +1915,215 @@
 						"RW"
 					],
 					"isNpc": true,
-					"uniqueId": "5e7e103cf8453e10a929a92d41a993d9"
+					"uniqueId": "4b052e357e0f08788599f4c8bff3c4cd"
+				},
+				{
+					"name": "Zinland Tormoria",
+					"size": "M",
+					"type": "humanoid",
+					"source": "Domule",
+					"alignment": [
+						"C",
+						"N"
+					],
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"Robe of Sehanine"
+							]
+						}
+					],
+					"hp": {
+						"formula": "20d8 + 20",
+						"average": 110
+					},
+					"speed": {
+						"walk": 30
+					},
+					"str": 8,
+					"dex": 10,
+					"con": 12,
+					"int": 16,
+					"wis": 18,
+					"cha": 15,
+					"passive": 10,
+					"cr": "0",
+					"shortName": "Zin",
+					"level": 20,
+					"languages": [
+						"Common",
+						"Draconic",
+						"Elvish",
+						"Abyssal"
+					],
+					"languageTags": [
+						"C",
+						"DR",
+						"E",
+						"AB"
+					],
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"insight": "+9",
+						"medicine": "+9",
+						"religion": "+8"
+					},
+					"save": {
+						"wis": "+9",
+						"cha": "+7"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zin is a 20-level spellcaster. Its spellcasting ability is Wisdom (spell save{@dc 20}, {@hit +12} to hit with spell attacks). Zin has the following 24 spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell mending}",
+										"{@spell spare the dying}",
+										"{@spell toll the dead|XGE}",
+										"{@spell word of radiance|XGE}"
+									]
+								},
+								"1": {
+									"spells": [
+										"{@spell bane}",
+										"{@spell command}",
+										"{@spell cure wounds}",
+										"{@spell false life}",
+										"{@spell healing word}"
+									],
+									"slots": 4
+								},
+								"2": {
+									"spells": [
+										"{@spell blindness/deafness}",
+										"{@spell calm emotions}",
+										"{@spell enhance ability}",
+										"{@spell gentle repose}",
+										"{@spell ray of enfeeblement}",
+										"{@spell zone of truth}"
+									],
+									"slots": 3
+								},
+								"3": {
+									"spells": [
+										"{@spell bestow curse}",
+										"{@spell create food and water}",
+										"{@spell mass healing word}",
+										"{@spell remove curse}",
+										"{@spell revivify}",
+										"{@spell sending}",
+										"{@spell speak with dead}",
+										"{@spell tongues}",
+										"{@spell vampiric touch}"
+									],
+									"slots": 3
+								},
+								"4": {
+									"spells": [
+										"{@spell blight}",
+										"{@spell death ward}",
+										"{@spell guardian of faith}"
+									],
+									"slots": 4
+								},
+								"5": {
+									"spells": [
+										"{@spell antilife shell}",
+										"{@spell greater restoration}",
+										"{@spell insect plague}",
+										"{@spell mass cure wounds}",
+										"{@spell raise dead}",
+										"{@spell scrying}"
+									],
+									"slots": 3
+								},
+								"6": {
+									"spells": [
+										"{@spell heal}",
+										"{@spell heroes' feast}"
+									],
+									"slots": 2
+								},
+								"7": {
+									"spells": [
+										"{@spell regenerate}",
+										"{@spell resurrection}"
+									],
+									"slots": 2
+								},
+								"8": {
+									"spells": [
+										"{@spell control weather}"
+									],
+									"slots": 1
+								},
+								"9": {
+									"spells": [
+										"{@spell mass heal}",
+										"{@spell true resurrection}"
+									],
+									"slots": 1
+								}
+							},
+							"ability": "wis",
+							"type": "spellcasting"
+						}
+					],
+					"trait": [
+						{
+							"name": "Fey Ancestry",
+							"entries": [
+								"The zin has advantage on saving throws against being {@condition charmed}, and magic can't put the zin to sleep."
+							]
+						},
+						{
+							"name": "Potent Spellcasting",
+							"entries": [
+								"Add your Wisdom modifier to the damage you deal with any cleric cantrip."
+							]
+						},
+						{
+							"name": "Keeper of Souls",
+							"entries": [
+								"When an enemy you can see dies within 30 feet of you, you or one ally of your choice that is within 30 feet of you regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren't {@condition incapacitated}. Once you use it, you can't do so again until the start of your next turn."
+							]
+						}
+					],
+					"traitTags": [
+						"Fey Ancestry"
+					],
+					"action": [
+						{
+							"name": "Eyes of the Graves",
+							"entries": [
+								"As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
+								"You can use this feature a number of times equal to your Wisdom modifier (+4). You regain all expended uses when you finish a long rest."
+							]
+						},
+						{
+							"name": "Fey Step (Eladrin - Spring)",
+							"entries": [
+								"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest.",
+								"Spring. When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you."
+							]
+						}
+					],
+					"reaction": [
+						{
+							"name": "Sentinel at Death's Door",
+							"entries": [
+								"As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any effects triggered by a critical hit are canceled.",
+								"You can use this feature a number of times equal to your Wisdom modifier (+4). You regain all expended uses when you finish a long rest."
+							]
+						}
+					],
+					"uniqueId": "9a4daef82012a5f392b151c860a5c870"
 				}
 			],
 			"class": [],
