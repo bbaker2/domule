@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "Domule",
+        "abbreviation": "dml",
+        "full": "Domule",
+        "url": "",
+        "authors": [
+          "Ben Baker"
+        ],
+        "convertedBy": []
+      }
+    ]
+  },
+  "monster": {
+    "name": "Taroc",
+    "size": "M",
+    "type": "humanoid",
+    "source": "Domule",
+    "alignment": [
+      "N",
+      "E"
+    ],
+    "ac": [
+      10
+    ],
+    "hp": {
+      "formula": "5d4 + 5",
+      "average": 17
+    },
+    "speed": {
+      "walk": 30
+    },
+    "str": 12,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 10,
+    "cha": 10,
+    "passive": 10,
+    "cr": "3",
+    "shortName": true,
+    "level": 5,
+    "languages": [
+      "Common,",
+      "Elvish"
+    ],
+    "languageTags": [
+      "C",
+      "E"
+    ],
+    "save": {
+      "str": "+3",
+      "dex": "+4"
+    },
+    "skill": {
+      "animal handling": "+2",
+      "acrobatics": "+4",
+      "athletics": "+3",
+      "deception": "+2",
+      "sleight of hand": "+4"
+    },
+    "spellcasting": [
+      {
+        "name": "Spells",
+        "spells": {
+          "1": {
+            "spells": [
+              "{@spell hunter's mark}",
+              "{@spell speak with animals}"
+            ],
+            "slots": 4
+          },
+          "2": {
+            "spells": [
+              "{@spell cordon of arrows}",
+              "{@spell spike growth}"
+            ],
+            "slots": 2
+          }
+        },
+        "type": "spellcasting"
+      }
+    ],
+    "action": [
+      {
+        "name": "One-Handed Crossbow",
+        "entries": [
+          "{@atk rw} {@hit 4} to hit, range 60/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. One-Handed"
+        ]
+      }
+    ],
+    "damageTags": [
+      "P"
+    ],
+    "miscTags": [
+      "RW"
+    ],
+    "isNpc": true,
+    "uniqueId": "4b052e357e0f08788599f4c8bff3c4cd"
+  }
+}
