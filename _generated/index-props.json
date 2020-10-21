@@ -1,1 +1,6 @@
-{}
+{
+	"monster" : {
+		"creature/npc_taroc" : "monster",
+		"creature/npc_zinland" : "monster"
+	}
+}
