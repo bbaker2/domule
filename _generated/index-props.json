@@ -1,0 +1,6 @@
+{
+	"monster" : {
+		"bestiary/npc_taroc" : "monster",
+		"bestiary/npc_zinland" : "monster"
+	}
+}
