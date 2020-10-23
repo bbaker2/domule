@@ -1,0 +1,15 @@
+{
+    "sources": [
+        {
+            "json": "domule",
+            "abbreviation": "dml",
+            "full": "Domule",
+            "url": "",
+            "authors": [
+                "Ben Baker"
+            ],
+            "version" : "1.0",
+            "convertedBy": []
+        }
+    ]
+}
