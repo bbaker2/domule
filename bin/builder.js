@@ -1,55 +1,98 @@
-const fs = require('fs');
-
-
-const RD_OPTIONS = { "withFileTypes" : true };
-const WHITELIST = ["_meta", "monster"];
+const fs    = require('fs');
+const path  = require('path');
+const ajv   = require('ajv');
 
 // determing the directory we wish to read from
-let root = ".";
+let root = path.normalize(".");
 if(process.argv.length > 2){ // if the user provides a path to start from... use it
     root = process.argv.slice(-1)[0]; // grab the last argument
 }
 
+let binDir      = path.dirname(process.argv[1]);
+let schemaFile  = path.resolve(binDir, "schema.json");
+let schema      = loadJson(schemaFile);
+
 // loop over the folders and read the approved ones
-console.log("Starting scan from: ", root);
-let result = readFolders(root);
-let strJson = JSON.stringify(result, null, 2);
+info("Starting scan from: ", root);
+let result      = readFolders(root, schema);
 
-// console.log(strJson);
+let trgName = generateFileName(result);
 
+// validate the final json
+let hbValidator = new ajv();
+if(hbValidator.validate(schema, result)){
+    success("The compiled json passed validation.")
+} else {
+    warn("The compiled json is not valid.");
+    warn("Reason: " + hbValidator.errorsText());
+}
+
+// convert to string and 
 // store the result in the "target" folder
-fs.mkdirSync(`${root}/target`, {"recursive":true}); // create the folder if it does not yet exist
-let trg = `${root}/target/result.json`
-fs.writeFile(trg, strJson, "utf8", console.error);
-console.log("Finished json in", trg);
+let strJson     = JSON.stringify(result, null, 2);
+let trgDir      = path.resolve(root, "target");
+fs.mkdirSync(trgDir, {"recursive":true}); // create the folder if it does not yet exist
+
+let trgJson     = path.resolve(trgDir, trgName);
+fs.writeFile(trgJson, strJson, "utf8", console.error);
+success(`Finished json in ${trgJson}`);
 // DONE
 
-
 /***** UTIL FUNCTIONS ****/
- 
 
-function readFolders(root){
+function generateFileName(obj){
+    if(     obj._meta 
+         && obj._meta.sources 
+         && obj._meta.sources[0] 
+         && obj._meta.sources[0].json){
+            
+        return obj._meta.sources[0].json + ".json";
+    }
+
+    warn("Unable to find _meta.sources[0].json");
+    return "result.json";
+}
+
+function loadJson(path) {
+    let rawData = fs.readFileSync(path);
+    let obj     = JSON.parse(rawData);
+    return obj;
+}
+
+function readFolders(root, schema){
     let result = {};
 
-    let folders = fs.readdirSync(root, RD_OPTIONS);    
-    // loop over the immedate group of folders
-    for(file of folders){        
-        let category = file.name;
+    for(category in schema.properties){
+        let folderDir = path.resolve(root, category);
         // if any folder matches the whitelist, dive down one layer
         // and concat all the json files into an array of json objects
-        if(file.isDirectory() && WHITELIST.includes(file.name)){
-            console.log("  Processing folder: ", file.name);
-            let items = readFiles(file.name);
-            result[file.name] = items; // store the result in the master json
-        }        
+        if(isFolder(folderDir)){                
+            success(`  Processing folder: ${category}`);
+            let folderPath      = path.resolve(root, category);
+            let isArray         = schema.properties[category].type == "array";
+            let items           = readFiles(folderPath, isArray);
+            result[category]    = items; // store the result in the master json                           
+        } else {
+            info(`  No folder found for: ${category}`);
+        }
+        
     }
+
     return result;
 }
 
+function isFolder(path) {
+    // sure, this could be one line
+    // but then it would be less readable
+    if(fs.existsSync(path) && fs.lstatSync(path).isDirectory() ){      
+        return true;        
+    }
+    return false;
+}
 
-function readFiles(dir) {
+function readFiles(dir, isArray) {
     var items = [];
-    let files = fs.readdirSync(dir, RD_OPTIONS);
+    let files = fs.readdirSync(dir, { "withFileTypes" : true });
     
     // loop over the immedate group of files
     for(file of files){
@@ -57,11 +100,30 @@ function readFiles(dir) {
         // read the file as a string, convert to json, then store
         // into the array
         if(file.isFile() && file.name.endsWith(".json")){
-            console.log("    Reading", file.name);
-            let rawData = fs.readFileSync(`${dir}/${file.name}`);
-            let obj = JSON.parse(rawData);
+            info(`    Reading ${file.name}`);
+            let fullPath    = path.resolve(dir, file.name);
+            let obj         = loadJson(fullPath);            
             items.push(obj);
         }        
     }     
-    return items;   
+
+    // if we are expecting an arrya, return the array
+    if(isArray) {
+        return items;
+    // otherwise, return an object. In this case, return the 1st element from the array
+    } else {
+        return items.length == 0 ? {} : items[0];        
+    }   
+}
+
+function warn(msg){
+    console.warn("\x1b[33m%s\x1b[0m", msg);
+}
+
+function success(msg){
+    console.warn("\x1b[32m%s\x1b[0m", msg);
+}
+
+function info(msg){
+    console.info("\x1b[2m%s\x1b[0m", msg);
 }
