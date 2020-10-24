@@ -36,16 +36,72 @@ fs.mkdirSync(trgDir, {"recursive":true}); // create the folder if it does not ye
 let trgJson     = path.resolve(trgDir, trgName);
 fs.writeFile(trgJson, strJson, "utf8", console.error);
 success(`Finished json in ${trgJson}`);
+
+info("generating the _generated folder/files");
+generateIndexes(trgJson, result);
 // DONE
 
 /***** UTIL FUNCTIONS ****/
 
+function generateIndexes(resultPath, resultObj){
+    let trgDir  = path.dirname(resultPath);
+    let trgFile = path.basename(resultPath);
+
+    let genDir = path.resolve(trgDir, "_generated");
+    fs.mkdirSync(genDir, {"recursive":true})
+
+    // save props
+    let props = {};
+    let collection = {};
+    collection[trgFile] = "collection";
+    for(prop in resultObj){
+        if(prop == "_meta") continue; // skip _meta
+        
+        props[prop] = collection;
+    }
+
+    fs.writeFile(
+        path.resolve(genDir, "index-props.json"), 
+        JSON.stringify(props, null, 2), 
+        console.error
+    );
+
+    // save sources
+    let sources = {};
+    if( hasMetaJson(resultObj) ){
+        sources[resultObj._meta.sources[0].json] = trgFile;
+    }
+
+    fs.writeFile(
+        path.resolve(genDir, "index-sources.json"), 
+        JSON.stringify(sources, null, 2), 
+        console.error
+    );
+
+    // save timestamps
+    let timestamps = {};
+    let now = Date.now();
+    timestamps[trgFile] = {
+        "a" : now,
+        "m" : now
+    };
+
+    fs.writeFile(
+        path.resolve(genDir, "index-timestamps.json"), 
+        JSON.stringify(timestamps, null, 2), 
+        console.error
+    );
+}
+
+function hasMetaJson(obj){
+    return obj._meta 
+        && obj._meta.sources 
+        && obj._meta.sources[0] 
+        && obj._meta.sources[0].json;
+}
+
 function generateFileName(obj){
-    if(     obj._meta 
-         && obj._meta.sources 
-         && obj._meta.sources[0] 
-         && obj._meta.sources[0].json){
-            
+    if( hasMetaJson(obj) ){            
         return obj._meta.sources[0].json + ".json";
     }
 
