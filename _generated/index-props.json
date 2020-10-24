@@ -1,6 +1,0 @@
-{
-	"monster" : {
-		"creature/npc_taroc.json" : "monster",
-		"creature/npc_zinland.json" : "monster"
-	}
-}
