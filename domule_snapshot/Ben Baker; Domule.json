@@ -52,7 +52,7 @@
               "type": "entries",
               "name": "Guild Brief",
               "entries": [
-                "blah blah, they start a mission"
+                "{@creature anohi|dml} informs the party that they are being hired to investigate a town slowly going crazy"
               ]
             },
             {
@@ -68,6 +68,129 @@
     }
   ],
   "monster": [
+    {
+      "name": "Anohi",
+      "source": "domule",
+      "page": 117,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          {
+            "tag": "yuan-ti",
+            "prefix": "change shape:"
+          }
+        ]
+      },
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d12 + 36",
+        "average": 153
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 10,
+      "con": 14,
+      "int": 16,
+      "wis": 13,
+      "cha": 21,
+      "save": {
+        "dex": "+5",
+        "con": "+7",
+        "wis": "+6",
+        "cha": "+10"
+      },
+      "skill": {
+        "arcana": "+8",
+        "history": "+8",
+        "perception": "+11",
+        "stealth": "+5",
+        "intimidation": "+4",
+        "animal handling": "+4"
+      },
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "passive": 21,
+      "immune": [
+        "cold"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Elvish"
+      ],
+      "cr": "16",
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+            "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom ({@skill Perception}) check."
+          ]
+        }
+      ],
+      "legendaryGroup": {
+        "name": "Silver Dragon",
+        "source": "MM"
+      },
+      "environment": [
+        "mountain",
+        "urban"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/silver-dragon.mp3?v=1.114.1"
+      },
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languageTags": [
+        "C",
+        "DR",
+        "E"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "isNpc": true,
+      "group": "Metallic Dragon",
+      "dragonCastingColor": "S"
+    },
     {
       "name": "Taroc",
       "size": "M",
