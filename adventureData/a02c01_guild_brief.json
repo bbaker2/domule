@@ -1,0 +1,27 @@
+{
+    "name": "",
+    "id": "02-jack",
+    "source": "domule",
+    "data": [
+        {
+            "type": "section",
+            "name": "Chapter 1",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Guild Brief",
+                    "entries": [
+                        "blah blah, they start a mission"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "The Tri-Cidadel",
+                    "entries": [
+                        "They enter the Tri-Cidadel for the fist time"
+                    ]
+                }
+            ]
+        }
+    ]
+}
