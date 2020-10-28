@@ -1,0 +1,22 @@
+{
+    "name" : "Jackson and the Lichen",
+    "id" : "02-jack",
+    "source": "domule",
+    "contents" : [
+        {
+            "name" : "Chapter 1",
+            "headers" : [
+                "Guild Brief",
+                "The Tri-Cidadel"
+            ]
+        }
+    ],
+    "level" : {
+        "start" : 3,
+        "end" : 4
+    },
+    "published" : "2020-10-07",
+    "storyline" :[
+        "Aggredel's 3rd Renaissance"
+    ]
+}
