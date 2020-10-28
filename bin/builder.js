@@ -53,7 +53,7 @@ function getSchema(){
 }
 
 function getArgument(index, defaultPath){
-    if(process.argv.length > index+1){ 
+    if(process.argv.length > index){ 
         let usrInput = process.argv[index];
         return path.normalize(usrInput);
     }
@@ -150,13 +150,13 @@ function readFolders(root, schema){
             let folderPath      = path.resolve(root, category);
             let isArray         = schema.properties[category].type == "array";
             let items           = readFiles(folderPath, isArray);
-            result[category]    = items; // store the result in the master json                           
+            result[category]    = items; // store the result in the master json                                   
         } else {
             info(`  No folder found for: ${category}`);
         }
         
     }
-
+    console.log(result);
     return result;
 }
 
