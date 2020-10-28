@@ -2,19 +2,22 @@ const fs    = require('fs');
 const path  = require('path');
 const ajv   = require('ajv');
 
-// determing the directory we wish to read from
-let root = path.normalize(".");
-if(process.argv.length > 2){ // if the user provides a path to start from... use it
-    root = process.argv.slice(-1)[0]; // grab the last argument
-}
 
-let binDir      = path.dirname(process.argv[1]);
-let schemaFile  = path.resolve(binDir, "schema.json");
-let schema      = loadJson(schemaFile);
+process.on('uncaughtException', err => {
+    red(err.message);
+    red("Exiting");
+    process.exit(1) //mandatory (as per the Node.js docs)
+})
+
+// determing the directory we wish to read from
+let srcDir  = getArgument(2, ".") // where we will scan from
+let trgDir  = getArgument(3, path.resolve(srcDir, "target")); // where we will the new files too
+
+let schema  = getSchema();
 
 // loop over the folders and read the approved ones
-info("Starting scan from: ", root);
-let result      = readFolders(root, schema);
+info("Starting scan from: ", srcDir);
+let result  = readFolders(srcDir, schema);
 
 let trgName = generateFileName(result);
 
@@ -29,11 +32,10 @@ if(hbValidator.validate(schema, result)){
 
 // convert to string and 
 // store the result in the "target" folder
-let strJson     = JSON.stringify(result, null, 2);
-let trgDir      = path.resolve(root, "target");
-fs.mkdirSync(trgDir, {"recursive":true}); // create the folder if it does not yet exist
+let strJson = JSON.stringify(result, null, 2);
+trgDir      = createFolder(trgDir);
 
-let trgJson     = path.resolve(trgDir, trgName);
+let trgJson = path.resolve(trgDir, trgName);
 fs.writeFile(trgJson, strJson, "utf8", console.error);
 success(`Finished json in ${trgJson}`);
 
@@ -43,13 +45,33 @@ generateIndexes(trgJson, result);
 
 /***** UTIL FUNCTIONS ****/
 
+function getSchema(){
+    let binDir      = path.dirname(process.argv[1]);
+    let schemaFile  = path.resolve(binDir, "schema.json");
+    let schema      = loadJson(schemaFile);
+    return schema;
+}
+
+function getArgument(index, defaultPath){
+    if(process.argv.length > index+1){ 
+        let usrInput = process.argv[index];
+        return path.normalize(usrInput);
+    }
+    return defaultPath;
+}
+
+function createFolder(...args){
+    let dirPath = path.resolve(...args);
+    fs.mkdirSync(dirPath, {"recursive":true});
+    return dirPath;
+}
+
 function generateIndexes(resultPath, resultObj){
     let trgDir  = path.dirname(resultPath);
     let trgFile = path.basename(resultPath);
 
-    let genDir = path.resolve(trgDir, "_generated");
-    fs.mkdirSync(genDir, {"recursive":true})
-
+    let genDir = createFolder(trgDir, "_generated");
+    
     // save props
     let props = {};
     let collection = {};
@@ -101,12 +123,13 @@ function hasMetaJson(obj){
 }
 
 function generateFileName(obj){
-    if( hasMetaJson(obj) ){            
-        return obj._meta.sources[0].json + ".json";
+    if( hasMetaJson(obj) ){      
+        let meta = obj._meta.sources[0];      
+        let fileName = `${meta.authors[0]}; ${meta.full}.json`;
+        return fileName;
     }
 
-    warn("Unable to find _meta.sources[0].json");
-    return "result.json";
+    throw new Error("Missing _meta. Unable to continue.");
 }
 
 function loadJson(path) {
@@ -182,4 +205,8 @@ function success(msg){
 
 function info(msg){
     console.info("\x1b[2m%s\x1b[0m", msg);
+}
+
+function red(msg){
+    console.error("\x1b[31m%s\x1b[0m", msg);
 }
