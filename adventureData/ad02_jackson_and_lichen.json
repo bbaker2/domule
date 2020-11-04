@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "Jackson and the Lichen",
     "id": "02-jack",
     "source": "domule",
     "data": [
@@ -41,9 +41,9 @@
                 },
                 {
                     "type": "entries",
-                    "name": "The Tri-Cidadel",
+                    "name": "The Tri-Citadel",
                     "entries": [
-                        "The Tri-Cidadel is a massive castle like structure made of three very large cylinder connected by a triangle",
+                        "The Tri-Citadel is a massive castle like structure made of three very large cylinder connected by a triangle",
                         "The party see several other Silver Wings gathered at one of the circular. Seamus is already there. He is surrounded by other Silver Wings that look to be the more... muscular variant on horse back",
                         "There are several tired looking wizards in green-silver uniforms. The most tired look, a young gnome holding a mug of coffee, approaches the group",
                         {
@@ -65,6 +65,48 @@
                         "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
                         "Once through, the arcana energy fades and what looks to be a thick copper cable holding the shape of an arch collapse into a pile. Four of the guards step forward and immediately begins the task of coiling the heavy cable."
                     ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Chapter 2 - Crowshire",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Crowshire",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "The Graveyard",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "Jackson Manor",
+                    "entries": []
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Chapter 3 - Underground",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "The Greenhouse",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "The Research Room",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "Jack'O Lichen",
+                    "entries": []
                 }
             ]
         }

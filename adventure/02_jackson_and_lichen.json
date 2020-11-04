@@ -7,7 +7,23 @@
             "name" : "Chapter 1 - Beginning",
             "headers" : [
                 "Guild Brief",
-                "The Tri-Cidadel"
+                "The Tri-Citadel"
+            ]
+        },
+        {
+            "name" : "Chapter 2 - Crowshire",
+            "headers" : [
+                "Crowshire",
+                "The Graveyard",
+                "The Manor"
+            ]
+        },
+        {
+            "name" : "Chapter 3 - Underground",
+            "headers" : [
+                "The Greenhouse",
+                "The Research Room",
+                "Jack'O Lichen"
             ]
         }
     ],
