@@ -1,27 +1,48 @@
 {
-    "name": "",
-    "id": "02-jack",
-    "source": "domule",
-    "data": [
+  "name": "",
+  "id": "02-jack",
+  "source": "domule",
+  "data": [
+    {
+      "type": "section",
+      "name": "Chapter 1",
+      "entries": [
         {
-            "type": "section",
-            "name": "Chapter 1",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Guild Brief",
-                    "entries": [
-                        "{@creature anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy"
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "The Tri-Cidadel",
-                    "entries": [
-                        "They enter the Tri-Cidadel for the fist time"
-                    ]
-                }
-            ]
+          "type": "entries",
+          "name": "Guild Brief",
+          "entries": [
+            "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
+            {
+              "type": "inset",
+              "name": "Anohi",
+              "entries": [
+                "Thank you all for coming in at such a late hour. We have a bit of an situation near <town>. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
+              ]
+            },
+            {
+              "type": "inset",
+              "name": "Seamus",
+              "entries": [
+                "Thank you. About 2 weeks ago King Macus recieved a report that the citizens of <town> were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning."
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                "For the pas",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "The Tri-Cidadel",
+          "entries": [
+            "They enter the Tri-Cidadel for the fist time"
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
