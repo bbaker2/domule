@@ -1,48 +1,72 @@
 {
-  "name": "",
-  "id": "02-jack",
-  "source": "domule",
-  "data": [
-    {
-      "type": "section",
-      "name": "Chapter 1",
-      "entries": [
+    "name": "",
+    "id": "02-jack",
+    "source": "domule",
+    "data": [
         {
-          "type": "entries",
-          "name": "Guild Brief",
-          "entries": [
-            "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
-            {
-              "type": "inset",
-              "name": "Anohi",
-              "entries": [
-                "Thank you all for coming in at such a late hour. We have a bit of an situation near <town>. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
-              ]
-            },
-            {
-              "type": "inset",
-              "name": "Seamus",
-              "entries": [
-                "Thank you. About 2 weeks ago King Macus recieved a report that the citizens of <town> were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning."
-              ]
-            },
-            {
-              "type": "list",
-              "items": [
-                "For the pas",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "The Tri-Cidadel",
-          "entries": [
-            "They enter the Tri-Cidadel for the fist time"
-          ]
+            "type": "section",
+            "name": "Chapter 1",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Guild Brief",
+                    "entries": [
+                        "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
+                        {
+                            "type": "inset",
+                            "name": "Anohi",
+                            "entries": [
+                                "Thank you all for coming in at such a late hour. We have a bit of an situation near Fairkeep. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
+                            ]
+                        },
+                        {
+                            "type": "inset",
+                            "name": "Seamus",
+                            "entries": [
+                                "Thank you. About 2 weeks ago King Macus received a report that the citizens of Crowshire were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning.",
+                                "We have secured an emergency use of Fairkeep's Gate Ring. Their guards should have set it up inside of Crowshire within the hour. Myself and the available Brassbrows will be rounding up the townsfolk so that they can be herded to quarantine camp being setup several miles away.",
+                                "The rest of you will be split up into four groups to investigate the area and try to determine the root cause of this strangeness.",
+                                "You have two hours to ready up and be at the Tri-Cidadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
+                                "Any questions?"
+                            ]
+                        },
+                        {
+                            "type": "inset",
+                            "name": "Anohi",
+                            "entries": [
+                                "Thank you Seamus. I have awoken the quartermaster. Our shop is open should you need any basic supplies."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "The Tri-Cidadel",
+                    "entries": [
+                        "The Tri-Cidadel is a massive castle like structure made of three very large cylinder connected by a triangle",
+                        "The party see several other Silver Wings gathered at one of the circular. Seamus is already there. He is surrounded by other Silver Wings that look to be the more... muscular variant on horse back",
+                        "There are several tired looking wizards in green-silver uniforms. The most tired look, a young gnome holding a mug of coffee, approaches the group",
+                        {
+                            "type": "inset",
+                            "name": "Wedbit",
+                            "entries": [
+                                "Seamus, good to see you. I wish we didn't have to keep meeting during time-sensitive-work-related jobs. Anyways, we got the confirmation from the Fairkeep Guard that they have their Gate Ring setup. If you will bring your crew and horses around, my apprentices will get you sent."
+                            ]
+                        },
+                        "Everyone enters one of the walled cylinder and see a large circular room connected by several heavy wooden doors. The doors have runes embedded and all but one has a massive beam locking them in place.",
+                        "One door is unlocked and open already. Inside the party see a short hallway that leads to another circular room. In the center of the room is thick 20 foot copper ring embedded in the floor. A few more green-silver robed people are slowly walking around it activating glyphs in the floor. Wedbit turns and faces the party:",
+                        {
+                            "type": "inset",
+                            "name": "Wedbit",
+                            "entries": [
+                                "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradura Gate's connection with Fairkeep until we know it is safe. Good luck."
+                            ]
+                        },
+                        "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
+                        "Once through, the arcana energy fades and what looks to be a thick copper cable holding the shape of an arch collapse into a pile. Four of the guards step forward and immediately begins the task of coiling the heavy cable."
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
