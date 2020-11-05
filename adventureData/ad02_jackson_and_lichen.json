@@ -1,114 +1,175 @@
 {
-    "name": "Jackson and the Lichen",
-    "id": "02-jack",
-    "source": "domule",
-    "data": [
+  "name": "Jackson and the Lichen",
+  "id": "02-jack",
+  "source": "domule",
+  "data": [
+    {
+      "type": "section",
+      "name": "Chapter 1",
+      "entries": [
         {
-            "type": "section",
-            "name": "Chapter 1",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Guild Brief",
-                    "entries": [
-                        "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
-                        {
-                            "type": "inset",
-                            "name": "Anohi",
-                            "entries": [
-                                "Thank you all for coming in at such a late hour. We have a bit of an situation near Fairkeep. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
-                            ]
-                        },
-                        {
-                            "type": "inset",
-                            "name": "Seamus",
-                            "entries": [
-                                "Thank you. About 2 weeks ago King Macus received a report that the citizens of Crowshire were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning.",
-                                "We have secured an emergency use of Fairkeep's Gate Ring. Their guards should have set it up inside of Crowshire within the hour. Myself and the available Brassbrows will be rounding up the townsfolk so that they can be herded to quarantine camp being setup several miles away.",
-                                "The rest of you will be split up into four groups to investigate the area and try to determine the root cause of this strangeness.",
-                                "You have two hours to ready up and be at the Tri-Cidadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
-                                "Any questions?"
-                            ]
-                        },
-                        {
-                            "type": "inset",
-                            "name": "Anohi",
-                            "entries": [
-                                "Thank you Seamus. I have awoken the quartermaster. Our shop is open should you need any basic supplies."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "The Tri-Citadel",
-                    "entries": [
-                        "The Tri-Citadel is a massive castle like structure made of three very large cylinder connected by a triangle",
-                        "The party see several other Silver Wings gathered at one of the circular. Seamus is already there. He is surrounded by other Silver Wings that look to be the more... muscular variant on horse back",
-                        "There are several tired looking wizards in green-silver uniforms. The most tired look, a young gnome holding a mug of coffee, approaches the group",
-                        {
-                            "type": "inset",
-                            "name": "Wedbit",
-                            "entries": [
-                                "Seamus, good to see you. I wish we didn't have to keep meeting during time-sensitive-work-related jobs. Anyways, we got the confirmation from the Fairkeep Guard that they have their Gate Ring setup. If you will bring your crew and horses around, my apprentices will get you sent."
-                            ]
-                        },
-                        "Everyone enters one of the walled cylinder and see a large circular room connected by several heavy wooden doors. The doors have runes embedded and all but one has a massive beam locking them in place.",
-                        "One door is unlocked and open already. Inside the party see a short hallway that leads to another circular room. In the center of the room is thick 20 foot copper ring embedded in the floor. A few more green-silver robed people are slowly walking around it activating glyphs in the floor. Wedbit turns and faces the party:",
-                        {
-                            "type": "inset",
-                            "name": "Wedbit",
-                            "entries": [
-                                "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradura Gate's connection with Fairkeep until we know it is safe. Good luck."
-                            ]
-                        },
-                        "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
-                        "Once through, the arcana energy fades and what looks to be a thick copper cable holding the shape of an arch collapse into a pile. Four of the guards step forward and immediately begins the task of coiling the heavy cable."
-                    ]
-                }
-            ]
+          "type": "entries",
+          "name": "Guild Brief",
+          "entries": [
+            "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
+            {
+              "type": "inset",
+              "name": "Anohi",
+              "entries": [
+                "Thank you all for coming in at such a late hour. We have a bit of an situation near Fairkeep. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
+              ]
+            },
+            {
+              "type": "inset",
+              "name": "Seamus",
+              "entries": [
+                "Thank you. About 2 weeks ago King Macus received a report that the citizens of Crowshire were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning.",
+                "We have secured an emergency use of Fairkeep's Gate Ring. Their guards should have set it up inside of Crowshire within the hour. Myself and the available Brassbrows will be rounding up the townsfolk so that they can be herded to quarantine camp being setup several miles away.",
+                "The rest of you will be split up into four groups to investigate the area and try to determine the root cause of this strangeness.",
+                "You have two hours to ready up and be at the Tri-Citadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
+                "Any questions?"
+              ]
+            },
+            {
+              "type": "inset",
+              "name": "Anohi",
+              "entries": [
+                "Thank you Seamus. I have awoken the quartermaster. Our shop is open should you need any basic supplies."
+              ]
+            }
+          ]
         },
         {
-            "type": "section",
-            "name": "Chapter 2 - Crowshire",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Crowshire",
-                    "entries": []
-                },
-                {
-                    "type": "entries",
-                    "name": "The Graveyard",
-                    "entries": []
-                },
-                {
-                    "type": "entries",
-                    "name": "Jackson Manor",
-                    "entries": []
-                }
-            ]
-        },
-        {
-            "type": "section",
-            "name": "Chapter 3 - Underground",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "The Greenhouse",
-                    "entries": []
-                },
-                {
-                    "type": "entries",
-                    "name": "The Research Room",
-                    "entries": []
-                },
-                {
-                    "type": "entries",
-                    "name": "Jack'O Lichen",
-                    "entries": []
-                }
-            ]
+          "type": "entries",
+          "name": "The Tri-Citadel",
+          "entries": [
+            "The Tri-Citadel is a massive castle like structure made of three very large cylinder connected by a triangle",
+            "The party see several other Silver Wings gathered at one of the circular. Seamus is already there. He is surrounded by other Silver Wings that look to be the more... muscular variant on horse back",
+            "There are several tired looking wizards in green-silver uniforms. The most tired look, a young gnome holding a mug of coffee, approaches the group",
+            {
+              "type": "inset",
+              "name": "Wedbit",
+              "entries": [
+                "Seamus, good to see you. I wish we didn't have to keep meeting during time-sensitive-work-related jobs. Anyways, we got the confirmation from the Fairkeep Guard that they have their Gate Ring setup. If you will bring your crew and horses around, my apprentices will get you sent."
+              ]
+            },
+            "Everyone enters one of the walled cylinder and see a large circular room connected by several heavy wooden doors. The doors have runes embedded and all but one has a massive beam locking them in place.",
+            "One door is unlocked and open already. Inside the party see a short hallway that leads to another circular room. In the center of the room is thick 20 foot copper ring embedded in the floor. A few more green-silver robed people are slowly walking around it activating glyphs in the floor. Wedbit turns and faces the party:",
+            {
+              "type": "inset",
+              "name": "Wedbit",
+              "entries": [
+                "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradora Gate's connection with Fairkeep until we know it is safe. Good luck."
+              ]
+            },
+            "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
+            "Once through, the arcana energy fades and what looks to be a thick copper cable holding the shape of an arch collapse into a pile. Four of the guards step forward and immediately begins the task of coiling the heavy cable."
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Chapter 2 - Crowshire",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Crowshire",
+          "entries": [
+            "A crowns guard with gold edging around her cloak steps forward.",
+            {
+              "type": "inset",
+              "name": "Cpt. Claudia",
+              "entries": [
+                "We are grateful for your expedient arrival. I'm Captain Claudia of the Fairkeep Guard.",
+                "Us twelve are the advance party. We have a Company of soldiers from Fairkeep's militia on their way here-ish. They will be in charge of setting up the camp for the citizens of Crowshire.",
+                "We are pretty sure whatever is affecting them is localized to this area and only after remaining here for a few days. We found a correlation between the citizens who travel in and out of the town often and how sane they remain. So we also recommend that no one stays within 10 miles of this town for more than 2 days."
+              ]
+            },
+            "Seamus requests for a map of the town and proceeds to rip it into 4. He hands each quadrant to the 4 remaining group.",
+            "The party will receive the quadrant with the graveyard and Jackson Manor"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "The Graveyard",
+          "entries": [
+            "At the graveyard, the party sees a simple plot of land with a wooden fence. Most of the tomb stones are plain with just a name and a date written on them. Vines from roses or squash spattered the graveyard while a basic stature of raven's head sits in the center.",
+            "The almost pleasant looking graveyard is starkly interrupted by the ripped down fence and torn up ground on the west side.",
+            {
+              "type": "list",
+              "items": [
+                "{@dc 5} Nature - This was not naturally occurring",
+                "{@dc 12} Nature - This matches the pattern of roots being ripped out of the ground",
+                "{@dc 10} Investigation - Footprints lead in and out of the ripped side",
+                "{@dc 15} Investigation - The footprint directly walk in and walk out, no signs of lots of stepping around or wandering."
+              ]
+            },
+            {
+              "type": "options",
+              "entries": [
+                {
+                  "type": "entries",
+                  "name": "Nighttime",
+                  "entries": [
+                    "If the party arrives during night, after about a short rest, anyone with a Passive Perception of {@dc 12} will hear slow treading footsteps",
+                    "They will see a group of Gourd Sprouts being lead by a few Gourd Adults. The Gourds will ignore the party and go straight to the graveyard",
+                    "A Gourd Sprout will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the Gourd Sprout. If left uninterrupted, will grow into a Gourd Adult. Once an Gourd Adult, the bones around the grave will be topside now. The new Gourd Adult collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Daytime",
+                  "entries": [
+                    "If the party arrive during daylight, the events from {@adventure The Forest|02-jack|1|the forest} occur after a short rest"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "The Forest",
+          "entries": [
+            "Wither by following the Gourds or just cutting through the forest to get to Jackson Manor, the following will occur",
+            {
+              "type": "list",
+              "items": [
+                "The party will hear someone crying for help",
+                "If the party investigates, they will find two humans under attack by 2 more humans",
+                "If no one keeps an eye on the Gourds, the party loses the Gourds"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Jackson Manor",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Chapter 3 - Underground",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "The Greenhouse",
+          "entries": []
+        },
+        {
+          "type": "entries",
+          "name": "The Research Room",
+          "entries": []
+        },
+        {
+          "type": "entries",
+          "name": "Jack'O Lichen",
+          "entries": []
+        }
+      ]
+    }
+  ]
 }
