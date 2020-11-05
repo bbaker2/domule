@@ -1,38 +1,40 @@
 {
-    "name" : "Jackson and the Lichen",
-    "id" : "02-jack",
+    "name": "Jackson and the Lichen",
+    "id": "02-jack",
     "source": "domule",
-    "contents" : [
+    "contents": [
         {
-            "name" : "Chapter 1 - Beginning",
-            "headers" : [
+            "name": "Chapter 1 - Beginning",
+            "headers": [
                 "Guild Brief",
                 "The Tri-Citadel"
             ]
         },
         {
-            "name" : "Chapter 2 - Crowshire",
-            "headers" : [
+            "name": "Chapter 2 - Crowshire",
+            "headers": [
                 "Crowshire",
                 "The Graveyard",
+                "The Graveyard",
+                "The Forest",
                 "The Manor"
             ]
         },
         {
-            "name" : "Chapter 3 - Underground",
-            "headers" : [
+            "name": "Chapter 3 - Underground",
+            "headers": [
                 "The Greenhouse",
                 "The Research Room",
                 "Jack'O Lichen"
             ]
         }
     ],
-    "level" : {
-        "start" : 3,
-        "end" : 4
+    "level": {
+        "start": 3,
+        "end": 4
     },
-    "published" : "2020-10-07",
-    "storyline" :[
+    "published": "2020-10-07",
+    "storyline": [
         "Aggredel's 3rd Renaissance"
     ]
 }
