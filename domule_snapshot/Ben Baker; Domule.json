@@ -32,6 +32,8 @@
           "headers": [
             "Crowshire",
             "The Graveyard",
+            "The Graveyard",
+            "The Forest",
             "The Manor"
           ]
         },
@@ -83,7 +85,7 @@
                     "Thank you. About 2 weeks ago King Macus received a report that the citizens of Crowshire were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning.",
                     "We have secured an emergency use of Fairkeep's Gate Ring. Their guards should have set it up inside of Crowshire within the hour. Myself and the available Brassbrows will be rounding up the townsfolk so that they can be herded to quarantine camp being setup several miles away.",
                     "The rest of you will be split up into four groups to investigate the area and try to determine the root cause of this strangeness.",
-                    "You have two hours to ready up and be at the Tri-Cidadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
+                    "You have two hours to ready up and be at the Tri-Citadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
                     "Any questions?"
                   ]
                 },
@@ -116,7 +118,7 @@
                   "type": "inset",
                   "name": "Wedbit",
                   "entries": [
-                    "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradura Gate's connection with Fairkeep until we know it is safe. Good luck."
+                    "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradora Gate's connection with Fairkeep until we know it is safe. Good luck."
                   ]
                 },
                 "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
@@ -132,12 +134,73 @@
             {
               "type": "entries",
               "name": "Crowshire",
-              "entries": []
+              "entries": [
+                "A crowns guard with gold edging around her cloak steps forward.",
+                {
+                  "type": "inset",
+                  "name": "Cpt. Claudia",
+                  "entries": [
+                    "We are grateful for your expedient arrival. I'm Captain Claudia of the Fairkeep Guard.",
+                    "Us twelve are the advance party. We have a Company of soldiers from Fairkeep's militia on their way here-ish. They will be in charge of setting up the camp for the citizens of Crowshire.",
+                    "We are pretty sure whatever is affecting them is localized to this area and only after remaining here for a few days. We found a correlation between the citizens who travel in and out of the town often and how sane they remain. So we also recommend that no one stays within 10 miles of this town for more than 2 days."
+                  ]
+                },
+                "Seamus requests for a map of the town and proceeds to rip it into 4. He hands each quadrant to the 4 remaining group.",
+                "The party will receive the quadrant with the graveyard and Jackson Manor"
+              ]
             },
             {
               "type": "entries",
               "name": "The Graveyard",
-              "entries": []
+              "entries": [
+                "At the graveyard, the party sees a simple plot of land with a wooden fence. Most of the tomb stones are plain with just a name and a date written on them. Vines from roses or squash spattered the graveyard while a basic stature of raven's head sits in the center.",
+                "The almost pleasant looking graveyard is starkly interrupted by the ripped down fence and torn up ground on the west side.",
+                {
+                  "type": "list",
+                  "items": [
+                    "{@dc 5} Nature - This was not naturally occurring",
+                    "{@dc 12} Nature - This matches the pattern of roots being ripped out of the ground",
+                    "{@dc 10} Investigation - Footprints lead in and out of the ripped side",
+                    "{@dc 15} Investigation - The footprint directly walk in and walk out, no signs of lots of stepping around or wandering."
+                  ]
+                },
+                {
+                  "type": "options",
+                  "entries": [
+                    {
+                      "type": "entries",
+                      "name": "Nighttime",
+                      "entries": [
+                        "If the party arrives during night, after about a short rest, anyone with a Passive Perception of {@dc 12} will hear slow treading footsteps",
+                        "They will see a group of Gourd Sprouts being lead by a few Gourd Adults. The Gourds will ignore the party and go straight to the graveyard",
+                        "A Gourd Sprout will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the Gourd Sprout. If left uninterrupted, will grow into a Gourd Adult. Once an Gourd Adult, the bones around the grave will be topside now. The new Gourd Adult collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "name": "Daytime",
+                      "entries": [
+                        "If the party arrive during daylight, the events from {@adventure The Forest|02-jack|1|the forest} occur after a short rest"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "The Forest",
+              "entries": [
+                "Wither by following the Gourds or just cutting through the forest to get to Jackson Manor, the following will occur",
+                {
+                  "type": "list",
+                  "items": [
+                    "The party will hear someone crying for help",
+                    "If the party investigates, they will find two humans under attack by 2 more humans",
+                    "If no one keeps an eye on the Gourds, the party loses the Gourds"
+                  ]
+                }
+              ]
             },
             {
               "type": "entries",
@@ -171,6 +234,294 @@
     }
   ],
   "monster": [
+    {
+      "name": "Gourd Sprout",
+      "source": "domule",
+      "page": 230,
+      "size": "S",
+      "type": "plant",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "average": 81,
+        "formula": "18d6 + 18"
+      },
+      "speed": {
+        "walk": 10
+      },
+      "str": 10,
+      "dex": 10,
+      "con": 12,
+      "int": 8,
+      "wis": 11,
+      "cha": 5,
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 10,
+      "cr": "1/4",
+      "trait": [
+        {
+          "name": "Distress Spores",
+          "entries": [
+            "When the gourd takes damage, all other gourds within 240 feet of it can sense its pain."
+          ]
+        },
+        {
+          "name": "Sun Sickness",
+          "entries": [
+            "While in sunlight, the gourd has disadvantage on ability checks, attack rolls, and saving throws. The gourd dies if it spends more than 1 hour in direct sunlight."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) bludgeoning damage plus 5 ({@damage 2d4}) poison damage."
+          ]
+        },
+        {
+          "name": "Rapport Spores (3/Day)",
+          "entries": [
+            "A 10-foot radius of spores extends from the gourd. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+          ]
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "damageTags": [
+        "B",
+        "I"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ]
+    },
+    {
+      "name": "Gourd Adult",
+      "source": "domule",
+      "page": 232,
+      "size": "M",
+      "type": "plant",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 12,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 22,
+        "formula": "4d8 + 4"
+      },
+      "speed": {
+        "walk": 20
+      },
+      "str": 10,
+      "dex": 10,
+      "con": 12,
+      "int": 10,
+      "wis": 13,
+      "cha": 7,
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 11,
+      "cr": "1/2",
+      "trait": [
+        {
+          "name": "Distress Spores",
+          "entries": [
+            "When the gourd takes damage, all other gourds within 240 feet of it can sense its pain."
+          ]
+        },
+        {
+          "name": "Sun Sickness",
+          "entries": [
+            "While in sunlight, the gourd has disadvantage on ability checks, attack rolls, and saving throws. The gourd dies if it spends more than 1 hour in direct sunlight."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) bludgeoning damage plus 5 ({@damage 2d4}) poison damage."
+          ]
+        },
+        {
+          "name": "Spore Slap (1/Day)",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage.",
+            "On a successful hit, the target must success on a {@dc 11} Constitution save or roll the short term madness table. See {@book Dungeon Master's Guide's Short-Term Madness|dmg|8|madness}"
+          ]
+        },
+        {
+          "name": "Pacifying Spores (3/Day)",
+          "entries": [
+            "The gourd ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 11} Constitution saving throw or be {@condition stunned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Rapport Spores",
+          "entries": [
+            "A 20-foot radius of spores extends from the gourd. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+          ]
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "damageTags": [
+        "B",
+        "I"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "stunned"
+      ]
+    },
+    {
+      "name": "Gourd Sovereign",
+      "source": "domule",
+      "page": 232,
+      "size": "L",
+      "type": "plant",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 60,
+        "formula": "8d10 + 16"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 12,
+      "dex": 10,
+      "con": 14,
+      "int": 13,
+      "wis": 15,
+      "cha": 10,
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 12,
+      "cr": "2",
+      "trait": [
+        {
+          "name": "Distress Spores",
+          "entries": [
+            "When the gourd takes damage, all other gourds within 240 feet of it can sense its pain."
+          ]
+        },
+        {
+          "name": "Sun Sickness",
+          "entries": [
+            "While in sunlight, the gourd has disadvantage on ability checks, attack rolls, and saving throws. The gourd dies if it spends more than 1 hour in direct sunlight."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The gourd uses either its Hallucination Spores or its Pacifying Spores, then makes a Vine Strike."
+          ]
+        },
+        {
+          "name": "Vine Strike",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 15 ft., one target. {@h}8 ({@damage 3d4 + 1}) piercing damage plus 7 ({@damage 3d4}) poison damage."
+          ]
+        },
+        {
+          "name": "Animating Spores (3/Day)",
+          "entries": [
+            "The gourd targets one corpse of a humanoid or a Large or smaller beast within 5 feet of it and releases spores at the corpse. In 24 hours, the corpse rises as a spore servant. The corpse stays animated for {@dice 1d4 + 1} weeks or until destroyed, and it can't be animated again in this way."
+          ]
+        },
+        {
+          "name": "Hallucination Spores",
+          "entries": [
+            "The gourd ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. The {@condition poisoned} target is {@condition incapacitated} while it hallucinates. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Pacifying Spores",
+          "entries": [
+            "The gourd ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 12} Constitution saving throw or be {@condition stunned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Rapport Spores",
+          "entries": [
+            "A 30-foot radius of spores extends from the gourd. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+          ]
+        },
+        {
+          "name": "Euphoria Spores (1/Day)",
+          "entries": [
+            "The gourd releases a cloud of spores in a 20-foot-radius sphere centered on itself. Other creatures in that area must each succeed on a {@dc 12} Constitution saving throw or become {@condition poisoned} for 1 minute. The save DC is 8 + the gourd's Constitution modifier + the gourd's proficiency bonus. A creature can repeat the saving throw at the end of each of its turns, ending the effect early on itself on a success. When the effect ends on it, the creature gains one level of {@condition exhaustion}"
+          ]
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "I"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "incapacitated",
+        "poisoned",
+        "stunned",
+        "exhaustion"
+      ]
+    },
     {
       "name": "Anohi",
       "source": "domule",
