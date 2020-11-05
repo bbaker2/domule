@@ -1,0 +1,74 @@
+{
+    "name": "Gourd Sprout",
+    "source": "domule",
+    "page": 230,
+    "size": "S",
+    "type": "plant",
+    "alignment": [
+        "N",
+        "G"
+    ],
+    "ac": [
+        10
+    ],
+    "hp": {
+        "average": 81,
+        "formula": "18d6 + 18"
+    },
+    "speed": {
+        "walk": 10
+    },
+    "str": 10,
+    "dex": 10,
+    "con": 12,
+    "int": 8,
+    "wis": 11,
+    "cha": 5,
+    "senses": [
+        "darkvision 120 ft."
+    ],
+    "passive": 10,
+    "cr": "1/4",
+    "trait": [
+        {
+            "name": "Distress Spores",
+            "entries": [
+                "When the gourd takes damage, all other gourds within 240 feet of it can sense its pain."
+            ]
+        },
+        {
+            "name": "Sun Sickness",
+            "entries": [
+                "While in sunlight, the gourd has disadvantage on ability checks, attack rolls, and saving throws. The gourd dies if it spends more than 1 hour in direct sunlight."
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "Fist",
+            "entries": [
+                "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) bludgeoning damage plus 5 ({@damage 2d4}) poison damage."
+            ]
+        },
+        {
+            "name": "Rapport Spores (3/Day)",
+            "entries": [
+                "A 10-foot radius of spores extends from the gourd. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+            ]
+        }
+    ],
+    "environment": [
+        "underdark"
+    ],   
+    "senseTags": [
+        "SD"
+    ],
+    "damageTags": [
+        "B",
+        "I"
+    ],
+    "miscTags": [
+        "MW",
+        "AOE"
+    ]
+}
