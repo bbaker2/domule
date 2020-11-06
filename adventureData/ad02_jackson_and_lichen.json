@@ -1,190 +1,239 @@
 {
-  "name": "Jackson and the Lichen",
-  "id": "02-jack",
-  "source": "domule",
-  "data": [
-    {
-      "type": "section",
-      "name": "Chapter 1",
-      "entries": [
+    "name": "Jackson and the Lichen",
+    "id": "02-jack",
+    "source": "domule",
+    "data": [
         {
-          "type": "entries",
-          "name": "Guild Brief",
-          "entries": [
-            "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
-            {
-              "type": "inset",
-              "name": "Anohi",
-              "entries": [
-                "Thank you all for coming in at such a late hour. We have a bit of an situation near Fairkeep. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
-              ]
-            },
-            {
-              "type": "inset",
-              "name": "Seamus",
-              "entries": [
-                "Thank you. About 2 weeks ago King Macus received a report that the citizens of Crowshire were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning.",
-                "We have secured an emergency use of Fairkeep's Gate Ring. Their guards should have set it up inside of Crowshire within the hour. Myself and the available Brassbrows will be rounding up the townsfolk so that they can be herded to quarantine camp being setup several miles away.",
-                "The rest of you will be split up into four groups to investigate the area and try to determine the root cause of this strangeness.",
-                "You have two hours to ready up and be at the Tri-Citadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
-                "Any questions?"
-              ]
-            },
-            {
-              "type": "inset",
-              "name": "Anohi",
-              "entries": [
-                "Thank you Seamus. I have awoken the quartermaster. Our shop is open should you need any basic supplies."
-              ]
-            }
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "The Tri-Citadel",
-          "entries": [
-            "The Tri-Citadel is a massive castle like structure made of three very large cylinder connected by a triangle",
-            "The party see several other Silver Wings gathered at one of the circular. Seamus is already there. He is surrounded by other Silver Wings that look to be the more... muscular variant on horse back",
-            "There are several tired looking wizards in green-silver uniforms. The most tired look, a young gnome holding a mug of coffee, approaches the group",
-            {
-              "type": "inset",
-              "name": "Wedbit",
-              "entries": [
-                "Seamus, good to see you. I wish we didn't have to keep meeting during time-sensitive-work-related jobs. Anyways, we got the confirmation from the Fairkeep Guard that they have their Gate Ring setup. If you will bring your crew and horses around, my apprentices will get you sent."
-              ]
-            },
-            "Everyone enters one of the walled cylinder and see a large circular room connected by several heavy wooden doors. The doors have runes embedded and all but one has a massive beam locking them in place.",
-            "One door is unlocked and open already. Inside the party see a short hallway that leads to another circular room. In the center of the room is thick 20 foot copper ring embedded in the floor. A few more green-silver robed people are slowly walking around it activating glyphs in the floor. Wedbit turns and faces the party:",
-            {
-              "type": "inset",
-              "name": "Wedbit",
-              "entries": [
-                "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradora Gate's connection with Fairkeep until we know it is safe. Good luck."
-              ]
-            },
-            "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
-            "Once through, the arcana energy fades and what looks to be a thick copper cable holding the shape of an arch collapse into a pile. Four of the guards step forward and immediately begins the task of coiling the heavy cable."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "section",
-      "name": "Chapter 2 - Crowshire",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Crowshire",
-          "entries": [
-            "A crowns guard with gold edging around her cloak steps forward.",
-            {
-              "type": "inset",
-              "name": "Cpt. Claudia",
-              "entries": [
-                "We are grateful for your expedient arrival. I'm Captain Claudia of the Fairkeep Guard.",
-                "Us twelve are the advance party. We have a Company of soldiers from Fairkeep's militia on their way here-ish. They will be in charge of setting up the camp for the citizens of Crowshire.",
-                "We are pretty sure whatever is affecting them is localized to this area and only after remaining here for a few days. We found a correlation between the citizens who travel in and out of the town often and how sane they remain. So we also recommend that no one stays within 10 miles of this town for more than 2 days."
-              ]
-            },
-            "Seamus requests for a map of the town and proceeds to rip it into 4. He hands each quadrant to the 4 remaining group.",
-            "The party will receive the quadrant with the graveyard and Jackson Manor"
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "The Graveyard",
-          "entries": [
-            "At the graveyard, the party sees a simple plot of land with a wooden fence. Most of the tomb stones are plain with just a name and a date written on them. Vines from roses or squash spattered the graveyard while a basic stature of raven's head sits in the center.",
-            "The almost pleasant looking graveyard is starkly interrupted by the ripped down fence and torn up ground on the west side.",
-            {
-              "type": "list",
-              "items": [
-                "{@dc 5} Nature - This was not naturally occurring",
-                "{@dc 12} Nature - This matches the pattern of roots being ripped out of the ground",
-                "{@dc 10} Investigation - Footprints lead in and out of the ripped side",
-                "{@dc 15} Investigation - The footprint directly walk in and walk out, no signs of lots of stepping around or wandering."
-              ]
-            },
-            {
-              "type": "options",
-              "entries": [
+            "type": "section",
+            "name": "Chapter 1",
+            "entries": [
                 {
-                  "type": "entries",
-                  "name": "Nighttime",
-                  "entries": [
-                    "If the party arrives during night, after about a short rest, anyone with a Passive Perception of {@dc 12} will hear slow treading footsteps",
-                    "They will see a group of {@creature Gourd Sprout|domule} being lead by a few {@creature Gourd Adult|domule}. The Gourds will ignore the party and go straight to the graveyard",
-                    "A {@creature Gourd Sprout|domule} will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the {@creature Gourd Sprout|domule}. If left uninterrupted, will grow into a {@creature Gourd Adult|domule}. Once an {@creature Gourd Adult|domule}, the bones around the grave will be topside now. The new {@creature Gourd Adult|domule} collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
-                  ]
+                    "type": "entries",
+                    "name": "Guild Brief",
+                    "entries": [
+                        "{@creature Anohi|domule} informs the party that they are being hired to investigate a town slowly going crazy. She gives the following speech:",
+                        {
+                            "type": "inset",
+                            "name": "Anohi",
+                            "entries": [
+                                "Thank you all for coming in at such a late hour. We have a bit of an situation near Fairkeep. Their king, King Macus, has hired us (at a massive fee) to assist since we can portal there. To explain our plan of action, our leader of the Brassbrows, Seamus Droug"
+                            ]
+                        },
+                        {
+                            "type": "inset",
+                            "name": "Seamus",
+                            "entries": [
+                                "Thank you. About 2 weeks ago King Macus received a report that the citizens of Crowshire were starting to act... weird. Their guard confirmed the towns folk were pregressivly going crazy but were extra alarmed when they found evidence of upturned grave sites. Naturally, this is very concerning.",
+                                "We have secured an emergency use of Fairkeep's Gate Ring. Their guards should have set it up inside of Crowshire within the hour. Myself and the available Brassbrows will be rounding up the townsfolk so that they can be herded to quarantine camp being setup several miles away.",
+                                "The rest of you will be split up into four groups to investigate the area and try to determine the root cause of this strangeness.",
+                                "You have two hours to ready up and be at the Tri-Citadel. It will still be ass'o clock in the morning where so be prepare for darkness.",
+                                "Any questions?"
+                            ]
+                        },
+                        {
+                            "type": "inset",
+                            "name": "Anohi",
+                            "entries": [
+                                "Thank you Seamus. I have awoken the quartermaster. Our shop is open should you need any basic supplies."
+                            ]
+                        }
+                    ]
                 },
                 {
-                  "type": "entries",
-                  "name": "Daytime",
-                  "entries": [
-                    "If the party arrive during daylight, the events from {@adventure The Forest|02-jack|1|the forest} occur after a short rest"
-                  ]
+                    "type": "entries",
+                    "name": "The Tri-Citadel",
+                    "entries": [
+                        "The Tri-Citadel is a massive castle like structure made of three very large cylinder connected by a triangle",
+                        "The party see several other Silver Wings gathered at one of the circular. Seamus is already there. He is surrounded by other Silver Wings that look to be the more... muscular variant on horse back",
+                        "There are several tired looking wizards in green-silver uniforms. The most tired look, a young gnome holding a mug of coffee, approaches the group",
+                        {
+                            "type": "inset",
+                            "name": "Wedbit",
+                            "entries": [
+                                "Seamus, good to see you. I wish we didn't have to keep meeting during time-sensitive-work-related jobs. Anyways, we got the confirmation from the Fairkeep Guard that they have their Gate Ring setup. If you will bring your crew and horses around, my apprentices will get you sent."
+                            ]
+                        },
+                        "Everyone enters one of the walled cylinder and see a large circular room connected by several heavy wooden doors. The doors have runes embedded and all but one has a massive beam locking them in place.",
+                        "One door is unlocked and open already. Inside the party see a short hallway that leads to another circular room. In the center of the room is thick 20 foot copper ring embedded in the floor. A few more green-silver robed people are slowly walking around it activating glyphs in the floor. Wedbit turns and faces the party:",
+                        {
+                            "type": "inset",
+                            "name": "Wedbit",
+                            "entries": [
+                                "Due to lack of information regarding how this madness is spreading, this portal is uni-directional. We will not be allowing anything on the other side to return. As a matter a fact, after you lot are sent threw, we will be disabling this portal and canceling the Tradora Gate's connection with Fairkeep until we know it is safe. Good luck."
+                            ]
+                        },
+                        "Webit flips a small coin to the center of the copper ring which triggers a glow of arcane energy. The copper ring flips up where half slides underground while the other half creates an arch above ground. The party can see a dark town on the other side with a dozen well donned city guard stand in attention",
+                        "Once through, the arcana energy fades and what looks to be a thick copper cable holding the shape of an arch collapse into a pile. Four of the guards step forward and immediately begins the task of coiling the heavy cable."
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         },
         {
-          "type": "entries",
-          "name": "The Forest",
-          "entries": [
-            "Wither by following the Gourds or just cutting through the forest to get to Jackson Manor, the following will occur",
-            {
-              "type": "list",
-              "items": [
-                "The party will hear someone crying for help",
-                "If the party investigates, they will find two humans under attack by 2 more humans",
-                "If no one keeps an eye on the Gourds, the party loses the Gourds",
-                "You can use the {@creature Commoner|mm}, {@creature Bandit|mm}, and/or {@creature Guard|mm} stats with relabeled names/weapons"
-              ]
-            }
-          ]
+            "type": "section",
+            "name": "Chapter 2 - Crowshire",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Crowshire",
+                    "entries": [
+                        "A crowns guard with gold edging around her cloak steps forward.",
+                        {
+                            "type": "inset",
+                            "name": "Cpt. Claudia",
+                            "entries": [
+                                "We are grateful for your expedient arrival. I'm Captain Claudia of the Fairkeep Guard.",
+                                "Us twelve are the advance party. We have a Company of soldiers from Fairkeep's militia on their way here-ish. They will be in charge of setting up the camp for the citizens of Crowshire.",
+                                "We are pretty sure whatever is affecting them is localized to this area and only after remaining here for a few days. We found a correlation between the citizens who travel in and out of the town often and how sane they remain. So we also recommend that no one stays within 10 miles of this town for more than 2 days."
+                            ]
+                        },
+                        "Seamus requests for a map of the town and proceeds to rip it into 4. He hands each quadrant to the 4 remaining group.",
+                        "The party will receive the quadrant with the graveyard and Jackson Manor"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "The Graveyard",
+                    "entries": [
+                        "At the graveyard, the party sees a simple plot of land with a wooden fence. Most of the tomb stones are plain with just a name and a date written on them. Vines from roses or squash spattered the graveyard while a basic stature of raven's head sits in the center.",
+                        "The almost pleasant looking graveyard is starkly interrupted by the ripped down fence and torn up ground on the west side.",
+                        {
+                            "type": "list",
+                            "items": [
+                                "{@dc 5} Nature - This was not naturally occurring",
+                                "{@dc 12} Nature - This matches the pattern of roots being ripped out of the ground",
+                                "{@dc 10} Investigation - Footprints lead in and out of the ripped side",
+                                "{@dc 15} Investigation - The footprint directly walk in and walk out, no signs of lots of stepping around or wandering."
+                            ]
+                        },
+                        {
+                            "type": "options",
+                            "entries": [
+                                {
+                                    "type": "entries",
+                                    "name": "Nighttime",
+                                    "entries": [
+                                        "If the party arrives during night, after about a short rest, anyone with a Passive Perception of {@dc 12} will hear slow treading footsteps",
+                                        "They will see a group of {@creature Gourd Sprout|domule} being lead by a few {@creature Gourd Adult|domule}. The Gourds will ignore the party and go straight to the graveyard",
+                                        "A {@creature Gourd Sprout|domule} will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the {@creature Gourd Sprout|domule}. If left uninterrupted, will grow into a {@creature Gourd Adult|domule}. Once an {@creature Gourd Adult|domule}, the bones around the grave will be topside now. The new {@creature Gourd Adult|domule} collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Daytime",
+                                    "entries": [
+                                        "If the party arrive during daylight, the events from {@adventure The Forest|02-jack|1|the forest} occur after a short rest"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "The Forest",
+                    "entries": [
+                        "Wither by following the Gourds or just cutting through the forest to get to Jackson Manor, the following will occur",
+                        {
+                            "type": "list",
+                            "items": [
+                                "The party will hear someone crying for help",
+                                "If the party investigates, they will find two humans under attack by 2 more humans",
+                                "If no one keeps an eye on the Gourds, the party loses the Gourds",
+                                "You can use the {@creature Commoner|mm}, {@creature Bandit|mm}, and/or {@creature Guard|mm} stats with relabeled names/weapons"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Jackson Manor",
+                    "entries": [
+                        "The following events can happen at the manor",
+                        {
+                            "type": "list",
+                            "items": [
+                                "There is a recipe for Bone Meal in the kitchen.",
+                                "There is note in the bedroom talking about how {@creature Myconid Sovereign|mm} can spawn by placing spore in dead creatures.",
+                                "The staircase can flip like a see-saw to grant access to a hidden office",
+                                "There is a note in the dinning room where Jackson is complaining that Myconids keep dying during daylight and needs to find a solution to this issue",
+                                "There is a note in the office from a R.S. that mentions a delivery of a {@creature Werewolf|mm} corpse.",
+                                "There are traps all over the house. Use {@trap falling net}, {@trap bear Trap|xge}, and {@trap poison needle trap|xge}",
+                                "If the party has already visited the graveyard, the cellar in the kitchen leads to the underground tunnels"
+                            ]
+                        },
+                        {
+                            "type": "insetReadaloud",
+                            "name": "Bone Meal",
+                            "entries": [
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "1 kg bones (any)",
+                                        "200 ml evaporated urine",
+                                        "500 g forest droppings (rabbit seems to work best)",
+                                        "1 l water"
+                                    ]
+                                },
+                                "Crush bone into powder and mix with the urine. Please inside of sealable container and mix in water and droppings. Immediately seal as this will start smelling really bad real fast. Shake hard and leave to warm in direct sunlight for 4 days",
+                                "Recommended to open on the 5th day and let the stench dissipate for a bit.",
+                                "When applying to crops, recommended to sprinkle a thin layer of topsoil to cover smell"
+                            ]
+                        },
+                        {
+                            "type": "insetReadaloud",
+                            "name": "Bedroom Letter",
+                            "entries": [
+                                "Mr. Jackson,",
+                                "My constituents and I were fascinated by your theory that you might be able to produce a Myconid from a plant instead of a corpse. We do believe you were right about using gourds or the squash family as a whole as it is easy to place the entire spore inside.",
+                                "I also think you may need to apply the same technique used in orchards on the Myconid. Start with a Myconid sport that has already been laid in a corpse and then transfer it to the squash. With any luck, the spore will graft. The subsequent Myconid (and spore) should be much more receptive to spawning from a squash and after a few generations may not need a corpse at all.",
+                                "Best of luck and please do tell us your results.",
+                                "Dr. Yoza Corgim",
+                                "Head of Herbology; Hue Academy"
+                            ]
+                        },
+                        {
+                            "type": "insetReadaloud",
+                            "name": "Dinning Room Note",
+                            "entries": [
+                                "Amendment 22",
+                                "The few Myconid I could spawn quickly die in the sunlight. The adults are intelligent enough to see cover during the day but the sprouts are fairly intelligent and will work themselves to dead during the day",
+                                "While I haven't found a good way to get them to be permanently sun resistant but I have an idea get them to instinctually grow a thick shell in sunlight. It will not keep them alive in sunlight forever, but in theory it prolong their life long enough for them to reach adulthood"
+                            ]
+                        },
+                        {
+                            "type": "insetReadaloud",
+                            "name": "Hidden Office Letter",
+                            "entries": [
+                                "Mr. Jackson,",
+                                "Acquiring the Sovereign was difficult enough but acquiring the Blood of the Lycanthrope is a very dangerous task indeed. But you are in luck, we just so happen to have acquired a Werewolf for other reasons and can spare a vial or two. Please be caution with the sample, this one came from a particularly devote follower of Malar",
+                                "Now that you have all that you need, please start producing results. We were interested in your theories because we thought they could benefit the agricultural world. But that will only happen if they actually work.",
+                                "- R.S."
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "type": "entries",
-          "name": "Jackson Manor",
-          "entries": [
-            "The following events can happen at the manor",
-            {
-              "type": "list",
-              "items": [
-                "There is a recipe for Bone Meal in the kitchen.",
-                "There is note in the bedroom talking about how {@creature Myconid Sovereign|mm} can spawn by placing spore in dead creatures.",
-                "The staircase can flip like a see-saw to grant access to a hidden office",
-                "There is a note in the dinning room where Jackson is complaining that Myconids keep dying during daylight and needs to find a solution to this issue",
-                "There is a note in the office from a R.S. that mentions a delivery of a {@creature Werewolf|mm} corpse.",
-                "There are traps all over the house",
-                "If the party has already visited the graveyard, the cellar in the kitchen leads to the underground tunnels"
-              ]
-            }
-          ]
+            "type": "section",
+            "name": "Chapter 3 - Underground",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "The Greenhouse",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "The Research Room",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "Jack'O Lichen",
+                    "entries": []
+                }
+            ]
         }
-      ]
-    },
-    {
-      "type": "section",
-      "name": "Chapter 3 - Underground",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "The Greenhouse",
-          "entries": []
-        },
-        {
-          "type": "entries",
-          "name": "The Research Room",
-          "entries": []
-        },
-        {
-          "type": "entries",
-          "name": "Jack'O Lichen",
-          "entries": []
-        }
-      ]
-    }
-  ]
+    ]
 }
