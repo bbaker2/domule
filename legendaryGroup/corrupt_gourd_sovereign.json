@@ -1,0 +1,76 @@
+{
+    "name": "Corrupt Gourd Sovereign",
+    "source": "domule",
+    "lairActions": [
+        "On Initiative count 20 (losing initiative ties), Gourd Sovereign can take a lair action to cause one of the following effects: he can't use the same effect two rounds in a row:",
+        {
+            "type": "list",
+            "items": [
+                {
+                    "type": "entries",
+                    "entries": [
+                        "Gourd Sovereign causes four {@creature gas spore||gas spores} or {@creature violet fungus||violet fungi} to appear in unoccupied spaces that she chooses within the lair. They vanish after 1 hour.",
+                        {
+                            "type": "variant",
+                            "name": "Less Deadly",
+                            "entries": [
+                                "The {@bold Death Burst} in the {@creature gas spore||gas spores} only causes the initial poison damaged and does not infect the targeted creates."
+                            ]
+                        }
+                    ]
+                },
+                "Up to four plant creatures that are friendly to Gourd Sovereign and that Gourd Sovereign can see can use their reactions to move up to their speed and make one weapon attack.",
+                "Gourd Sovereign uses either her Infestation Spores or her Mind Control Spores, centered on a mushroom or other fungus within her lair, instead of on herself."
+            ]
+        }
+    ],
+    "regionalEffects": [
+        "The region containing Gourd Sovereign's lair is warped by his magic, creating one or more of the following effects:",
+        {
+            "type": "list",
+            "items": [
+                "Molds and fungi grow on surfaces within 6 miles of the lair, even where they would normally find no purchase.",
+                "Plant life within 1 mile of the lair becomes infested with parasitic fungi, slowly mutating as it is overwhelmed.",
+                "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a {@dc 17} Wisdom saving throw or descend into a madness determined by the Madness of Gourd Sovereign table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours."
+            ]
+        },
+        "If Gourd Sovereign dies, these effects fade over the course of {@dice 1d10} days.",
+        {
+            "type": "entries",
+            "name": "Madness of Gourd Sovereign",
+            "entries": [
+                "If a creature goes mad in Gourd Sovereign's lair or within line of sight of the demon lord, roll on the Madness of Gourd Sovereign table to determine the nature of the madness, which is a character flaw that lasts until cured. See the {@book Dungeon Master's Guide|dmg|8|madness} for more on madness.",
+                {
+                    "type": "table",
+                    "caption": "Madness of Gourd Sovereign",
+                    "colLabels": [
+                        "d100",
+                        "Flaw (lasts until cured)"
+                    ],
+                    "colStyles": [
+                        "col-1",
+                        "col-11"
+                    ],
+                    "rows": [
+                        [
+                            "01–25",
+                            "\"I must collect any bones I see\""
+                        ],
+                        [
+                            "26–50",
+                            "\"I periodically try to eat dirt.\""
+                        ],
+                        [
+                            "51–75",
+                            "\"The sun makes me itchy\""
+                        ],
+                        [
+                            "76-100",
+                            "\"The moon makes me itchy\""
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
