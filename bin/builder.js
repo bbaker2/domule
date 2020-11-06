@@ -156,7 +156,6 @@ function readFolders(root, schema){
         }
         
     }
-    console.log(result);
     return result;
 }
 
