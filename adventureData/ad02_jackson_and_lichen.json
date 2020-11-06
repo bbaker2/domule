@@ -113,8 +113,8 @@
                   "name": "Nighttime",
                   "entries": [
                     "If the party arrives during night, after about a short rest, anyone with a Passive Perception of {@dc 12} will hear slow treading footsteps",
-                    "They will see a group of Gourd Sprouts being lead by a few Gourd Adults. The Gourds will ignore the party and go straight to the graveyard",
-                    "A Gourd Sprout will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the Gourd Sprout. If left uninterrupted, will grow into a Gourd Adult. Once an Gourd Adult, the bones around the grave will be topside now. The new Gourd Adult collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
+                    "They will see a group of {@creature Gourd Sprout|domule} being lead by a few {@creature Gourd Adult|domule}. The Gourds will ignore the party and go straight to the graveyard",
+                    "A {@creature Gourd Sprout|domule} will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the {@creature Gourd Sprout|domule}. If left uninterrupted, will grow into a {@creature Gourd Adult|domule}. Once an {@creature Gourd Adult|domule}, the bones around the grave will be topside now. The new {@creature Gourd Adult|domule} collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
                   ]
                 },
                 {
@@ -138,7 +138,8 @@
               "items": [
                 "The party will hear someone crying for help",
                 "If the party investigates, they will find two humans under attack by 2 more humans",
-                "If no one keeps an eye on the Gourds, the party loses the Gourds"
+                "If no one keeps an eye on the Gourds, the party loses the Gourds",
+                "You can use the {@creature Commoner|mm}, {@creature Bandit|mm}, and/or {@creature Guard|mm} stats with relabeled names/weapons"
               ]
             }
           ]
@@ -146,7 +147,21 @@
         {
           "type": "entries",
           "name": "Jackson Manor",
-          "entries": []
+          "entries": [
+            "The following events can happen at the manor",
+            {
+              "type": "list",
+              "items": [
+                "There is a recipe for Bone Meal in the kitchen.",
+                "There is note in the bedroom talking about how {@creature Myconid Sovereign|mm} can spawn by placing spore in dead creatures.",
+                "The staircase can flip like a see-saw to grant access to a hidden office",
+                "There is a note in the dinning room where Jackson is complaining that Myconids keep dying during daylight and needs to find a solution to this issue",
+                "There is a note in the office from a R.S. that mentions a delivery of a {@creature Werewolf|mm} corpse.",
+                "There are traps all over the house",
+                "If the party has already visited the graveyard, the cellar in the kitchen leads to the underground tunnels"
+              ]
+            }
+          ]
         }
       ]
     },
