@@ -94,7 +94,7 @@
     ],
     "environment": [
         "underdark"
-    ],   
+    ],
     "senseTags": [
         "SD"
     ],
@@ -115,5 +115,9 @@
         "poisoned",
         "stunned",
         "exhaustion"
-    ]
+    ],
+    "legendaryGroup": {
+        "name": "Corrupt Gourd Sovereign",
+        "source": "domule"
+    }
 }
