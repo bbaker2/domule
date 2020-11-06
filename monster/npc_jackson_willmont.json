@@ -1,0 +1,165 @@
+{
+    "name": "Jackson Willmont",
+    "source": "domule",
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "human",
+            "shapechanger"
+        ]
+    },
+    "alignment": [
+        "C",
+        "E"
+    ],
+    "ac": [
+        {
+            "ac": 11,
+            "condition": "in humanoid form"
+        },
+        {
+            "ac": 12,
+            "from": [
+                "natural armor"
+            ],
+            "condition": "in wolf or hybrid form"
+        }
+    ],
+    "hp": {
+        "average": 58,
+        "formula": "9d8 + 18"
+    },
+    "speed": {
+        "walk": {
+            "number": 30,
+            "condition": "(40 ft. in wolf form)"
+        }
+    },
+    "str": 15,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 10,
+    "skill": {
+        "perception": "+4"
+    },
+    "passive": 14,
+    "languages": [
+        "Common (can't speak in wolf form)"
+    ],
+    "cr": "3",
+    "trait": [
+        {
+            "name": "Shapechanger",
+            "entries": [
+                "The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            ]
+        },
+        {
+            "name": "Keen Hearing and Smell",
+            "entries": [
+                "The werewolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "Multiattack (Hybrid Form Only)",
+            "entries": [
+                "The werewolf makes two attacks: any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
+            ]
+        },
+        {
+            "name": "Bite (Hybrid Form Only)",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or take 4 ({@damage 2d4}) poison damage. "
+            ]
+        },
+        {
+            "name": "Claws (Hybrid Form Only)",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+            ]
+        },
+        {
+            "name": "Gourd Throw (Hybrid Form Only)",
+            "entries": [
+                "{@atk rw} {@hit 3} to hit, range 20/40 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+            ]
+        }
+    ],
+    "traitTags": [
+        "Keen Senses",
+        "Shapechanger"
+    ],
+    "actionTags": [
+        "Multiattack"
+    ],
+    "languageTags": [
+        "C",
+        "CS"
+    ],
+    "damageTags": [
+        "P",
+        "I",
+        "S",
+        "B"
+    ],
+    "miscTags": [
+        "MW",
+        "RW"
+    ],
+    "resist": [
+        {
+            "resist": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+            ],
+            "note": "from nonmagical attacks that aren't silvered"
+        }
+    ],
+    "vulnerable": [
+        {
+            "vulnerable": [
+                "fire"
+            ],
+            "note": "while transformed"
+        }
+    ],
+    "spellcasting": [
+        {
+            "name": "Spellcasting",
+            "headerEntries": [
+                "Spell DC is {@i 8 + Proficiency + Wisdom Mod} or {@b 10}"
+            ],
+            "will": [
+                "{@spell ensnaring strike}",
+                "{@spell hail of thorns}"
+            ],
+            "ability": "wis",
+            "type": "spellcasting"
+        }
+    ],
+    "legendary": [
+        {
+            "name": "Cast At Will Spell (Cost 2 Actions)",
+            "entries": [
+                "Cast {@spell ensnaring strike} or {@spell hail of thorns} at will"
+            ]
+        },
+        {
+            "name": "Perform Attack (Costs 1 Action)",
+            "entries": [
+                "any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
+            ]
+        }
+    ],
+    "environment": [
+        "forest",
+        "underdark"
+    ],
+    "isNpc": true
+}
