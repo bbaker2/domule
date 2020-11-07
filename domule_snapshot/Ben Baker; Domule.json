@@ -32,7 +32,6 @@
           "headers": [
             "Crowshire",
             "The Graveyard",
-            "The Graveyard",
             "The Forest",
             "The Manor"
           ]
@@ -41,8 +40,7 @@
           "name": "Chapter 3 - Underground",
           "headers": [
             "The Greenhouse",
-            "The Research Room",
-            "Jack'O Lichen"
+            "The Research Room"
           ]
         }
       ],
@@ -172,8 +170,8 @@
                       "name": "Nighttime",
                       "entries": [
                         "If the party arrives during night, after about a short rest, anyone with a Passive Perception of {@dc 12} will hear slow treading footsteps",
-                        "They will see a group of Gourd Sprouts being lead by a few Gourd Adults. The Gourds will ignore the party and go straight to the graveyard",
-                        "A Gourd Sprout will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the Gourd Sprout. If left uninterrupted, will grow into a Gourd Adult. Once an Gourd Adult, the bones around the grave will be topside now. The new Gourd Adult collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
+                        "They will see a group of {@creature Gourd Sprout|domule} being lead by a few {@creature Gourd Adult|domule}. The Gourds will ignore the party and go straight to the graveyard",
+                        "A {@creature Gourd Sprout|domule} will approach a gave and start latching to the ground. After a few minutes, the roots in the ground start slithering out of the ground and absorb into the {@creature Gourd Sprout|domule}. If left uninterrupted, will grow into a {@creature Gourd Adult|domule}. Once an {@creature Gourd Adult|domule}, the bones around the grave will be topside now. The new {@creature Gourd Adult|domule} collects the bones and joins the other Gourds. After a few graves are dug up, they shuffle back into the forest towards Jackson's Manor."
                       ]
                     },
                     {
@@ -184,7 +182,8 @@
                       ]
                     }
                   ]
-                }
+                },
+                "If the party has already visited the manor, the party might 'find' the entrance to the greenhouse near the graveyard"
               ]
             },
             {
@@ -197,7 +196,8 @@
                   "items": [
                     "The party will hear someone crying for help",
                     "If the party investigates, they will find two humans under attack by 2 more humans",
-                    "If no one keeps an eye on the Gourds, the party loses the Gourds"
+                    "If no one keeps an eye on the Gourds, the party loses the Gourds",
+                    "You can use the {@creature Commoner|mm}, {@creature Bandit|mm}, and/or {@creature Guard|mm} stats with relabeled names/weapons"
                   ]
                 }
               ]
@@ -205,7 +205,88 @@
             {
               "type": "entries",
               "name": "Jackson Manor",
-              "entries": []
+              "entries": [
+                "The following events can happen at the manor",
+                {
+                  "type": "list",
+                  "items": [
+                    "There is a recipe for Bone Meal in the kitchen.",
+                    "There is note in the bedroom talking about how {@creature Myconid Sovereign|mm} can spawn by placing spore in dead creatures.",
+                    "The staircase can flip like a see-saw to grant access to a hidden office",
+                    "There is a note in the dinning room where Jackson is complaining that Myconids keep dying during daylight and needs to find a solution to this issue",
+                    "There is a note in the office from a R.S. that mentions a delivery of a {@creature Werewolf|mm} corpse.",
+                    "There are traps all over the house. Use {@trap falling net}, {@trap bear Trap|xge}, and {@trap poison needle trap|xge}",
+                    "If the party has already visited the graveyard, the cellar in the kitchen leads to the underground tunnels"
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "The Last Servant",
+                  "entries": [
+                    "In the last bedroom, a servant has barred the door, set a basic drop trap behind the door awaits the party. Use {@trap Crossbow Trap|xge}.",
+                    "Once inside, a scared servant will charge at the party with a candle stick yelling \"Begone plant creatures!\". But once he realizes he is being hunted by Gourds, he relaxes.",
+                    "The servant introduce himself as Riley Parkley III, the house servant. In reality, it is {@creature Jackson Willmont|domule} who wants to use the party to kill the {@create Gourd Sovereign|domule}",
+                    {
+                      "type": "list",
+                      "items": [
+                        "Master Jackson has been trying to develop self maintaining crop",
+                        "Three weeks ago he had a large crate delivered",
+                        "Once week later, random things would get stolen. The privy pots, the pig slops, ash from the fireplace...",
+                        "A few days ago, Jackson handed him a potion and said to be careful and stay safe. He has been fortifying the house every since"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "insetReadaloud",
+                  "name": "Bone Meal",
+                  "entries": [
+                    {
+                      "type": "list",
+                      "items": [
+                        "1 kg bones (any)",
+                        "200 ml evaporated urine",
+                        "500 g forest droppings (rabbit seems to work best)",
+                        "1 l water"
+                      ]
+                    },
+                    "Crush bone into powder and mix with the urine. Please inside of sealable container and mix in water and droppings. Immediately seal as this will start smelling really bad real fast. Shake hard and leave to warm in direct sunlight for 4 days",
+                    "Recommended to open on the 5th day and let the stench dissipate for a bit.",
+                    "When applying to crops, recommended to sprinkle a thin layer of topsoil to cover smell"
+                  ]
+                },
+                {
+                  "type": "insetReadaloud",
+                  "name": "Bedroom Letter",
+                  "entries": [
+                    "Mr. Jackson,",
+                    "My constituents and I were fascinated by your theory that you might be able to produce a Myconid from a plant instead of a corpse. We do believe you were right about using gourds or the squash family as a whole as it is easy to place the entire spore inside.",
+                    "I also think you may need to apply the same technique used in orchards on the Myconid. Start with a Myconid sport that has already been laid in a corpse and then transfer it to the squash. With any luck, the spore will graft. The subsequent Myconid (and spore) should be much more receptive to spawning from a squash and after a few generations may not need a corpse at all.",
+                    "Best of luck and please do tell us your results.",
+                    "Dr. Yoza Corgim",
+                    "Head of Herbology; Hue Academy"
+                  ]
+                },
+                {
+                  "type": "insetReadaloud",
+                  "name": "Dinning Room Note",
+                  "entries": [
+                    "Amendment 22",
+                    "The few Myconid I could spawn quickly die in the sunlight. The adults are intelligent enough to see cover during the day but the sprouts are fairly intelligent and will work themselves to dead during the day",
+                    "While I haven't found a good way to get them to be permanently sun resistant but I have an idea get them to instinctually grow a thick shell in sunlight. It will not keep them alive in sunlight forever, but in theory it prolong their life long enough for them to reach adulthood"
+                  ]
+                },
+                {
+                  "type": "insetReadaloud",
+                  "name": "Hidden Office Letter",
+                  "entries": [
+                    "Mr. Jackson,",
+                    "Acquiring the Sovereign was difficult enough but acquiring the Blood of the Lycanthrope is a very dangerous task indeed. But you are in luck, we just so happen to have acquired a Werewolf for other reasons and can spare a vial or two. Please be caution with the sample, this one came from a particularly devote follower of Malar",
+                    "Now that you have all that you need, please start producing results. We were interested in your theories because we thought they could benefit the agricultural world. But that will only happen if they actually work.",
+                    "- R.S."
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -216,17 +297,109 @@
             {
               "type": "entries",
               "name": "The Greenhouse",
-              "entries": []
+              "entries": [
+                "The greenhouse is actually a large underground hydroponics structure. The first area has ropes strung along the support beams that are glowing. They appear to be projecting enough daylight to be growing plants. There is a variety of squash, carrots, lettuces, and other common crops.",
+                "The back room is separated by a curtain and is dark, only illuminated by bioluminescence fungus. The entire room is low light. Inside is the {@creature Gourd Sovereign|domule}",
+                "The Sovereign just wants to be left alone and tells The Topsiders to leave him to his work.",
+                "The Sovereign is collecting bones and other compostable items to create nutrients. The Topsiders are inconsequential and Gourds will continue to expand.",
+                "The Sovereign knows it was created by {@creature Jackson Willmont|domule} and once The Sovereign played along until he was powerful enough to refuse Jackson. He tried to eliminate Jackson but Jackson escaped.",
+                "It won't take much effort for the Sovereign to get annoyed and just try to kill the party for its bones"
+              ]
             },
             {
               "type": "entries",
               "name": "The Research Room",
-              "entries": []
-            },
+              "entries": [
+                "In the research room, there is a table with bloody mess underneath a rug. The body is belongs to an elderly man in a blank tailcoat.",
+                "If found, {@creature Jackson Willmont|domule} will reveal himself as Jackson himself.",
+                {
+                  "type": "list",
+                  "items": [
+                    "He wanted the party to kill {@creature Gourd Sovereign|domule} since he has lost control over it.",
+                    "Jackson was hoping to create a shapechanging {@creature Myconid Sprout|mm} that could transform into something that could withstand sunlight",
+                    "When Jackson was working with {@creature Werewolf|mm} blood, he got infected. His servant Riley Parkley III tried to kill him before he turned but he killed him.",
+                    "Now that he as been found out, he has to kill the witnesses"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legendaryGroup": [
+    {
+      "name": "Corrupt Gourd Sovereign",
+      "source": "domule",
+      "lairActions": [
+        "On Initiative count 20 (losing initiative ties), Gourd Sovereign can take a lair action to cause one of the following effects: he can't use the same effect two rounds in a row:",
+        {
+          "type": "list",
+          "items": [
             {
               "type": "entries",
-              "name": "Jack'O Lichen",
-              "entries": []
+              "entries": [
+                "Gourd Sovereign causes four {@creature gas spore||gas spores} or {@creature violet fungus||violet fungi} to appear in unoccupied spaces that she chooses within the lair. They vanish after 1 hour.",
+                {
+                  "type": "variant",
+                  "name": "Less Deadly",
+                  "entries": [
+                    "The {@bold Death Burst} in the {@creature gas spore||gas spores} only causes the initial poison damaged and does not infect the targeted creates."
+                  ]
+                }
+              ]
+            },
+            "Up to four plant creatures that are friendly to Gourd Sovereign and that Gourd Sovereign can see can use their reactions to move up to their speed and make one weapon attack.",
+            "Gourd Sovereign uses either her Infestation Spores or her Mind Control Spores, centered on a mushroom or other fungus within her lair, instead of on herself."
+          ]
+        }
+      ],
+      "regionalEffects": [
+        "The region containing Gourd Sovereign's lair is warped by his magic, creating one or more of the following effects:",
+        {
+          "type": "list",
+          "items": [
+            "Molds and fungi grow on surfaces within 6 miles of the lair, even where they would normally find no purchase.",
+            "Plant life within 1 mile of the lair becomes infested with parasitic fungi, slowly mutating as it is overwhelmed.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a {@dc 17} Wisdom saving throw or descend into a madness determined by the Madness of Gourd Sovereign table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours."
+          ]
+        },
+        "If Gourd Sovereign dies, these effects fade over the course of {@dice 1d10} days.",
+        {
+          "type": "entries",
+          "name": "Madness of Gourd Sovereign",
+          "entries": [
+            "If a creature goes mad in Gourd Sovereign's lair or within line of sight of the demon lord, roll on the Madness of Gourd Sovereign table to determine the nature of the madness, which is a character flaw that lasts until cured. See the {@book Dungeon Master's Guide|dmg|8|madness} for more on madness.",
+            {
+              "type": "table",
+              "caption": "Madness of Gourd Sovereign",
+              "colLabels": [
+                "d100",
+                "Flaw (lasts until cured)"
+              ],
+              "colStyles": [
+                "col-1",
+                "col-11"
+              ],
+              "rows": [
+                [
+                  "01–25",
+                  "\"I must collect any bones I see\""
+                ],
+                [
+                  "26–50",
+                  "\"I periodically try to eat dirt.\""
+                ],
+                [
+                  "51–75",
+                  "\"The sun makes me itchy\""
+                ],
+                [
+                  "76-100",
+                  "\"The moon makes me itchy\""
+                ]
+              ]
             }
           ]
         }
@@ -520,7 +693,11 @@
         "poisoned",
         "stunned",
         "exhaustion"
-      ]
+      ],
+      "legendaryGroup": {
+        "name": "Corrupt Gourd Sovereign",
+        "source": "domule"
+      }
     },
     {
       "name": "Anohi",
@@ -644,6 +821,171 @@
       "isNpc": true,
       "group": "Metallic Dragon",
       "dragonCastingColor": "S"
+    },
+    {
+      "name": "Jackson Willmont",
+      "source": "domule",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human",
+          "shapechanger"
+        ]
+      },
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 11,
+          "condition": "in humanoid form"
+        },
+        {
+          "ac": 12,
+          "from": [
+            "natural armor"
+          ],
+          "condition": "in wolf or hybrid form"
+        }
+      ],
+      "hp": {
+        "average": 58,
+        "formula": "9d8 + 18"
+      },
+      "speed": {
+        "walk": {
+          "number": 30,
+          "condition": "(40 ft. in wolf form)"
+        }
+      },
+      "str": 15,
+      "dex": 13,
+      "con": 14,
+      "int": 10,
+      "wis": 11,
+      "cha": 10,
+      "skill": {
+        "perception": "+4"
+      },
+      "passive": 14,
+      "languages": [
+        "Common (can't speak in wolf form)"
+      ],
+      "cr": "3",
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+          ]
+        },
+        {
+          "name": "Keen Hearing and Smell",
+          "entries": [
+            "The werewolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack (Hybrid Form Only)",
+          "entries": [
+            "The werewolf makes two attacks: any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
+          ]
+        },
+        {
+          "name": "Bite (Hybrid Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or take 4 ({@damage 2d4}) poison damage. "
+          ]
+        },
+        {
+          "name": "Claws (Hybrid Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Gourd Throw (Hybrid Form Only)",
+          "entries": [
+            "{@atk rw} {@hit 3} to hit, range 20/40 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses",
+        "Shapechanger"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "CS"
+      ],
+      "damageTags": [
+        "P",
+        "I",
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "vulnerable": [
+        {
+          "vulnerable": [
+            "fire"
+          ],
+          "note": "while transformed"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Spell DC is {@i 8 + Proficiency + Wisdom Mod} or {@b 10}"
+          ],
+          "will": [
+            "{@spell ensnaring strike}",
+            "{@spell hail of thorns}"
+          ],
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Cast At Will Spell (Cost 2 Actions)",
+          "entries": [
+            "Cast {@spell ensnaring strike} or {@spell hail of thorns} at will"
+          ]
+        },
+        {
+          "name": "Perform Attack (Costs 1 Action)",
+          "entries": [
+            "any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "underdark"
+      ],
+      "isNpc": true
     },
     {
       "name": "Taroc",
