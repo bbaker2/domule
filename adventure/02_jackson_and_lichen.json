@@ -15,7 +15,6 @@
             "headers": [
                 "Crowshire",
                 "The Graveyard",
-                "The Graveyard",
                 "The Forest",
                 "The Manor"
             ]
@@ -24,8 +23,7 @@
             "name": "Chapter 3 - Underground",
             "headers": [
                 "The Greenhouse",
-                "The Research Room",
-                "Jack'O Lichen"
+                "The Research Room"
             ]
         }
     ],
