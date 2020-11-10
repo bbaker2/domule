@@ -74,7 +74,7 @@
         {
             "name": "Bite (Hybrid Form Only)",
             "entries": [
-                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or take 4 ({@damage 2d4}) poison damage. "
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or take 4 ({@damage 2d4+2}) poison damage. "
             ]
         },
         {
@@ -145,15 +145,21 @@
     ],
     "legendary": [
         {
-            "name": "Cast At Will Spell (Cost 2 Actions)",
+            "name": "Ensnaring Claw Attack (Cost 2 Actions)",
             "entries": [
-                "Cast {@spell ensnaring strike} or {@spell hail of thorns} at will"
+                "Cast {@spell ensnaring strike} at will and perform a {@i Claws} attack."
             ]
         },
         {
-            "name": "Perform Attack (Costs 1 Action)",
+            "name": "Thorny Gourd Throw (Cost 2 Actions)",
             "entries": [
-                "any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
+                "Cast {@spell hail of thorns} at will and perform {@i Gourd Throw} attack"
+            ]
+        },
+        {
+            "name": "Multiattack (Costs 1 Action)",
+            "entries": [
+                "The werewolf makes two attacks: any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
             ]
         }
     ],
