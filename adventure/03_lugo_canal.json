@@ -1,0 +1,36 @@
+{
+    "name": "Lugo Canal Sabotage",
+    "id": "02-lugo",
+    "source": "domule",
+    "contents": [
+        {
+            "name": "Chapter 1 - Beginning",
+            "headers": [
+                "Guild Brief",
+                "Travel to Lugo"
+            ]
+        },
+        {
+            "name": "Chapter 2 - Lugo's Canal",
+            "headers": [
+                "Chief Jark's Brief",
+                "The Giant Snake"
+            ]
+        },
+        {
+            "name": "Chapter 3 - Jark's Defense",
+            "headers": [
+                "Canal Travels",
+                "Bronc Keep gone dark"
+            ]
+        }
+    ],
+    "level": {
+        "start": 3,
+        "end": 4
+    },
+    "published": "2020-10-07",
+    "storyline": [
+        "Aggredel's 3rd Renaissance"
+    ]
+}
