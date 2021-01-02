@@ -29,9 +29,9 @@
                   "entries": [
                     "Every other day, the Tradora Gate opens a portal with Lugo. For 2 hours, traffic flows in both directions. Once on the other side...",
                     {
-                      "type" : "inset",
-                      "name" : "Lugo's Towers Gate",
-                      "entries" : [
+                      "type": "inset",
+                      "name": "Lugo's Towers Gate",
+                      "entries": [
                         "The gate is at the base of a singular large mountain. Three massively tall brick and stone towers surround the portal connected by a basic 12 similarly bricked wall. All three sides of the wall have large gates that are held up above the entrances, ready to be dropped down to block passageways.",
                         "The towers have spiraling staircases on the outside and no windows. At the base of each tower there are heavy wooden door, each with arcane glyphs inscribed on them an each directly facing the portal."
                       ]
@@ -47,14 +47,40 @@
                   ]
                 }
               ]
-            },
-            "At Logo, it is discovered that there are other groups   hired for this... mysterious job.",
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Chapter 2 - Lugo's Canal",
+          "entries": [
             {
-              "type": "list",
-              "items": [
-                "The Silver Wings - for their success at solving the Crowshire incident",
-                "The Rocs - for their experiences in the underworld",
-                "Batir Warriors - for their land mobility"
+              "type": "entries",
+              "name": "Chief Jark's Brief",
+              "entries": [
+                "At Logo, it is discovered that there are other groups hired for this... mysterious job.",
+                {
+                  "type": "list",
+                  "items": [
+                    "The Silver Wings - for their success at solving the Crowshire incident",
+                    "The Rocs - for their experiences in the underworld",
+                    "Batir Warriors - for their land mobility"
+                  ]
+                },
+                "Everyone is corralled into room with a scaled model of Lugo, The Strodred Canal, and the Yellow Sea. There are topographical maps of specific sections of the canal, charts of weather patterns, and dates of repair jobs.",
+                "Already waiting in the room is a very weathered looking dwarf. He has a short braided beard and is covered in nautical tattoos. He is wearing teal slops with gold trimming. Next to him is a younger dwarf wearing regular shirt and paints but with matching teal and gold colors. Lastly, an ancient looking woman dwarf in white leather armor",
+                {
+                  "type": "inset",
+                  "name": "Chief Jark",
+                  "entries": [
+                    "I am Jark Logas, Chief Engineer of the Strodred Canal. This is my assistant Dathen and over there is Captain of the Guard, Sirihelda. Thank you all for being here.",
+                    "You may have heard about that Canal Gate Seconda suffered a gate failure that partially flooded the lands for 2 miles before some druids who just so happen to be intervened and earth walled it shut. You may have heard that it was caused by barge previously that day running into the gates themselves, which compromised the structural integrity. This was a lie."
+
+                  "A week prior we received a threatening letter by a group that calls themselves the Black Gates saying we were to announce plans permanently close off the canals.",
+                  "Three weeks prior to THAT, a group of Tritons were granted audience with King Borsic and demanded that Lugo would be in danger if they did not close and fill the canals."
+                  "Naturally, we are suspicious "
+                  ]
+                }
               ]
             }
           ]
