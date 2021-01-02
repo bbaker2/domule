@@ -1,0 +1,65 @@
+{
+  "name": "Lugo Canal Sabotage",
+  "id": "03-lugo",
+  "source": "domule",
+  "data": [
+    {
+      "type": "section",
+      "name": "Chapter 1 - Beginning",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Guild Brief",
+          "entries": [
+            "Anohi pulls Odven aside and informs her that she think he would be best suited for an upcoming job.",
+            "The dwarves of Lugo want abled people who could have a cover story for traveling up and down The Strodred Canal. She figured Odven's Engineer Guild membership allow him to create a cover story",
+            "The mission starts in 4 days. That should be enough if they keep pace on horseback or use the portal for 50GP each"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Travel to Lugo",
+          "entries": [
+            {
+              "type": "options",
+              "entries": [
+                {
+                  "type": "entries",
+                  "name": "By Portal",
+                  "entries": [
+                    "Every other day, the Tradora Gate opens a portal with Lugo. For 2 hours, traffic flows in both directions. Once on the other side...",
+                    {
+                      "type" : "inset",
+                      "name" : "Lugo's Towers Gate",
+                      "entries" : [
+                        "The gate is at the base of a singular large mountain. Three massively tall brick and stone towers surround the portal connected by a basic 12 similarly bricked wall. All three sides of the wall have large gates that are held up above the entrances, ready to be dropped down to block passageways.",
+                        "The towers have spiraling staircases on the outside and no windows. At the base of each tower there are heavy wooden door, each with arcane glyphs inscribed on them an each directly facing the portal."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "By Land",
+                  "entries": [
+                    "If the party travels by land they are met by a party of Half-Orcs on horseback on their to Lugo.",
+                    "The Half-Orcs are completing their 1st Dux Odyssey where they must travel 200 miles in 3 days on horseback, service with the tribe's rangers and service with a tribe's ally. Once complete, they will be Dragoons The Half-Orc party is very friendly and wishes to travel with you to Lugo"
+                  ]
+                }
+              ]
+            },
+            "At Logo, it is discovered that there are other groups   hired for this... mysterious job.",
+            {
+              "type": "list",
+              "items": [
+                "The Silver Wings - for their success at solving the Crowshire incident",
+                "The Rocs - for their experiences in the underworld",
+                "Batir Warriors - for their land mobility"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
