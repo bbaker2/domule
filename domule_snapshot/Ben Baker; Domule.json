@@ -52,6 +52,42 @@
       "storyline": [
         "Aggredel's 3rd Renaissance"
       ]
+    },
+    {
+      "name": "Lugo Canal Sabotage",
+      "id": "03-lugo",
+      "source": "domule",
+      "contents": [
+        {
+          "name": "Chapter 1 - Beginning",
+          "headers": [
+            "Guild Brief",
+            "Travel to Lugo"
+          ]
+        },
+        {
+          "name": "Chapter 2 - Lugo's Canal",
+          "headers": [
+            "Chief Jark's Brief",
+            "The Giant Snake"
+          ]
+        },
+        {
+          "name": "Chapter 3 - Jark's Defense",
+          "headers": [
+            "Canal Travels",
+            "Bronc Keep gone dark"
+          ]
+        }
+      ],
+      "level": {
+        "start": 3,
+        "end": 4
+      },
+      "published": "2020-10-07",
+      "storyline": [
+        "Aggredel's 3rd Renaissance"
+      ]
     }
   ],
   "adventureData": [
@@ -326,6 +362,96 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lugo Canal Sabotage",
+      "id": "03-lugo",
+      "source": "domule",
+      "data": [
+        {
+          "type": "section",
+          "name": "Chapter 1 - Beginning",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Guild Brief",
+              "entries": [
+                "Anohi pulls Odven aside and informs her that she think he would be best suited for an upcoming job.",
+                "The dwarves of Lugo want abled people who could have a cover story for traveling up and down The Strodred Canal. She figured Odven's Engineer Guild membership allow him to create a cover story",
+                "The mission starts in 4 days. That should be enough if they keep pace on horseback or use the portal for 50GP each"
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Travel to Lugo",
+              "entries": [
+                {
+                  "type": "options",
+                  "entries": [
+                    {
+                      "type": "entries",
+                      "name": "By Portal",
+                      "entries": [
+                        "Every other day, the Tradora Gate opens a portal with Lugo. For 2 hours, traffic flows in both directions. Once on the other side...",
+                        {
+                          "type": "inset",
+                          "name": "Lugo's Towers Gate",
+                          "entries": [
+                            "The gate is at the base of a singular large mountain. Three massively tall brick and stone towers surround the portal connected by a basic 12 similarly bricked wall. All three sides of the wall have large gates that are held up above the entrances, ready to be dropped down to block passageways.",
+                            "The towers have spiraling staircases on the outside and no windows. At the base of each tower there are heavy wooden door, each with arcane glyphs inscribed on them an each directly facing the portal."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "name": "By Land",
+                      "entries": [
+                        "If the party travels by land they are met by a party of Half-Orcs on horseback on their to Lugo.",
+                        "The Half-Orcs are completing their 1st Dux Odyssey where they must travel 200 miles in 3 days on horseback, service with the tribe's rangers and service with a tribe's ally. Once complete, they will be Dragoons The Half-Orc party is very friendly and wishes to travel with you to Lugo"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "name": "Chapter 2 - Lugo's Canal",
+              "entries": [
+                {
+                  "type": "entries",
+                  "name": "Chief Jark's Brief",
+                  "entries": [
+                    "At Logo, it is discovered that there are other groups hired for this... mysterious job.",
+                    {
+                      "type": "list",
+                      "items": [
+                        "The Silver Wings - for their success at solving the Crowshire incident",
+                        "The Rocs - for their experiences in the underworld",
+                        "Batir Warriors - for their land mobility"
+                      ]
+                    },
+                    "Everyone is corralled into room with a scaled model of Lugo, The Strodred Canal, and the Yellow Sea. There are topographical maps of specific sections of the canal, charts of weather patterns, and dates of repair jobs.",
+                    "Already waiting in the room is a very weathered looking dwarf. He has a short braided beard and is covered in nautical tattoos. He is wearing teal slops with gold trimming. Next to him is a younger dwarf wearing regular shirt and paints but with matching teal and gold colors. Lastly, an ancient looking woman dwarf in white leather armor",
+                    {
+                      "type": "inset",
+                      "name": "Chief Jark",
+                      "entries": [
+                        "I am Jark Logas, Chief Engineer of the Strodred Canal. This is my assistant Dathen and over there is Captain of the Guard, Sirihelda. Thank you all for being here.",
+                        "You may have heard about that Canal Gate Seconda suffered a gate failure that partially flooded the lands for 2 miles before some druids who just so happen to be intervened and earth walled it shut. You may have heard that it was caused by barge previously that day running into the gates themselves, which compromised the structural integrity. This was a lie.",
+                        "A week prior we received a threatening letter by a group that calls themselves the Black Gates saying we were to announce plans permanently close off the canals.",
+                        "Three weeks prior to THAT, a group of Tritons were granted audience with King Borsic and demanded that Lugo would be in danger if they did not close and fill the canals.",
+                        "Naturally, we are suspicious "
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legendaryGroup": [
@@ -421,8 +547,8 @@
         10
       ],
       "hp": {
-        "average": 81,
-        "formula": "18d6 + 18"
+        "average": 9,
+        "formula": "2d6 + 2"
       },
       "speed": {
         "walk": 10
@@ -898,7 +1024,7 @@
         {
           "name": "Bite (Hybrid Form Only)",
           "entries": [
-            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or take 4 ({@damage 2d4}) poison damage. "
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or take 4 ({@damage 2d4+2}) poison damage. "
           ]
         },
         {
@@ -969,15 +1095,21 @@
       ],
       "legendary": [
         {
-          "name": "Cast At Will Spell (Cost 2 Actions)",
+          "name": "Ensnaring Claw Attack (Cost 2 Actions)",
           "entries": [
-            "Cast {@spell ensnaring strike} or {@spell hail of thorns} at will"
+            "Cast {@spell ensnaring strike} at will and perform a {@i Claws} attack."
           ]
         },
         {
-          "name": "Perform Attack (Costs 1 Action)",
+          "name": "Thorny Gourd Throw (Cost 2 Actions)",
           "entries": [
-            "any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
+            "Cast {@spell hail of thorns} at will and perform {@i Gourd Throw} attack"
+          ]
+        },
+        {
+          "name": "Multiattack (Costs 1 Action)",
+          "entries": [
+            "The werewolf makes two attacks: any mix of {@i Bite}, {@i Claws}, or {@i Gourd Throw}"
           ]
         }
       ],
