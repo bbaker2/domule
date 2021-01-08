@@ -91,7 +91,7 @@
 		{
 			"name": "Equipment",
 			"entries": [
-				"{@spell Seeming|phb|Scroll of Seeming}, {@item Potion of Water Breathing}, {@item Ring of Swimming}"
+				"{@spell Seeming|phb|Scroll of Seeming}, {@item Potion of Water Breathing}, {@item Ring of Swimming}, {@item Wand of Illusions|dml}"
 			]
 		}
 	],
