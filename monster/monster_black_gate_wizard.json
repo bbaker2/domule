@@ -1,0 +1,126 @@
+{
+	"name": "Black Gate Wizard",
+	"source": "domule",
+	"page": 248,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"dwarf"
+		]
+	},
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		12,
+		{
+			"ac": 15,
+			"condition": "with {@spell mage armor}",
+			"braces": true
+		}
+	],
+	"hp": {
+		"average": 32,
+		"formula": "5d8 + 10"
+	},
+	"speed": {
+		"walk": 30,
+		"swim": {
+			"number": 40,
+			"condition": "with {@item Ring of Swimming}"
+		}
+	},
+	"str": 10,
+	"dex": 14,
+	"con": 14,
+	"int": 16,
+	"wis": 13,
+	"cha": 11,
+	"skill": {
+		"arcana": "+5",
+		"perception": "+3"
+	},
+	"passive": 13,
+	"cr": "1",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The deck wizard is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell friends}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}",
+						"{@spell ray of frost}"
+					]
+				},
+				"1": {
+					"spells": [
+						"{@spell disguise self}",
+						"{@spell fog cloud}",
+						"{@spell mage armor}",
+						"{@spell witch bolt}"
+					],
+					"slots": 4
+				},
+				"2": {
+					"spells": [
+						"{@spell gust of wind}",
+						"{@spell Melf's acid arrow}",
+						"{@spell Major Image}"
+					],
+					"slots": 3
+				}
+			},
+			"ability": "int",
+			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Sea Legs",
+			"entries": [
+				"The deck wizard has advantage on ability checks and saving throws to resist being knocked {@condition prone}."
+			]
+		},
+		{
+			"name": "Equipment",
+			"entries": [
+				"{@spell Seeming|phb|Scroll of Seeming}, {@item Potion of Water Breathing}, {@item Ring of Swimming}"
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Quarterstaff",
+			"entries": [
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+			]
+		}
+	],
+	"damageTags": [
+		"B"
+	],
+	"spellcastingTags": [
+		"CW"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"tokenUrl": "https://5e.tools/img/GoS/Pirate Deck Wizard.png?v=1.119.0",
+	"languages": [
+		"Common",
+		"Dwarvish",
+		"Undercommon"
+	],
+	"languageTags": [
+		"C",
+		"D",
+		"U"
+	]
+}

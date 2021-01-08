@@ -1,0 +1,14 @@
+{
+  "name": "Wand of Illusions",
+  "source": "domule",
+  "page": "200",
+  "type": "Wand",
+  "rarity": "very rare",
+  "charges": 3,
+  "recharge": "restLong",
+  "weight": 1,
+  "entries": [
+    "This wand has 3 charges. When casting a spell that is from the school of {@i illusion}, you may spend charges to reduce the spell slot cost of the spell to a minimum of level 1. You must know the spell and you must have the spell prepared.",
+    "{@i Example:} You are a level 5 Wizard. You have prepared {@spell Major Image|phb} but you have already used your two level 3 spell slots. You may spend two charges to reduce the spell cost of {@spell Major Image|phb} to level 1 (But the spell is still cast at level 3)"
+  ]
+}

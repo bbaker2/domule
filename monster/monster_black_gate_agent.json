@@ -1,0 +1,100 @@
+{
+	"name": "Black Gate Agent",
+	"source": "domule",
+	"page": 226,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"dwarf"
+		]
+	},
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 12,
+			"from": [
+				"{@item cast-off leather armor|xge}"
+			]
+		}
+	],
+	"hp": {
+		"average": 16,
+		"formula": "3d8 + 3"
+	},
+	"speed": {
+		"walk": 30,
+		"swim": {
+			"number": 40,
+			"condition": "with {@item Ring of Swimming}"
+		}
+	},
+	"str": 13,
+	"dex": 12,
+	"con": 12,
+	"int": 10,
+	"wis": 11,
+	"cha": 11,
+	"skill": {
+		"perception": "+2",
+		"athletics": "+3"
+	},
+	"passive": 12,
+	"cr": "1",
+	"trait": [
+		{
+			"name": "Formation Tactics",
+			"entries": [
+				"The soldier has advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition grappled}, or {@condition restrained} while it is within 5 feet of at least one ally."
+			]
+		},
+		{
+			"name": "Equipment",
+			"entries": [
+				"{@item Potion of Water Breathing}, {@item Spear|phb}, {@item Dagger|phb}"
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Spear",
+			"entries": [
+				"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage in melee, or 4 ({@damage 1d6 + 1}) piercing damage at range, or 5 ({@damage 1d8 + 1}) piercing damage if used with both hands."
+			]
+		},
+		{
+			"name": "Dagger",
+			"entries": [
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+			]
+		}
+	],
+	"damageTags": [
+		"P"
+	],
+	"tokenUrl": "https://5e.tools/img/GGR/Soldier.png?v=1.119.0",
+	"miscTags": [
+		"RW",
+		"MW",
+		"THW"
+	],
+	"languages": [
+		"Common",
+		"Dwarvish",
+		"Undercommon"
+	],
+	"languageTags": [
+		"C",
+		"D",
+		"U"
+	],
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	]
+}
