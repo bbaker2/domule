@@ -454,6 +454,22 @@
       ]
     }
   ],
+  "item": [
+    {
+      "name": "Wand of Illusions",
+      "source": "domule",
+      "page": "200",
+      "type": "Wand",
+      "rarity": "very rare",
+      "charges": 3,
+      "recharge": "restLong",
+      "weight": 1,
+      "entries": [
+        "This wand has 3 charges. When casting a spell that is from the school of {@i illusion}, you may spend charges to reduce the spell slot cost of the spell to a minimum of level 1. You must know the spell and you must have the spell prepared.",
+        "{@i Example:} You are a level 5 Wizard. You have prepared {@spell Major Image|phb} but you have already used your two level 3 spell slots. You may spend two charges to reduce the spell cost of {@spell Major Image|phb} to level 1 (But the spell is still cast at level 3)"
+      ]
+    }
+  ],
   "legendaryGroup": [
     {
       "name": "Corrupt Gourd Sovereign",
@@ -533,6 +549,232 @@
     }
   ],
   "monster": [
+    {
+      "name": "Black Gate Agent",
+      "source": "domule",
+      "page": 226,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "dwarf"
+        ]
+      },
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 12,
+          "from": [
+            "{@item cast-off leather armor|xge}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 16,
+        "formula": "3d8 + 3"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": {
+          "number": 40,
+          "condition": "with {@item Ring of Swimming}"
+        }
+      },
+      "str": 13,
+      "dex": 12,
+      "con": 12,
+      "int": 10,
+      "wis": 11,
+      "cha": 11,
+      "skill": {
+        "perception": "+2",
+        "athletics": "+3"
+      },
+      "passive": 12,
+      "cr": "1",
+      "trait": [
+        {
+          "name": "Formation Tactics",
+          "entries": [
+            "The soldier has advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition grappled}, or {@condition restrained} while it is within 5 feet of at least one ally."
+          ]
+        },
+        {
+          "name": "Equipment",
+          "entries": [
+            "{@item Potion of Water Breathing}, {@item Spear|phb}, {@item Dagger|phb}"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage in melee, or 4 ({@damage 1d6 + 1}) piercing damage at range, or 5 ({@damage 1d8 + 1}) piercing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "https://5e.tools/img/GGR/Soldier.png?v=1.119.0",
+      "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+      ],
+      "languages": [
+        "Common",
+        "Dwarvish",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "C",
+        "D",
+        "U"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ]
+    },
+    {
+      "name": "Black Gate Wizard",
+      "source": "domule",
+      "page": 248,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "dwarf"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        12,
+        {
+          "ac": 15,
+          "condition": "with {@spell mage armor}",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "average": 32,
+        "formula": "5d8 + 10"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": {
+          "number": 40,
+          "condition": "with {@item Ring of Swimming}"
+        }
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 14,
+      "int": 16,
+      "wis": 13,
+      "cha": 11,
+      "skill": {
+        "arcana": "+5",
+        "perception": "+3"
+      },
+      "passive": 13,
+      "cr": "1",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The deck wizard is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell friends}",
+                "{@spell mage hand}",
+                "{@spell prestidigitation}",
+                "{@spell ray of frost}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell disguise self}",
+                "{@spell fog cloud}",
+                "{@spell mage armor}",
+                "{@spell witch bolt}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell Melf's acid arrow}",
+                "{@spell Major Image}"
+              ],
+              "slots": 3
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Sea Legs",
+          "entries": [
+            "The deck wizard has advantage on ability checks and saving throws to resist being knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Equipment",
+          "entries": [
+            "{@spell Seeming|phb|Scroll of Seeming}, {@item Potion of Water Breathing}, {@item Ring of Swimming}"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Quarterstaff",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "https://5e.tools/img/GoS/Pirate Deck Wizard.png?v=1.119.0",
+      "languages": [
+        "Common",
+        "Dwarvish",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "C",
+        "D",
+        "U"
+      ]
+    },
     {
       "name": "Gourd Sprout",
       "source": "domule",
