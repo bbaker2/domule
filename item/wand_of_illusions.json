@@ -2,7 +2,7 @@
   "name": "Wand of Illusions",
   "source": "domule",
   "page": "200",
-  "type": "Wand",
+  "type": "WD",
   "rarity": "very rare",
   "charges": 3,
   "recharge": "restLong",
