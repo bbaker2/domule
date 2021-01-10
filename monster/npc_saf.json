@@ -1,0 +1,141 @@
+{
+    "name": "Saf Mosquest",
+    "source": "domule",
+    "page": 343,
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "dwarf"
+        ]
+    },
+    "alignment": [
+        "N",
+        "E"
+    ],
+    "ac": [
+        {
+            "ac": 20,
+            "from": [
+                "{@item plate armor|phb}",
+                "{@item shield|phb}"
+            ]
+        },
+        {
+            "ac": 19,
+            "from": [
+                "{@item plate armor|phb}",
+                "{@feat Dual Wielder|phb}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "5d8 + 15",
+        "average": 37
+    },
+    "speed": {
+        "walk": 25
+    },
+    "str": 14,
+    "dex": 9,
+    "con": 16,
+    "int": 9,
+    "wis": 11,
+    "cha": 11,
+    "skill": {
+        "history": "+1",
+        "intimidation": "+2",
+        "athletics": "+6",
+        "insight": "+2"
+    },
+    "passive": 10,
+    "resist": [
+        {
+            "resist": [
+                "poison"
+            ],
+            "note": "(Dwarven Resilience)"
+        }
+    ],
+    "cr": "3",
+    "trait": [
+        {
+            "name": "Dwarven Resilence",
+            "entries": [
+                "Advantage on saving throws agains poison and resistance against poison damage."
+            ]
+        }
+    ],
+    "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/assassin.mp3?v=1.119.0"
+    },
+    "altArt": [
+        {
+            "name": "Vistana Assassin",
+            "source": "CoS"
+        }
+    ],
+    "damageTags": [
+        "S"
+    ],
+    "tokenUrl": "https://5e.tools/img/MM/Assassin.png?v=1.119.0",
+    "fluff": {
+        "name": "Assassin",
+        "source": "MM",
+        "entries": [
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            "Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "shortName": "Saf",
+    "level": 5,
+    "languages": [
+        "Common",
+        "Dwarvish",
+        "Undercommon"
+    ],
+    "languageTags": [
+        "C",
+        "D",
+        "U"
+    ],
+    "save": {
+        "str": "+4",
+        "con": "+5"
+    },
+    "action": [
+        {
+            "name": "{@feat Dual Wielder|phb}",
+            "entries": [
+                "You master fighting with two weapons, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
+                        "You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.",
+                        "You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "{@item Battleaxe|phb}",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with both hands."
+            ]
+        }
+    ],
+    "miscTags": [
+        "MW"
+    ]
+}
