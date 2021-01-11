@@ -1,0 +1,113 @@
+{
+    "name": "Batir Rider",
+    "source": "domule",
+    "page": 347,
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "half-orc"
+        ]
+    },
+    "alignment": [
+        "L",
+        "G"
+    ],
+    "ac": [
+        {
+            "ac": 11,
+            "from": [
+                "{@item leather armor|phb}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "5d8 + 15",
+        "average": 37
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 16,
+    "dex": 10,
+    "con": 17,
+    "int": 10,
+    "wis": 12,
+    "cha": 11,
+    "save": {
+        "dex": "+2",
+        "con": "+5"
+    },
+    "passive": 11,
+    "cr": "3",
+    "damageTags": [
+        "P"
+    ],
+    "skill": {
+        "intimidation": "+2",
+        "history": "+2",
+        "animal handling": "+3",
+        "athletics": "+5"
+    },
+    "trait": [
+        {
+            "name": "Relentless Endurance",
+            "entries": [
+                "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Savage Attack",
+            "entries": [
+                "When you score a critical hit with a melee weapon attack, you can roll one of the weapon ’s damage dice one additional time and add it to the extra damage of the critical hit."
+            ]
+        },
+        {
+            "name": "Menacing",
+            "entries": [
+                "You have proficiency in the intimidate skill."
+            ]
+        },
+        {
+            "name": "Horse Companion",
+            "entries": [
+                "The Batir Rider has a favorite horse and has advantage on any animal handling checks with him"
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "{@item Hand Crossbow|phb}",
+            "entries": [
+                "{@atk rw} {@hit 2} to hit, range 30/120 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+            ]
+        },
+        {
+            "name": "{@item Shortsword|phb}",
+            "entries": [
+                "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+            ]
+        }
+    ],
+    "miscTags": [
+        "RW",
+        "RNG",
+        "MW"
+    ],
+    "languages": [
+        "Common",
+        "Orc",
+        "Dwarvish"
+    ],
+    "languageTags": [
+        "C",
+        "O",
+        "D"
+    ],
+    "senses": [
+        "darkvision 60 ft."
+    ],
+    "senseTags": [
+        "D"
+    ]
+}

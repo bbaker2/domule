@@ -66,10 +66,6 @@
             ]
         }
     ],
-    "soundClip": {
-        "type": "external",
-        "url": "https://5e.tools/audio/bestiary/assassin.mp3?v=1.119.0"
-    },
     "altArt": [
         {
             "name": "Vistana Assassin",
@@ -79,24 +75,6 @@
     "damageTags": [
         "S"
     ],
-    "tokenUrl": "https://5e.tools/img/MM/Assassin.png?v=1.119.0",
-    "fluff": {
-        "name": "Assassin",
-        "source": "MM",
-        "entries": [
-            {
-                "type": "entries",
-                "entries": [
-                    {
-                        "type": "entries",
-                        "entries": [
-                            "Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
     "shortName": "Saf",
     "level": 5,
     "languages": [
@@ -137,5 +115,6 @@
     ],
     "miscTags": [
         "MW"
-    ]
+    ],
+    "isNpc": true
 }
