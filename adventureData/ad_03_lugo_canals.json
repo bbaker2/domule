@@ -47,13 +47,7 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "section",
-          "name": "Chapter 2 - Lugo's Canal",
-          "entries": [
+            },
             {
               "type": "entries",
               "name": "Chief Jark's Brief",
@@ -79,8 +73,54 @@
                     "Three weeks prior to THAT, a group of Tritons were granted audience with King Borsic and demanded that Lugo would be in danger if they did not close and fill the canals.",
                     "Naturally, we are suspicious "
                   ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Lugo City",
+                  "entries": [
+                    {
+                      "type": "inset",
+                      "name": "The Metallic Mile",
+                      "entries": [
+                        "It is actually half a mile long, but still impressive. Repeating rows and rows of forges, tables, benches, anvils, and acid pools. Not every forge is burning but the ones that are have unique pennants. Chalk boards are displayed below the pennants listing the prices of varies items. Everything from weapons and armor to silverware and precious metal jewelry"
+                      ]
+                    },
+                    {
+                      "type": "inset",
+                      "name": "The Cooper's Keep",
+                      "entries": [
+                        "A tavern embedded in the mountain. The room is a large circle. The outer wall is covered floor to ceiling with barrels. In the center is a load bearing support pillar, also surrounded with mounted barrels. A ringed bar surrounds the pillar.",
+                        {
+                          "type": "list",
+                          "items": [
+                            "Amrus - the tavern owner",
+                            "Dulman - the errand dwarf"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Chapter 2 - Lugo's Canal",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Arriving at Seconda",
+              "entries": [
+                "The Captain of Seconda is a middle aged dwarven woman named {@creature Cpt. Gwindish Brillevian|dml}. She is a little annoyed that the team from the Engineer's Guild isn't actually a team from the Engineer's Guild, but she vents her frustrations at Chief Jark.",
+                "If asked, {@creature Cpt. Gwindish Brillevian|dml} tells the party that gates failed about 3 weeks ago. One of the gate door's hinges failed and a whole gate door was washed away. One hinge failing is a mistake. Two hinges failing at the same time is sabotage. While inspecting what was lift of the hinges, it appeared that metals warped apart. Luckily, the high flowing water quickly dragged a passenger barge that had a pair of druids. They used a {@spell Move Earth|phb} spell to stop the flooding"
+              ]
+            },
+            {
+              "type": "inset",
+              "name": "From Below",
+              "entries": []
             }
           ]
         }

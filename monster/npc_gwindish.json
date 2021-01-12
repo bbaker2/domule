@@ -1,0 +1,81 @@
+{
+  "name": "Cpt. Gwindish Brillevian",
+  "source": "domule",
+  "page": 347,
+  "size": "M",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "dwarf"
+    ]
+  },
+  "alignment": [
+    "A"
+  ],
+  "ac": [
+    {
+      "ac": 14,
+      "from": [
+        "{@item chain shirt|phb}"
+      ]
+    }
+  ],
+  "hp": {
+    "formula": "2d8 + 4",
+    "average": 13
+  },
+  "speed": {
+    "walk": 30
+  },
+  "str": 13,
+  "dex": 12,
+  "con": 14,
+  "int": 10,
+  "wis": 11,
+  "cha": 10,
+  "skill": {
+    "perception": "+2"
+  },
+  "passive": 12,
+  "cr": "1/8",
+  "action": [
+    {
+      "name": "{@item Heavy Crossbow}",
+      "entries": [
+        "{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+      ]
+    }
+  ],
+  "altArt": [
+    {
+      "name": "Vistana Guard",
+      "source": "CoS"
+    }
+  ],
+  "damageTags": [
+    "P"
+  ],
+  "miscTags": [
+    "RW",
+    "MW",
+    "THW",
+    "RNG"
+  ],
+  "senses": [
+    "darkvision 60 ft."
+  ],
+  "senseTags": [
+    "D"
+  ],
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "languageTags": [
+    "C",
+    "D"
+  ],
+  "save": {
+    "wis": "+2"
+  }
+}
