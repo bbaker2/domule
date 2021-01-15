@@ -96,7 +96,17 @@
                             "Amrus - the tavern owner",
                             "Dulman - the errand dwarf"
                           ]
-                        }
+                        },
+                        "20 GP for a barrel of 7th Level of Hell Porter. 10 GP for a keg, 5 GP for the growler.",
+                        "The porter is 16% alcohol and has a thick head. The head is ignitable."
+                      ]
+                    },
+                    {
+                      "type": "inset",
+                      "name": "The Redla Ring",
+                      "entries": [
+                        "The Market for the city.",
+                        "A single underground market ring that circles the entire city. Every 100 feet there is a air shaft that also lets in light. Along the center path is 2 by 2 ft water way. Floating inside is some kind of glowing bioluminescent algae that seems to recharger around the air shafts. The glowing algae provides dim light for the main paths around The Redla Ring"
                       ]
                     }
                   ]
