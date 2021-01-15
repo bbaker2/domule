@@ -1,0 +1,16 @@
+{
+    "name": "Second Wave Warhammer",
+    "source": "domule",
+    "page": "200",
+    "type": "M",
+    "rarity": "rare",
+    "ammunition": false,
+    "weaponCategory": "Simple",
+    "dmg1": "1d8",
+    "dmg2": "1d10",
+    "dmgType": "B",
+    "charges": 1,
+    "recharge": "restLong",
+    "weight": 4,
+    "entries": []
+}

@@ -130,7 +130,10 @@
             {
               "type": "inset",
               "name": "From Below",
-              "entries": []
+              "entries": [
+                "In the early morning, there is a disturbance in the water. A {@creature Plesiosaurus|mm} rushes out and attempts to scale the main fort guarding the gate locks. Any targeted interactions with the {@creature Plesiosaurus|mm} or {@dc 13} intelligence investigation will reveal that it is a {@spell Major Image|phb}",
+                "Meanwhile a group of {@creature Black Gate Agent|dml} and one {@creature Black Gate Wizard|dml} are attempting to weaken the door with a Triton made war hammer. They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|dml} who is trying to knock down the gate."
+              ]
             }
           ]
         }
