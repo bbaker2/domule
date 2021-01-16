@@ -10,7 +10,21 @@
     "dmg2": "1d10",
     "dmgType": "B",
     "charges": 1,
+    "property": [
+        "V"
+    ],
     "recharge": "restLong",
     "weight": 4,
-    "entries": []
+    "entries": [
+        "While submerged in water, becomes surprisingly lightweight and does not sink under its own weight. The player may use the two-handed damage die while wielding with one hand",
+        "The Warhammer has 3 charges. You may spend a charge to:",
+        {
+            "type": "list",
+            "items": [
+                "Give your weapon the siege property while hitting a structure",
+                "Deal an additional {@damage 2d4} force damage while hitting a Monstrosity"
+            ]
+        },
+        "If you spend a charge on an invalid target type, the charge is lost. You regain all charges after a long rest"
+    ]
 }
