@@ -1,143 +1,160 @@
 {
-  "name": "Lugo Canal Sabotage",
-  "id": "03-lugo",
-  "source": "domule",
-  "data": [
-    {
-      "type": "section",
-      "name": "Chapter 1 - Beginning",
-      "entries": [
+    "name": "Lugo Canal Sabotage",
+    "id": "03-lugo",
+    "source": "domule",
+    "data": [
         {
-          "type": "entries",
-          "name": "Guild Brief",
-          "entries": [
-            "Anohi pulls Odven aside and informs her that she think he would be best suited for an upcoming job.",
-            "The dwarves of Lugo want abled people who could have a cover story for traveling up and down The Strodred Canal. She figured Odven's Engineer Guild membership allow him to create a cover story",
-            "The mission starts in 4 days. That should be enough if they keep pace on horseback or use the portal for 50GP each"
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Travel to Lugo",
-          "entries": [
-            {
-              "type": "options",
-              "entries": [
+            "type": "section",
+            "name": "Chapter 1 - Beginning",
+            "entries": [
                 {
-                  "type": "entries",
-                  "name": "By Portal",
-                  "entries": [
-                    "Every other day, the Tradora Gate opens a portal with Lugo. For 2 hours, traffic flows in both directions. Once on the other side...",
-                    {
-                      "type": "inset",
-                      "name": "Lugo's Towers Gate",
-                      "entries": [
-                        "The gate is at the base of a singular large mountain. Three massively tall brick and stone towers surround the portal connected by a basic 12 similarly bricked wall. All three sides of the wall have large gates that are held up above the entrances, ready to be dropped down to block passageways.",
-                        "The towers have spiraling staircases on the outside and no windows. At the base of each tower there are heavy wooden door, each with arcane glyphs inscribed on them an each directly facing the portal."
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "entries",
-                  "name": "By Land",
-                  "entries": [
-                    "If the party travels by land they are met by a party of Half-Orcs on horseback on their to Lugo.",
-                    "The Half-Orcs are completing their 1st Dux Odyssey where they must travel 200 miles in 3 days on horseback, service with the tribe's rangers and service with a tribe's ally. Once complete, they will be Dragoons The Half-Orc party is very friendly and wishes to travel with you to Lugo"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Chief Jark's Brief",
-              "entries": [
-                "At Logo, it is discovered that there are other groups hired for this... mysterious job.",
-                {
-                  "type": "list",
-                  "items": [
-                    "The Silver Wings - for their success at solving the Crowshire incident",
-                    "The Rocs - for their experiences in the underworld",
-                    "Batir Warriors - for their land mobility"
-                  ]
-                },
-                "Everyone is corralled into room with a scaled model of Lugo, The Strodred Canal, and the Yellow Sea. There are topographical maps of specific sections of the canal, charts of weather patterns, and dates of repair jobs.",
-                "Already waiting in the room is a very weathered looking dwarf. He has a short braided beard and is covered in nautical tattoos. He is wearing teal slops with gold trimming. Next to him is a younger dwarf wearing regular shirt and paints but with matching teal and gold colors. Lastly, an ancient looking woman dwarf in white leather armor",
-                {
-                  "type": "inset",
-                  "name": "Chief Jark",
-                  "entries": [
-                    "I am Jark Logas, Chief Engineer of the Strodred Canal. This is my assistant Dathen and over there is Captain of the Guard, Sirihelda. Thank you all for being here.",
-                    "You may have heard about that Canal Gate Seconda suffered a gate failure that partially flooded the lands for 2 miles before some druids who just so happen to be intervened and earth walled it shut. You may have heard that it was caused by barge previously that day running into the gates themselves, which compromised the structural integrity. This was a lie.",
-                    "A week prior we received a threatening letter by a group that calls themselves the Black Gates saying we were to announce plans permanently close off the canals.",
-                    "Three weeks prior to THAT, a group of Tritons were granted audience with King Borsic and demanded that Lugo would be in danger if they did not close and fill the canals.",
-                    "Naturally, we are suspicious "
-                  ]
-                },
-                {
-                  "type": "entries",
-                  "name": "Lugo City",
-                  "entries": [
-                    {
-                      "type": "inset",
-                      "name": "The Metallic Mile",
-                      "entries": [
-                        "It is actually half a mile long, but still impressive. Repeating rows and rows of forges, tables, benches, anvils, and acid pools. Not every forge is burning but the ones that are have unique pennants. Chalk boards are displayed below the pennants listing the prices of varies items. Everything from weapons and armor to silverware and precious metal jewelry"
-                      ]
-                    },
-                    {
-                      "type": "inset",
-                      "name": "The Cooper's Keep",
-                      "entries": [
-                        "A tavern embedded in the mountain. The room is a large circle. The outer wall is covered floor to ceiling with barrels. In the center is a load bearing support pillar, also surrounded with mounted barrels. A ringed bar surrounds the pillar.",
+                    "type": "entries",
+                    "name": "Quick References",
+                    "entries": [
                         {
-                          "type": "list",
-                          "items": [
-                            "Amrus - the tavern owner",
-                            "Dulman - the errand dwarf"
-                          ]
+                            "type": "list",
+                            "items": [
+                                "{@creature Maddoc Batul|domule} - the cool Batir Rider half-orc",
+                                "{@creature Batir Rider|domule} - a generic half-orc rider",
+                                "{@creature Saf Mosquest|domule} - the leader of the Black Gates",
+                                "{@creature Cpt. Gwindish Brillevian|domule} - Captain of Seconda",
+                                "{@creature Black Gate Agent|domule} - the average member of the Black Gates",
+                                "{@creature Black Gate Wizard|domule} - the average spell caster of the Black Gates"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Guild Brief",
+                    "entries": [
+                        "Anohi pulls Odven aside and informs her that she think he would be best suited for an upcoming job.",
+                        "The dwarves of Lugo want abled people who could have a cover story for traveling up and down The Strodred Canal. She figured Odven's Engineer Guild membership allow him to create a cover story",
+                        "The mission starts in 4 days. That should be enough if they keep pace on horseback or use the portal for 50GP each"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Travel to Lugo",
+                    "entries": [
+                        {
+                            "type": "options",
+                            "entries": [
+                                {
+                                    "type": "entries",
+                                    "name": "By Portal",
+                                    "entries": [
+                                        "Every other day, the Tradora Gate opens a portal with Lugo. For 2 hours, traffic flows in both directions. Once on the other side...",
+                                        {
+                                            "type": "inset",
+                                            "name": "Lugo's Towers Gate",
+                                            "entries": [
+                                                "The gate is at the base of a singular large mountain. Three massively tall brick and stone towers surround the portal connected by a basic 12 similarly bricked wall. All three sides of the wall have large gates that are held up above the entrances, ready to be dropped down to block passageways.",
+                                                "The towers have spiraling staircases on the outside and no windows. At the base of each tower there are heavy wooden door, each with arcane glyphs inscribed on them an each directly facing the portal."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "By Land",
+                                    "entries": [
+                                        "If the party travels by land they are met by a party of Half-Orcs on horseback on their to Lugo.",
+                                        "The Half-Orcs are completing their 1st Dux Odyssey where they must travel 200 miles in 3 days on horseback, service with the tribe's rangers and service with a tribe's ally. Once complete, they will be Dragoons The Half-Orc party is very friendly and wishes to travel with you to Lugo"
+                                    ]
+                                }
+                            ]
                         },
-                        "20 GP for a barrel of 7th Level of Hell Porter. 10 GP for a keg, 5 GP for the growler.",
-                        "The porter is 16% alcohol and has a thick head. The head is ignitable."
-                      ]
-                    },
-                    {
-                      "type": "inset",
-                      "name": "The Redla Ring",
-                      "entries": [
-                        "The Market for the city.",
-                        "A single underground market ring that circles the entire city. Every 100 feet there is a air shaft that also lets in light. Along the center path is 2 by 2 ft water way. Floating inside is some kind of glowing bioluminescent algae that seems to recharger around the air shafts. The glowing algae provides dim light for the main paths around The Redla Ring"
-                      ]
-                    }
-                  ]
+                        {
+                            "type": "entries",
+                            "name": "Chief Jark's Brief",
+                            "entries": [
+                                "At Logo, it is discovered that there are other groups hired for this... mysterious job.",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "The Silver Wings - for their success at solving the Crowshire incident",
+                                        "The Rocs - for their experiences in the underworld",
+                                        "Batir Warriors - for their land mobility"
+                                    ]
+                                },
+                                "Everyone is corralled into room with a scaled model of Lugo, The Strodred Canal, and the Yellow Sea. There are topographical maps of specific sections of the canal, charts of weather patterns, and dates of repair jobs.",
+                                "Already waiting in the room is a very weathered looking dwarf. He has a short braided beard and is covered in nautical tattoos. He is wearing teal slops with gold trimming. Next to him is a younger dwarf wearing regular shirt and paints but with matching teal and gold colors. Lastly, an ancient looking woman dwarf in white leather armor",
+                                {
+                                    "type": "inset",
+                                    "name": "Chief Jark",
+                                    "entries": [
+                                        "I am Jark Logas, Chief Engineer of the Strodred Canal. This is my assistant Dathen and over there is Captain of the Guard, Sirihelda. Thank you all for being here.",
+                                        "You may have heard about that Canal Gate Seconda suffered a gate failure that partially flooded the lands for 2 miles before some druids who just so happen to be intervened and earth walled it shut. You may have heard that it was caused by barge previously that day running into the gates themselves, which compromised the structural integrity. This was a lie.",
+                                        "A week prior we received a threatening letter by a group that calls themselves the Black Gates saying we were to announce plans permanently close off the canals.",
+                                        "Three weeks prior to THAT, a group of Tritons were granted audience with King Borsic and demanded that Lugo would be in danger if they did not close and fill the canals.",
+                                        "Naturally, we are suspicious "
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Lugo City",
+                                    "entries": [
+                                        {
+                                            "type": "inset",
+                                            "name": "The Metallic Mile",
+                                            "entries": [
+                                                "It is actually half a mile long, but still impressive. Repeating rows and rows of forges, tables, benches, anvils, and acid pools. Not every forge is burning but the ones that are have unique pennants. Chalk boards are displayed below the pennants listing the prices of varies items. Everything from weapons and armor to silverware and precious metal jewelry"
+                                            ]
+                                        },
+                                        {
+                                            "type": "inset",
+                                            "name": "The Cooper's Keep",
+                                            "entries": [
+                                                "A tavern embedded in the mountain. The room is a large circle. The outer wall is covered floor to ceiling with barrels. In the center is a load bearing support pillar, also surrounded with mounted barrels. A ringed bar surrounds the pillar.",
+                                                {
+                                                    "type": "list",
+                                                    "items": [
+                                                        "Amrus - the tavern owner",
+                                                        "Dulman - the errand dwarf"
+                                                    ]
+                                                },
+                                                "20 GP for a barrel of 7th Level of Hell Porter. 10 GP for a keg, 5 GP for the growler.",
+                                                "The porter is 16% alcohol and has a thick head. The head is ignitable."
+                                            ]
+                                        },
+                                        {
+                                            "type": "inset",
+                                            "name": "The Redla Ring",
+                                            "entries": [
+                                                "The Market for the city.",
+                                                "A single underground market ring that circles the entire city. Every 100 feet there is a air shaft that also lets in light. Along the center path is 2 by 2 ft water way. Floating inside is some kind of glowing bioluminescent algae that seems to recharger around the air shafts. The glowing algae provides dim light for the main paths around The Redla Ring"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         },
         {
-          "type": "section",
-          "name": "Chapter 2 - Lugo's Canal",
-          "entries": [
-            {
-              "type": "entries",
-              "name": "Arriving at Seconda",
-              "entries": [
-                "The Captain of Seconda is a middle aged dwarven woman named {@creature Cpt. Gwindish Brillevian|dml}. She is a little annoyed that the team from the Engineer's Guild isn't actually a team from the Engineer's Guild, but she vents her frustrations at Chief Jark.",
-                "If asked, {@creature Cpt. Gwindish Brillevian|dml} tells the party that gates failed about 3 weeks ago. One of the gate door's hinges failed and a whole gate door was washed away. One hinge failing is a mistake. Two hinges failing at the same time is sabotage. While inspecting what was lift of the hinges, it appeared that metals warped apart. Luckily, the high flowing water quickly dragged a passenger barge that had a pair of druids. They used a {@spell Move Earth|phb} spell to stop the flooding"
-              ]
-            },
-            {
-              "type": "inset",
-              "name": "From Below",
-              "entries": [
-                "In the early morning, there is a disturbance in the water. A {@creature Plesiosaurus|mm} rushes out and attempts to scale the main fort guarding the gate locks. Any targeted interactions with the {@creature Plesiosaurus|mm} or {@dc 13} intelligence investigation will reveal that it is a {@spell Major Image|phb}",
-                "Meanwhile a group of {@creature Black Gate Agent|dml} and one {@creature Black Gate Wizard|dml} are attempting to weaken the door with a Triton made war hammer. They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|dml} who is trying to knock down the gate."
-              ]
-            }
-          ]
+            "type": "section",
+            "name": "Chapter 2 - Lugo's Canal",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Arriving at Seconda",
+                    "entries": [
+                        "The Captain of Seconda is a middle aged dwarven woman named {@creature Cpt. Gwindish Brillevian|domule}. She is a little annoyed that the team from the Engineer's Guild isn't actually a team from the Engineer's Guild, but she vents her frustrations at Chief Jark.",
+                        "If asked, {@creature Cpt. Gwindish Brillevian|domule} tells the party that gates failed about 3 weeks ago. One of the gate door's hinges failed and a whole gate door was washed away. One hinge failing is a mistake. Two hinges failing at the same time is sabotage. While inspecting what was lift of the hinges, it appeared that metals warped apart. Luckily, the high flowing water quickly dragged a passenger barge that had a pair of druids. They used a {@spell Move Earth|phb} spell to stop the flooding"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "From Below",
+                    "entries": [
+                        "In the early morning, there is a disturbance in the water. A {@creature Plesiosaurus|mm} rushes out and attempts to scale the main fort guarding the gate locks. Any targeted interactions with the {@creature Plesiosaurus|mm} or {@dc 13} intelligence investigation will reveal that it is a {@spell Major Image|phb}",
+                        "Meanwhile a group of {@creature Black Gate Agent|domule} and one {@creature Black Gate Wizard|domule} are attempting to weaken the door with a Triton made war hammer. They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|domule} who is trying to knock down the gate."
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
