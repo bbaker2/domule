@@ -19,6 +19,9 @@ let schema  = getSchema();
 info("Starting scan from: ", srcDir);
 let result  = readFolders(srcDir, schema);
 
+info("Indexing adventures");
+indexAdventures(result);
+
 let trgName = generateFileName(result);
 
 // validate the final json
@@ -192,6 +195,50 @@ function readFiles(dir, isArray) {
     } else {
         return items.length == 0 ? {} : items[0];        
     }   
+}
+
+function indexAdventures(root) {
+    let adventureList =     root.adventure;
+    let adventureDataList = root.adventureData;
+    
+    if(!(adventureList && adventureDataList)){
+        return;
+    }
+
+    for(adventure of adventureList) {
+        for(adventureData of adventureDataList){
+            if(adventureData.name === adventure.name){
+                adventure.contents = collectChapters(adventureData);
+            }
+        }
+    }
+}
+
+function collectChapters(adventureData){
+    let contents = [];
+    for(data of adventureData.data){
+        // chapters can only be from 'sections'
+        if(data.type === "section"){
+            let chapters = {
+                name : data.name,
+                headers : []
+            };
+
+            if(!data.entries) {
+                continue;
+            }
+
+            for(entries of data.entries){
+                // headers can only be from 'entries'
+                if(entries.type === "entries"){
+                    chapters.headers.push(entries.name);
+                }
+            }
+
+            contents.push(chapters);
+        }
+    }
+    return contents;
 }
 
 function warn(msg){
