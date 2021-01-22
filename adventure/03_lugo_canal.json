@@ -2,32 +2,10 @@
     "name": "Lugo Canal Sabotage",
     "id": "03-lugo",
     "source": "domule",
-    "contents": [
-        {
-            "name": "Chapter 1 - Beginning",
-            "headers": [
-                "Guild Brief",
-                "Travel to Lugo"                
-            ]
-        },
-        {
-            "name": "Chapter 2 - Lugo's Canal",
-            "headers": [
-                "Arriving at Seconda",
-                "From Below"
-            ]
-        },
-        {
-            "name": "Chapter 3 - Jark's Defense",
-            "headers": [
-                "Canal Travels",
-                "Bronc Keep gone dark"
-            ]
-        }
-    ],
+    "contents": [],
     "level": {
-        "start": 3,
-        "end": 4
+        "start": 4,
+        "end": 5
     },
     "published": "2020-10-07",
     "storyline": [

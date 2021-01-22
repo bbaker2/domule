@@ -2,31 +2,7 @@
     "name": "Jackson and the Lichen",
     "id": "02-jack",
     "source": "domule",
-    "contents": [
-        {
-            "name": "Chapter 1 - Beginning",
-            "headers": [
-                "Guild Brief",
-                "The Tri-Citadel"
-            ]
-        },
-        {
-            "name": "Chapter 2 - Crowshire",
-            "headers": [
-                "Crowshire",
-                "The Graveyard",
-                "The Forest",
-                "The Manor"
-            ]
-        },
-        {
-            "name": "Chapter 3 - Underground",
-            "headers": [
-                "The Greenhouse",
-                "The Research Room"
-            ]
-        }
-    ],
+    "contents": [],
     "level": {
         "start": 3,
         "end": 4
