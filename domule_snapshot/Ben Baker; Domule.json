@@ -21,7 +21,7 @@
       "source": "domule",
       "contents": [
         {
-          "name": "Chapter 1 - Beginning",
+          "name": "Chapter 1",
           "headers": [
             "Guild Brief",
             "The Tri-Citadel"
@@ -33,7 +33,7 @@
             "Crowshire",
             "The Graveyard",
             "The Forest",
-            "The Manor"
+            "Jackson Manor"
           ]
         },
         {
@@ -61,6 +61,7 @@
         {
           "name": "Chapter 1 - Beginning",
           "headers": [
+            "Quick References",
             "Guild Brief",
             "Travel to Lugo"
           ]
@@ -71,18 +72,11 @@
             "Arriving at Seconda",
             "From Below"
           ]
-        },
-        {
-          "name": "Chapter 3 - Jark's Defense",
-          "headers": [
-            "Canal Travels",
-            "Bronc Keep gone dark"
-          ]
         }
       ],
       "level": {
-        "start": 3,
-        "end": 4
+        "start": 4,
+        "end": 5
       },
       "published": "2020-10-07",
       "storyline": [
@@ -508,7 +502,8 @@
               "name": "Arriving at Seconda",
               "entries": [
                 "The Captain of Seconda is a middle aged dwarven woman named {@creature Cpt. Gwindish Brillevian|domule}. She is a little annoyed that the team from the Engineer's Guild isn't actually a team from the Engineer's Guild, but she vents her frustrations at Chief Jark.",
-                "If asked, {@creature Cpt. Gwindish Brillevian|domule} tells the party that gates failed about 3 weeks ago. One of the gate door's hinges failed and a whole gate door was washed away. One hinge failing is a mistake. Two hinges failing at the same time is sabotage. While inspecting what was lift of the hinges, it appeared that metals warped apart. Luckily, the high flowing water quickly dragged a passenger barge that had a pair of druids. They used a {@spell Move Earth|phb} spell to stop the flooding"
+                "If asked, {@creature Cpt. Gwindish Brillevian|domule} tells the party that gates failed about 3 weeks ago. One of the gate door's hinges failed and a whole gate door was washed away. One hinge failing is a mistake. Two hinges failing at the same time is sabotage. While inspecting what was lift of the hinges, it appeared that metals warped apart. Luckily, the high flowing water quickly dragged a passenger barge that had a pair of druids. They used a {@spell Move Earth|phb} spell to stop the flooding",
+                "The dwarves has two {@item Cloak of the Manta Ray|dmg} they {@i might} be willing to share"
               ]
             },
             {
@@ -516,7 +511,7 @@
               "name": "From Below",
               "entries": [
                 "In the early morning, there is a disturbance in the water. A {@creature Plesiosaurus|mm} rushes out and attempts to scale the main fort guarding the gate locks. Any targeted interactions with the {@creature Plesiosaurus|mm} or {@dc 13} intelligence investigation will reveal that it is a {@spell Major Image|phb}",
-                "Meanwhile a group of {@creature Black Gate Agent|domule} and one {@creature Black Gate Wizard|domule} are attempting to weaken the door with a Triton made war hammer. They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|domule} who is trying to knock down the gate."
+                "Meanwhile a group of {@creature Black Gate Agent|domule} and one {@creature Black Gate Wizard|domule} are attempting to weaken the door with a Triton made war hammer ({@item Second Wave Warhammer|domule}). They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|domule} who is trying to knock down the gate."
               ]
             }
           ]
