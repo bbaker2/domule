@@ -144,15 +144,83 @@
                     "entries": [
                         "The Captain of Seconda is a middle aged dwarven woman named {@creature Cpt. Gwindish Brillevian|domule}. She is a little annoyed that the team from the Engineer's Guild isn't actually a team from the Engineer's Guild, but she vents her frustrations at Chief Jark.",
                         "If asked, {@creature Cpt. Gwindish Brillevian|domule} tells the party that gates failed about 3 weeks ago. One of the gate door's hinges failed and a whole gate door was washed away. One hinge failing is a mistake. Two hinges failing at the same time is sabotage. While inspecting what was lift of the hinges, it appeared that metals warped apart. Luckily, the high flowing water quickly dragged a passenger barge that had a pair of druids. They used a {@spell Move Earth|phb} spell to stop the flooding",
-                        "The dwarves has two {@item Cloak of the Manta Ray|dmg} they {@i might} be willing to share"
+                        "The dwarves has two {@item Cloak of the Manta Ray|dmg} they {@i might} be willing to share",
+                        {
+                            "type": "inset",
+                            "name": "Seconda Gate",
+                            "entries": [
+                                "On the northside, there is a tiny castle. It has a single tower that serves as a lookout and storeroom. It houses a team of 20 dwarves. 10 soldiers, 6 engineers, 2 cooks, a doctor, and the {@creature Cpt. Gwindish Brillevian|domule}.",
+                                "A bridge crosses over the west-side of the lock gates where it connects with another tower. A few soldiers are stationed on both sides with little guard houses where they can take shelter on rainy or hot days. If asked, they also handle crossing fees (1 silver) except for any member of the Batir Nation, who have a heritage treaty with Lugo to allow free passage.",
+                                "A barge is docked inside the locks. It contains general repair supplies such as shoring wood, metal straps, lumber, etc..."
+                            ]
+                        }
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "From Below",
                     "entries": [
-                        "In the early morning, there is a disturbance in the water. A {@creature Plesiosaurus|mm} rushes out and attempts to scale the main fort guarding the gate locks. Any targeted interactions with the {@creature Plesiosaurus|mm} or {@dc 13} intelligence investigation will reveal that it is a {@spell Major Image|phb}",
-                        "Meanwhile a group of {@creature Black Gate Agent|domule} and one {@creature Black Gate Wizard|domule} are attempting to weaken the door with a Triton made war hammer ({@item Second Wave Warhammer|domule}). They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|domule} who is trying to knock down the gate."
+                        "In the early morning, there is a disturbance in the water. A {@creature Plesiosaurus|mm} rushes out and attempts to scale the main tower guarding the gate locks. Any targeted interactions with the {@creature Plesiosaurus|mm} or {@dc 13} intelligence investigation will reveal that it is a {@spell Major Image|phb}",
+                        "Meanwhile a group of {@creature Black Gate Agent|domule} and one {@creature Black Gate Wizard|domule} are attempting to weaken the door with a Triton made war hammer ({@item Second Wave Warhammer|domule}). They all look like Tritons because of a {@spell Seeming|phb} spell. Once more, a {@dc 13} intelligence investigation will reveal the illusion. They will all defend the one {@creature Black Gate Agent|domule} who is trying to knock down the gate with the {@item Second Wave Warhammer|domule}.",
+                        {
+                            "type": "dataItem",
+                            "dataItem": {
+                                "name": "Gate Lock",
+                                "source": "domule",
+                                "page": "200",
+                                "type": "OTH",
+                                "rarity": "common",
+                                "weight": 1000,
+                                "ac": 16,
+                                "vehHp": 27,
+                                "entries": [
+                                    "Made of solid wood reenforced with iron"
+                                ]
+                            }
+                        },
+                        {
+                            "type": "entries",
+                            "name": "After combat...",
+                            "entries": [
+                                {
+                                    "type": "options",
+                                    "entries": [
+                                        {
+                                            "type": "entries",
+                                            "name": "A Black Gate is captured",
+                                            "entries": [
+                                                "The captured Black Gate knows the following information:",
+                                                {
+                                                    "type": "list",
+                                                    "items": [
+                                                        "The {@item Second Wave Warhammer|domule} came from a Second Wave Triton",
+                                                        "The Black Gates approached the Second Wind while they were leaving about joining forces to close the Canals. The Second Wind were wary of the Black Gates and a confrontation ensured. Some dwarves were killed as well as one Triton. This is where the {@item Second Wave Warhammer|domule} came from",
+                                                        "The Black Gates plan on draining the canals to booby trap the both the castles and canal itself. Hopefully the continuing disruptions to the canals for many months"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "While searching a Black Gate's body",
+                                            "entries": [
+                                                "A note is found on the body.",
+                                                {
+                                                    "type": "inset",
+                                                    "name": "Note",
+                                                    "entries": [
+                                                        "Trista will be fused shut while Seconda and Primate will be collapsed. Saf is personally leading the assault Bronc Keep. Our insiders should be able to prevent any messages from getting out so make sure keep the distractions on Trista or Seconda.",
+                                                        " We will make sure Primat continues to send 'All Clear' to Lugo once we get Jark Logas's seal."
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+
+                                
+                            ]
+                        }
                     ]
                 }
             ]
