@@ -193,8 +193,8 @@
                                                 {
                                                     "type": "list",
                                                     "items": [
-                                                        "The {@item Second Wave Warhammer|domule} came from a Second Wave Triton",
-                                                        "The Black Gates approached the Second Wind while they were leaving about joining forces to close the Canals. The Second Wind were wary of the Black Gates and a confrontation ensured. Some dwarves were killed as well as one Triton. This is where the {@item Second Wave Warhammer|domule} came from",
+                                                        "The {@item Second Wave Warhammer|domule} came from a Second Wave Triton.",
+                                                        "The Black Gates approached the Second Wind while they were leaving and proposed they joined forces to close the Canals. The Second Wind were wary of the Black Gates and a confrontation ensured. Some dwarves were killed as well as one Triton. This is where the {@item Second Wave Warhammer|domule} came from",
                                                         "The Black Gates plan on draining the canals to booby trap the both the castles and canal itself. Hopefully the continuing disruptions to the canals for many months"
                                                     ]
                                                 }
@@ -210,18 +210,39 @@
                                                     "name": "Note",
                                                     "entries": [
                                                         "Trista will be fused shut while Seconda and Primate will be collapsed. Saf is personally leading the assault Bronc Keep. Our insiders should be able to prevent any messages from getting out so make sure keep the distractions on Trista or Seconda.",
-                                                        " We will make sure Primat continues to send 'All Clear' to Lugo once we get Jark Logas's seal."
+                                                        " We will make sure Bronc Keep continues to send 'All Clear' to Lugo once we get Jark Logas's seal."
                                                     ]
                                                 }
                                             ]
                                         }
                                     ]
                                 }
-
-                                
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Chapter 3 - The Bronc Keep Assault",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Here comes the calvary",
+                    "entries": [
+                        "Later that morning, {@creature Maddoc Batul|domule} along with a few {@creature Batir Rider|domule} come riding in.", "They successfully defended Trista"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Traveling to Primate",
+                    "entries": []
+                },
+                {
+                    "type": "entries",
+                    "name": "Traveling to Primate",
+                    "entries": []
                 }
             ]
         }
