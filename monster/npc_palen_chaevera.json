@@ -1,0 +1,114 @@
+{
+	"name": "Palen Chaevera",
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"elf",
+			"eladrin"
+		]
+	},
+	"source": "",
+	"alignment": [
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 13,
+			"from": [
+				"{@item leather armor|phb}"
+			]
+		}
+	],
+	"hp": {
+		"formula": "6d6 + 12",
+		"average": 33
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 10,
+	"dex": 14,
+	"con": 14,
+	"int": 12,
+	"wis": 10,
+	"cha": 16,
+	"passive": 13,
+	"cr": "4",
+	"shortName": "Palen",
+	"level": 6,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	],
+	"languages": [
+		"Common",
+		"Dwarvish",
+		"Elvish",
+		"Orc"
+	],
+	"languageTags": [
+		"C",
+		"D",
+		"E",
+		"O"
+	],
+	"skill": {
+		"perception": "+3",
+		"insight": "+3",
+		"persuasion": "+6",
+		"deception": "+6",
+		"stealth": "+5"
+	},
+	"save": {
+		"con": "+5",
+		"cha": "+6"
+	},
+	"spellcasting": [
+		{
+			"name": "Socerer's Spells",
+			"headerEntries": [
+				"Spell {@dc 16}",
+				"Spell {@atk rs} +6 /{@atk rm} +6"
+			],
+			"footerEntries": [
+				"{@b Metamagic}",
+				"{@i Distant Spell}",
+				"When you Cast a Spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
+				"When you Cast a Spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+			],
+			"spells": {
+				"1": {
+					"spells": [
+						"{@spell magic missile}",
+						"{@spell sleep}",
+						"{@spell witch bolt}"
+					],
+					"slots": 4
+				},
+				"2": {
+					"spells": [
+						"{@spell detect thoughts}",
+						"{@spell invisibility}"
+					],
+					"slots": 3
+				},
+				"3": {
+					"spells": [
+						"{@spell counterspell}",
+						"{@spell dispel magic}"
+					],
+					"slots": 3
+				}
+			},
+			"daily": {
+				"1": [
+					"{@spell misty step}"
+				]
+			},
+			"type": "spellcasting"
+		}
+	]
+}

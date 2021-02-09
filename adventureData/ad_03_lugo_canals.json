@@ -231,7 +231,8 @@
                     "type": "entries",
                     "name": "Here comes the calvary",
                     "entries": [
-                        "Later that morning, {@creature Maddoc Batul|domule} along with a few {@creature Batir Rider|domule} come riding in.", "They successfully defended Trista"
+                        "Later that morning, {@creature Maddoc Batul|domule} along with a few {@creature Batir Rider|domule}, along with two strangers, come riding in.",
+                        "They successfully defended Trista from a group of dwarves who were trying to impose themselves as {@creature Batir Rider|domule}. Upset that anyone would dare try to give the Batir Warriors a bad reputation. All dwarves were killed immediately."
                     ]
                 },
                 {
