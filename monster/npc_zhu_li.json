@@ -1,0 +1,55 @@
+{
+	"name": "Zhu Li",
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			{
+				"tag": "rogue",
+				"prefix": "inquisitive"
+			}
+		]
+	},
+	"source": "domule",
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		10
+	],
+	"hp": {
+		"formula": "1d8 + 1",
+		"average": 5
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 10,
+	"dex": 15,
+	"con": 12,
+	"int": 14,
+	"wis": 11,
+	"cha": 16,
+	"passive": 13,
+	"cr": "0",
+	"level": 6,
+	"languages": [
+		"Common",
+		"Elvish"
+	],
+	"languageTags": [
+		"C",
+		"E"
+	],
+	"skill": {
+		"perception": "+3",
+		"investigation": "+5",
+		"sleight of hand": "+5",
+		"stealth": "+5"
+	},
+	"save": {
+		"dex": "+5",
+		"int": "+5"
+	}
+}

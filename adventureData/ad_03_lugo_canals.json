@@ -232,7 +232,14 @@
                     "name": "Here comes the calvary",
                     "entries": [
                         "Later that morning, {@creature Maddoc Batul|domule} along with a few {@creature Batir Rider|domule}, along with two strangers, come riding in.",
-                        "They successfully defended Trista from a group of dwarves who were trying to impose themselves as {@creature Batir Rider|domule}. Upset that anyone would dare try to give the Batir Warriors a bad reputation. All dwarves were killed immediately."
+                        "They successfully defended Trista from a group of dwarves who were trying to impose themselves as {@creature Batir Rider|domule}. Upset that anyone would dare try to give the Batir Warriors a bad reputation. All dwarves were killed immediately. A few hours after the attack, the two strangers rode up to Trista",
+                        {
+                            "type" : "list",
+                            "items" : [
+                                "{@creature Palen Chavera|domule} the second in command of the Rocs",
+                                "{@creature Zhu Li|domule} Palen's right hand man"
+                            ]
+                        }
                     ]
                 },
                 {
