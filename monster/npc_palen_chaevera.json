@@ -1,14 +1,19 @@
 {
 	"name": "Palen Chaevera",
+	"source": "domule",
+	"page": 347,
 	"size": "M",
 	"type": {
 		"type": "humanoid",
 		"tags": [
 			"elf",
-			"eladrin"
+			"eladrin",
+			{
+				"tag": "sorcerer",
+				"prefix": "shadow magic"
+			}
 		]
 	},
-	"source": "",
 	"alignment": [
 		"N"
 	],
@@ -38,10 +43,10 @@
 	"shortName": "Palen",
 	"level": 6,
 	"senses": [
-		"darkvision 60 ft."
+		"darkvision 120 ft."
 	],
 	"senseTags": [
-		"D"
+		"SD"
 	],
 	"languages": [
 		"Common",
@@ -74,12 +79,44 @@
 				"Spell {@atk rs} +6 /{@atk rm} +6"
 			],
 			"footerEntries": [
-				"{@b Metamagic}",
-				"{@i Distant Spell}",
-				"When you Cast a Spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
-				"When you Cast a Spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+				{
+					"type": "list",
+					"style": "list-hang",
+					"name": "Metamagic",
+					"items": [
+						{
+							"type": "item",
+							"name": "Quickened Spell",
+							"entry": "When you Cast a Spell that has a Casting Time of 1 action, you can spend 2 sorcery points to change the Casting Time to 1 Bonus Action for this casting."
+						},
+						{
+							"type": "item",
+							"name": "Distant Spell",
+							"entry": "When you Cast a Spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell. When you Cast a Spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+						},
+						{
+							"type": "item",
+							"name": "Eyes of the Dark",
+							"entry": "If you cast {@spell darkness} with (2) sorcery points, you can see through the darkness created by the spell."
+						}
+					]
+				}
 			],
+			"daily": {
+				"1": [
+					"{@spell misty step}"
+				]
+			},
 			"spells": {
+				"0": {
+					"spells": [
+						"{@spell dancing lights}",
+						"{@spell fire bolt}",
+						"{@spell friends}",
+						"{@spell message}",
+						"{@spell poison spray}"
+					]
+				},
 				"1": {
 					"spells": [
 						"{@spell magic missile}",
@@ -90,6 +127,7 @@
 				},
 				"2": {
 					"spells": [
+						"{@spell darkness}",
 						"{@spell detect thoughts}",
 						"{@spell invisibility}"
 					],
@@ -103,12 +141,56 @@
 					"slots": 3
 				}
 			},
-			"daily": {
-				"1": [
-					"{@spell misty step}"
-				]
-			},
 			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Strength of the Grave",
+			"entries": [
+				"Starting at 1st level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw ({@dc 5} + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.",
+				"After the saving throw succeeds, you can't use this feature again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Creating Spell Slots",
+			"entries": [
+				"You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
+				{
+					"type": "table",
+					"caption": "Creating Spell Slots",
+					"intro": [
+						"You have 6 Sorcery Points"
+					],
+					"colLabels": [
+						"Spell Slot Level",
+						"Sorcery Point Cost"
+					],
+					"rows": [
+						[
+							"1st",
+							"2"
+						],
+						[
+							"2nd",
+							"3"
+						],
+						[
+							"3rd",
+							"5"
+						],
+						[
+							"4th",
+							"6"
+						],
+						[
+							"5th",
+							"7"
+						]
+					]
+				},
+				"{@i Converting a Spell Slot to Sorcery Points}. As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+			]
 		}
 	]
 }
