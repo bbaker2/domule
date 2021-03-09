@@ -19,8 +19,8 @@
 		10
 	],
 	"hp": {
-		"formula": "1d8 + 1",
-		"average": 5
+		"formula": "6d8 + 6",
+		"average": 33
 	},
 	"speed": {
 		"walk": 30
@@ -51,5 +51,39 @@
 	"save": {
 		"dex": "+5",
 		"int": "+5"
-	}
+	},
+	"fluff": {
+		"entries": [
+			"Female Human",
+			"{@creature Palen Chaevera|domule}'s right hand woman."
+		]
+	},
+	"trait": [
+		{
+			"name": "Rogue Features",
+			"entries": [
+				"{@classFeature Cunning Action|Rogue|PHB|2}, {@classFeature Sneak Attack|Rogue|PHB|1}"
+			]
+		},
+		{
+			"name": "Inquisitive",
+			"entries": [
+				"{@subclassFeature Ear for Deceit|Rogue||Inquisitive|xge|3}, {@subclassFeature Eye for Detail|Rogue||Inquisitive|xge|3}, {@subclassFeature Insightful Fighting|Rogue||Inquisitive|xge|3}"
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Dagger",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+			]
+		}
+	],
+	"damageTags": [
+		"P"
+	],
+	"miscTags": [
+		"MW"
+	]
 }
