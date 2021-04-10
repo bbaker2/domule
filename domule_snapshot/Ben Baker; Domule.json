@@ -963,6 +963,103 @@
       ]
     },
     {
+      "name": "Black Gate Defender",
+      "source": "domule",
+      "page": 226,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "dwarf"
+        ]
+      },
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item shield|phb} + {@item ring mail|phb} + {@optfeature defense|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 4",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 12,
+      "con": 12,
+      "int": 10,
+      "wis": 11,
+      "cha": 11,
+      "skill": {
+        "perception": "+3",
+        "athletics": "+5"
+      },
+      "passive": 13,
+      "cr": "1",
+      "trait": [
+        {
+          "name": "Formation Tactics",
+          "entries": [
+            "The soldier has advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition grappled}, or {@condition restrained} while it is within 5 feet of at least one ally."
+          ]
+        },
+        {
+          "name": "Equipment",
+          "entries": [
+            "{@item Potion of Water Breathing}, {@item Spear|phb}, {@item Dagger|phb}"
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "https://5e.tools/img/GGR/Soldier.png?v=1.119.0",
+      "languages": [
+        "Common",
+        "Dwarvish",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "C",
+        "D",
+        "U"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "action": [
+        {
+          "name": "Ralley",
+          "entries": [
+            "Once per day, you may perform the {@optfeature rally} feature.",
+            "Recover {@dice 1d8 + 0} temporary health points"
+          ]
+        },
+        {
+          "name": "Handaxe",
+          "entries": [
+            "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage in melee, or 5 ({@damage 1d6 + 2}) slashing damage at range."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+      ]
+    },
+    {
       "name": "Black Gate Wizard",
       "source": "domule",
       "page": 248,
@@ -2300,8 +2397,8 @@
         10
       ],
       "hp": {
-        "formula": "1d8 + 1",
-        "average": 5
+        "formula": "6d8 + 6",
+        "average": 33
       },
       "speed": {
         "walk": 30
@@ -2332,7 +2429,41 @@
       "save": {
         "dex": "+5",
         "int": "+5"
-      }
+      },
+      "fluff": {
+        "entries": [
+          "Female Human",
+          "{@creature Palen Chaevera|domule}'s right hand woman."
+        ]
+      },
+      "trait": [
+        {
+          "name": "Rogue Features",
+          "entries": [
+            "{@classFeature Cunning Action|Rogue|PHB|2}, {@classFeature Sneak Attack|Rogue|PHB|1}"
+          ]
+        },
+        {
+          "name": "Inquisitive",
+          "entries": [
+            "{@subclassFeature Ear for Deceit|Rogue||Inquisitive|xge|3}, {@subclassFeature Eye for Detail|Rogue||Inquisitive|xge|3}, {@subclassFeature Insightful Fighting|Rogue||Inquisitive|xge|3}"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ]
     },
     {
       "name": "Zinland Tormoria",
