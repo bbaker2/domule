@@ -1,0 +1,27 @@
+{
+    "name": "Domule, the Portal City",
+    "id": "dml-book",
+    "data": [
+        {
+            "type": "section",
+            "name": "Major Cities",
+            "entries": [
+                {
+                    "type": "section",
+                    "name": "Fairkeep",
+                    "entries": [
+                        {
+                            "type": "section",
+                            "name": "Redstone Docks",
+                            "entries": [
+                                "Unlike other cities, these docks are permanent red brickwork. This dock is also advanced enough that each pier has its own wooden crane.",
+                                "There are 16 piers and they are all almost full.",
+                                "Rhogar leased an entire pier where three ships are currently docked. He has also leased his own warehouse that seconds as his headquarters"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
