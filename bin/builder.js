@@ -20,10 +20,10 @@ info("Starting scan from: ", srcDir);
 let result  = readFolders(srcDir, schema);
 
 info("Indexing adventures");
-indexAdventures(result, "adventure", "adventureData", -1);
+indexAdventures(result);
 
 info("Indexing books");
-indexAdventures(result, "book", "bookData", 1);
+indexBooks(result)
 
 let trgName = generateFileName(result);
 
@@ -200,9 +200,9 @@ function readFiles(dir, isArray) {
     }   
 }
 
-function indexAdventures(root, trg, trgData, ordinal) {
-    let adventureList =     root[trg];
-    let adventureDataList = root[trgData];
+function indexAdventures(root) {
+    let adventureList =     root.adventure;
+    let adventureDataList = root.adventureData;
     
     if(!(adventureList && adventureDataList)){
         return;
@@ -211,13 +211,13 @@ function indexAdventures(root, trg, trgData, ordinal) {
     for(adventure of adventureList) {
         for(adventureData of adventureDataList){
             if(adventureData.name === adventure.name){
-                adventure.contents = collectChapters(adventureData, ordinal);
+                adventure.contents = collectChapters(adventureData);
             }
         }
     }
 }
 
-function collectChapters(adventureData, ordinal){
+function collectChapters(adventureData){
     let contents = [];
     for(data of adventureData.data){
         // chapters can only be from 'sections'
@@ -238,12 +238,53 @@ function collectChapters(adventureData, ordinal){
                 }
             }
 
-            // -1 is the magic value for skipping
-            if(ordinal > 0){
-                chapters.ordinal = {
-                    "type" : "chapter",
-                    "identifier" : ordinal++
-                };
+            contents.push(chapters);
+        }
+    }
+    return contents;
+}
+
+function indexBooks(root) {
+    let bookList =     root.book;
+    let bookDataList = root.bookData;
+    
+    if(!(bookList && bookDataList)){
+        return;
+    }
+
+    for(book of bookList) {
+        for(bookData of bookDataList){
+            if(bookData.name === book.name){
+                book.contents = collectSections(bookData);
+            }
+        }
+    }
+}
+
+function collectSections(bookData){
+    let contents = [];
+    let chapter = 1;
+    for(data of bookData.data){
+        // chapters can only be from 'sections'
+        if(data.type === "section"){
+            let chapters = {
+                name : data.name,
+                headers : [],
+                ordinal : {
+                    type : "chapter",
+                    identifier : chapter++
+                }
+            };
+
+            if(!data.entries) {
+                continue;
+            }
+
+            for(entries of data.entries){
+                // headers can only be from 'entries'
+                if(entries.type === "section"){
+                    chapters.headers.push(entries.name);
+                }
             }
 
             contents.push(chapters);
