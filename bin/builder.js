@@ -20,7 +20,10 @@ info("Starting scan from: ", srcDir);
 let result  = readFolders(srcDir, schema);
 
 info("Indexing adventures");
-indexAdventures(result);
+indexAdventures(result, "adventure", "adventureData", -1);
+
+info("Indexing books");
+indexAdventures(result, "book", "bookData", 1);
 
 let trgName = generateFileName(result);
 
@@ -197,9 +200,9 @@ function readFiles(dir, isArray) {
     }   
 }
 
-function indexAdventures(root) {
-    let adventureList =     root.adventure;
-    let adventureDataList = root.adventureData;
+function indexAdventures(root, trg, trgData, ordinal) {
+    let adventureList =     root[trg];
+    let adventureDataList = root[trgData];
     
     if(!(adventureList && adventureDataList)){
         return;
@@ -208,13 +211,13 @@ function indexAdventures(root) {
     for(adventure of adventureList) {
         for(adventureData of adventureDataList){
             if(adventureData.name === adventure.name){
-                adventure.contents = collectChapters(adventureData);
+                adventure.contents = collectChapters(adventureData, ordinal);
             }
         }
     }
 }
 
-function collectChapters(adventureData){
+function collectChapters(adventureData, ordinal){
     let contents = [];
     for(data of adventureData.data){
         // chapters can only be from 'sections'
@@ -233,6 +236,14 @@ function collectChapters(adventureData){
                 if(entries.type === "entries"){
                     chapters.headers.push(entries.name);
                 }
+            }
+
+            // -1 is the magic value for skipping
+            if(ordinal > 0){
+                chapters.ordinal = {
+                    "type" : "chapter",
+                    "identifier" : ordinal++
+                };
             }
 
             contents.push(chapters);
