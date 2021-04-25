@@ -622,6 +622,133 @@
           ]
         }
       ]
+    },
+    {
+      "name": "betsoff",
+      "id": "03-lugo",
+      "source": "domule",
+      "notes": [
+        "Jost approaches Kohl and lets him know that the next mission is his first trial to join the Nightflyers",
+        "There is an upcoming auction hosted by The Maeve Bank, a bank with close ties to several guilds, mobs, and kingdoms",
+        "At the auction, will be three known mob bosses.",
+        "The Black Fang, run by a male dragonborn named Rhogar Seeker",
+        "The Korreds, run by a male tabaxi named Beauty's Eye",
+        "The Vaults, run by a female human named Celaena Taurus"
+      ],
+      "The Vaults": [
+        "Officially Celaena owns a very nice upscale and successful bookstore. But it is a well known secret that she also is the broker for assassin and hit jobs",
+        "She has expensive tastes. She wears a jewel encrusted long flowing dress. A Perception check (DC 8) reveals that she many dagger partially sewn into her dress",
+        "Celaena has a strange combination of morals. While she's okay with killing people for pay, she is extremely anti slavery",
+        "Celaena has a history of extreme retaliation if anyone double crosses her or steals anything from her",
+        "Celaena has a small entourage of beautiful assassins. They are constantly observing the crowds and reporting suspicious activity",
+        "All of Celaena's entourage has matching daggers with rose gold leaf etching down the blade and scabbard",
+        "Celaena have a personal partnership with Rhogar, acquiring poisons animals and plants"
+      ],
+      "The Black Fang": [
+        "The Black Fang is actually the capital ship in Rhogar Seeker's fleet",
+        "He is officially a merchant, but in some circles, he is known for acquiring and selling exotic and illegal beasts and plants",
+        "Rhogar is surrounded by his crew. Unlike the typical sailor, his crew is well dressed and remarkably calm and civil",
+        "All of Rhogar's crew have matching rapiers with a blue sapphire on the pommel",
+        "Rhogar is a devout follower of Talos, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
+        "The Black Fang has been hiring the Korred rangers to capture debtors, and sells them into slavery at the Endove Islands"
+      ],
+      "The Korreds": [
+        "The Korreds is a company of wayfinders and guides. They are hired to lead caravans to any location.",
+        "The Korreds are also hired by debt collectors, loan sharks, and political asylum seekers to find persons of interest. They are bounty hunters.",
+        "Beauty Eye and his rangers can communicate via hand gestures.",
+        "Both Beauty Eye and his rangers all dress differently but have very noticeable tribal tattoos.",
+        "Beauty Eye finds Undead and Constructs abominations and distrusts anyone who uses or works with them.",
+        "The Korreds are constantly selling updated maps and gossip to Celaena"
+      ],
+      "Possible Confrontations": [
+        "If Celaena finds out by that either Rhogar or Beauty Eye are involved in slavery, she will break relationships with both. She may even kill one of them later",
+        "Rhogar will dislike anyone who insults Talor or anyone who worships Talor's enemies: Chauntea, Eldath, Lathander, Mystra, Sune, Deneir, Gond, Helm, Mielikki, Oghma, Shiallia, Silvanus, or Tyr.",
+        "Beauty Eye will distrust anyone who has/works with Constructs or The Undead"
+      ],
+      "Fairkeep Locations": {
+        "Redstone Docks": [
+          "Unlike other cities, these docks are permanent red brickwork. This dock is also advanced enough that each pier has its own wooden crane.",
+          "There are 16 piers and they are all almost full.",
+          "Rhogar leased an entire pier where three ships are currently docked. He has also leased his own warehouse that seconds as his headquarters"
+        ],
+        "The Bolt District": [
+          "Two whole blocks of clothing stores, tailors, fabric shops, and boutiques. Noteworthy stores include:",
+          "Rose Gold - for sheek outfits, cocktail dresses, and gowns",
+          "Beatnix - for outfits that have more fabric then most tents",
+          "Southface - fashionable active-ware",
+          "Darrington's - hat and accessories for all occasions",
+          "Polywears - 2nd hand and overstocked clothes",
+          "Madame Lebrace - tailor and customizations"
+        ],
+        "Westwall": [
+          "A district outside of Fairkeep wall full of pubs and taverns.",
+          "A popular location for farmers to retire to in the evening without having to go into the walled city itself",
+          "It is also where The Korred's Lodge resides"
+        ],
+        "Lanternarius District": [
+          "A hexagon district where oil street lights are installed. At night, the entire district is well lit creating a please nightlife.",
+          "This is where the affluent stores, restaurants, theaters, and parks exist",
+          "This is also where Celaena's bookstore: The Oakwald Bookstore"
+        ],
+        "The Flags District": [
+          "The main market area for the city. In these district, no builder is taller than two stories and most shops have a large flag masts that leans over the roads, advertising their storefront",
+          "Noteworthy stores include:",
+          "Whitehorn Wares - a magical items shop",
+          "Redds Hammer - a weapon and armor smith",
+          "Jo Castirons - high quality cookware and kitchen tools"
+        ]
+      }
+    }
+  ],
+  "book": [
+    {
+      "name": "Domule, the Portal City",
+      "id": "dml-book",
+      "source": "domule",
+      "coverUrl": "",
+      "published": "2020-01-01",
+      "author": "bbaker",
+      "contents": [
+        {
+          "name": "Major Cities",
+          "headers": [
+            "Fairkeep"
+          ],
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 1
+          }
+        }
+      ]
+    }
+  ],
+  "bookData": [
+    {
+      "name": "Domule, the Portal City",
+      "id": "dml-book",
+      "data": [
+        {
+          "type": "section",
+          "name": "Major Cities",
+          "entries": [
+            {
+              "type": "section",
+              "name": "Fairkeep",
+              "entries": [
+                {
+                  "type": "section",
+                  "name": "Redstone Docks",
+                  "entries": [
+                    "Unlike other cities, these docks are permanent red brickwork. This dock is also advanced enough that each pier has its own wooden crane.",
+                    "There are 16 piers and they are all almost full.",
+                    "Rhogar leased an entire pier where three ships are currently docked. He has also leased his own warehouse that seconds as his headquarters"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "item": [
