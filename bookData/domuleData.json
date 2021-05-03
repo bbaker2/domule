@@ -18,6 +18,102 @@
                                 "There are 16 piers and they are all almost full.",
                                 "Rhogar leased an entire pier where three ships are currently docked. He has also leased his own warehouse that seconds as his headquarters"
                             ]
+                        },
+                        {
+                            "type": "section",
+                            "name": "The Bolt District",
+                            "entries": [
+                                "Two whole blocks of clothing stores, tailors, fabric shops, and boutiques. Noteworthy stores include:",
+                                {
+                                    "type": "inset",
+                                    "name": "Rose Gold",
+                                    "entries": [
+                                        "For chic outfits, cocktail dresses, and gowns"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Beatnix",
+                                    "entries": [
+                                        "For outfits that have more fabric then most tents"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Southface",
+                                    "entries": [
+                                        "Fashionable active-ware"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Darrington's",
+                                    "entries": [
+                                        "Hat and accessories for all occasions"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Polywears",
+                                    "entries": [
+                                        "Second-hand and overstocked clothes"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Madame Lebrace",
+                                    "entries": [
+                                        "Tailor and customizations"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "name": "Westwall",
+                            "entries": [
+                                "A district outside of Fairkeep wall full of pubs and taverns.",
+                                "A popular location for farmers to retire to in the evening without having to go into the walled city itself",
+                                "It is also where The Korred's Lodge resides"
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "name": "Lanternarius district",
+                            "entries": [
+                                "A hexagon district where oil street lights are installed. At night, the entire district is well lit creating a please nightlife.",
+                                "This is where the affluent stores, restaurants, theaters, and parks exist",
+                                "This is also where Celaena's bookstore: The Oakwald Bookstore"
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "name": "The Flags District",
+                            "entries": [
+                                "The main market area for the city. In these district, no builder is taller than two stories and most shops have a large flag masts that leans over the roads, advertising their storefront",
+                                "Noteworthy stores include:",
+                                {
+                                    "type": "inset",
+                                    "name": "Whitehorn Wares",
+                                    "entries": [
+                                        "A magical items shop"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Redds Hammer",
+                                    "entries": [
+                                        "A weapon and armor smith"
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Jo Castirons",
+                                    "entries": [
+                                        "High quality cookware and kitchen tools"
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
