@@ -5,47 +5,62 @@
     "data": [
         {
             "type": "section",
-            "name": "Chapter 0 - Overview",
+            "name": "Overview",
             "entries": [
                 {
                     "type": "entries",
-                    "name": "Organization",
+                    "name": "Organizations",
                     "entries": [
                         {
                             "type": "entries",
                             "name": "The Vaults",
                             "entries": [
-                                "Officially Celaena owns a very nice upscale and successful bookstore. But it is a well known secret that she also is the broker for assassin and hit jobs",
-                                "She has expensive tastes. She wears a jewel encrusted long flowing dress. A Perception check (DC 8) reveals that she many dagger partially sewn into her dress",
-                                "Celaena has a strange combination of morals. While she's okay with killing people for pay, she is extremely anti slavery",
-                                "Celaena has a history of extreme retaliation if anyone double crosses her or steals anything from her",
-                                "Celaena has a small entourage of beautiful assassins. They are constantly observing the crowds and reporting suspicious activity",
-                                "All of Celaena's entourage has matching daggers with rose gold leaf etching down the blade and scabbard",
-                                "Celaena have a personal partnership with Rhogar, acquiring poisons animals and plants"
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Officially Celaena owns a very nice upscale and successful bookstore. But it is a well known secret that she also is the broker for assassin and hit jobs",
+                                        "She has expensive tastes. She wears a jewel encrusted long flowing dress. A Perception check (DC 8) reveals that she many dagger partially sewn into her dress",
+                                        "Celaena has a strange combination of morals. While she's okay with killing people for pay, she is extremely anti slavery",
+                                        "Celaena has a history of extreme retaliation if anyone double crosses her or steals anything from her",
+                                        "Celaena has a small entourage of beautiful assassins. They are constantly observing the crowds and reporting suspicious activity",
+                                        "All of Celaena's entourage has matching daggers with rose gold leaf etching down the blade and scabbard",
+                                        "Celaena have a personal partnership with Rhogar, acquiring poisons animals and plants"
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "The Black Fang",
                             "entries": [
-                                "The Black Fang is actually the capital ship in Rhogar Seeker's fleet",
-                                "He is officially a merchant, but in some circles, he is known for acquiring and selling exotic and illegal beasts and plants",
-                                "Rhogar is surrounded by his crew. Unlike the typical sailor, his crew is well dressed and remarkably calm and civil",
-                                "All of Rhogar's crew have matching rapiers with a blue sapphire on the pommel",
-                                "Rhogar is a devout follower of Talos, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
-                                "The Black Fang has been hiring the Korred rangers to capture debtors, and sells them into slavery at the Endove Islands"
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "The Black Fang is actually the capital ship in Rhogar Seeker's fleet",
+                                        "He is officially a merchant, but in some circles, he is known for acquiring and selling exotic and illegal beasts and plants",
+                                        "Rhogar is surrounded by his crew. Unlike the typical sailor, his crew is well dressed and remarkably calm and civil",
+                                        "All of Rhogar's crew have matching rapiers with a blue sapphire on the pommel",
+                                        "Rhogar is a devout follower of Talos, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
+                                        "The Black Fang has been hiring the Korred rangers to capture debtors, and sells them into slavery at the Endove Islands"
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "The Korreds",
                             "entries": [
-                                "The Korreds is a company of wayfinders and guides. They are hired to lead caravans to any location.",
-                                "The Korreds are also hired by debt collectors, loan sharks, and political asylum seekers to find persons of interest. They are bounty hunters.",
-                                "Beauty Eye and his rangers can communicate via hand gestures.",
-                                "Both Beauty Eye and his rangers all dress differently but have very noticeable tribal tattoos.",
-                                "Beauty Eye finds Undead and Constructs abominations and distrusts anyone who uses or works with them.",
-                                "The Korreds are constantly selling updated maps and gossip to Celaena"
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "The Korreds is a company of wayfinders and guides. They are hired to lead caravans to any location.",
+                                        "The Korreds are also hired by debt collectors, loan sharks, and political asylum seekers to find persons of interest. They are bounty hunters.",
+                                        "Beauty Eye and his rangers can communicate via hand gestures.",
+                                        "Both Beauty Eye and his rangers all dress differently but have very noticeable tribal tattoos.",
+                                        "Beauty Eye finds Undead and Constructs abominations and distrusts anyone who uses or works with them.",
+                                        "The Korreds are constantly selling updated maps and gossip to Celaena"
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -62,6 +77,15 @@
                 "The Black Fang, run by a male dragonborn named Rhogar Seeker",
                 "The Korreds, run by a male tabaxi named Beauty's Eye",
                 "The Vaults, run by a female human named Celaena Taurus",
+                {
+                    "type": "entries",
+                    "name": "Alliances",
+                    "entries": [
+                        "The Vaults use The Black Fangs as a supplier for exotic poisons and venoms",
+                        "The Black Fangs have been chartering The Korreds. Otherwise, The Black Fangs never charter anyone",
+                        "The Korreds have been selling up-to-date information (maps, political news, gossip, etc...) to The Vaults after each of their treks"
+                    ]
+                },
                 {
                     "type": "entries",
                     "name": "Possible Confrontations",
