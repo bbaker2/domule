@@ -74,9 +74,14 @@
                 "Jost approaches Kohl and lets him know that the next mission is his first trial to join the Nightflyers",
                 "There is an upcoming auction hosted by The Maeve Bank, a bank with close ties to several guilds, mobs, and kingdoms",
                 "At the auction, will be three known mob bosses.",
-                "The Black Fang, run by a male dragonborn named Rhogar Seeker",
-                "The Korreds, run by a male tabaxi named Beauty's Eye",
-                "The Vaults, run by a female human named Celaena Taurus",
+                {
+                    "type": "list",
+                    "items": [
+                        "The Black Fang, run by a male dragonborn named Rhogar Seeker",
+                        "The Korreds, run by a male tabaxi named Beauty's Eye",
+                        "The Vaults, run by a female human named Celaena Taurus"
+                    ]
+                },
                 {
                     "type": "entries",
                     "name": "Alliances",
@@ -90,8 +95,27 @@
                     "type": "entries",
                     "name": "Possible Confrontations",
                     "entries": [
-                        "If Celaena finds out by that either Rhogar or Beauty Eye are involved in slavery, she will break relationships with both. She may even kill one of them later",
-                        "Rhogar will dislike anyone who insults Talor or anyone who worships Talor's enemies: Chauntea, Eldath, Lathander, Mystra, Sune, Deneir, Gond, Helm, Mielikki, Oghma, Shiallia, Silvanus, or Tyr.",
+                        {
+                            "type": "entries",
+                            "name": "Celaena hates Slavery",
+                            "entries": [
+                                "Rhogar has 'bought out' the debt owed to loan sharks and used some of Beauty Eye's trackers to find them and enslave them.",
+                                "Rhogar sells the captured to the warrior nations in the Endove Islands. The Korreds take a little of the cut.",
+                                "It will be suspicious when it is revealed that The Korreds are getting paid to travel with The Black Fangs, instead of the other way around.",
+                                "There is paperwork that the party can find that reveals that the ships are consuming 10 time more rations that what the ships normally consume.",
+                                "Some of Rhogar's sailors are wearing necklaces with purple volcanic glass. This glass is only found from the chain of volcanoes that make up the Endove Islands.",
+                                "If Celaena finds out by that either Rhogar or Beauty Eye are involved in slavery, she will break relationships with both. She may even kill one of them later"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Rhogar is surprisingly religious",
+                            "entries": [
+                                "Rhogar is a diviout follower of Talos, God of Storms. He is constantly wearing a large amulet with three lightning bolts radiating from a central point",
+                                "Rhogar will dislike anyone who insults Talos or anyone who worships Talos's enemies: Chauntea, Eldath, Lathander, Mystra, Sune, Deneir, Gond, Helm, Mielikki, Oghma, Shiallia, Silvanus, or Tyr.",
+                                "Rhogar is campaigning to install a monument to Talos at the docks and even has bought out some space to begin building. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship Silvanus and want to put their own stature. They are working behind the scenes to put up a fountain for Silvanus instead."
+                            ]
+                        },
                         "Beauty Eye will distrust anyone who has/works with Constructs or The Undead"
                     ]
                 }
