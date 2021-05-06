@@ -101,9 +101,15 @@
                             "entries": [
                                 "Rhogar has 'bought out' the debt owed to loan sharks and used some of Beauty Eye's trackers to find them and enslave them.",
                                 "Rhogar sells the captured to the warrior nations in the Endove Islands. The Korreds take a little of the cut.",
-                                "It will be suspicious when it is revealed that The Korreds are getting paid to travel with The Black Fangs, instead of the other way around.",
-                                "There is paperwork that the party can find that reveals that the ships are consuming 10 time more rations that what the ships normally consume.",
-                                "Some of Rhogar's sailors are wearing necklaces with purple volcanic glass. This glass is only found from the chain of volcanoes that make up the Endove Islands.",
+                                {
+                                    "type": "list",
+                                    "name": "Plot Hooks",
+                                    "items": [
+                                        "It will be suspicious when it is revealed that The Korreds are getting paid to travel with The Black Fangs, instead of the other way around.",
+                                        "There is paperwork that the party can find that reveals that the ships are consuming 10 time more rations that what the ships normally consume.",
+                                        "Some of Rhogar's sailors are wearing necklaces with purple volcanic glass. This glass is only found from the chain of volcanoes that make up the Endove Islands."
+                                    ]
+                                },
                                 "If Celaena finds out by that either Rhogar or Beauty Eye are involved in slavery, she will break relationships with both. She may even kill one of them later"
                             ]
                         },
@@ -113,10 +119,24 @@
                             "entries": [
                                 "Rhogar is a diviout follower of Talos, God of Storms. He is constantly wearing a large amulet with three lightning bolts radiating from a central point",
                                 "Rhogar will dislike anyone who insults Talos or anyone who worships Talos's enemies: Chauntea, Eldath, Lathander, Mystra, Sune, Deneir, Gond, Helm, Mielikki, Oghma, Shiallia, Silvanus, or Tyr.",
-                                "Rhogar is campaigning to install a monument to Talos at the docks and even has bought out some space to begin building. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship Silvanus and want to put their own stature. They are working behind the scenes to put up a fountain for Silvanus instead."
+                                "Rhogar is campaigning to install a monument at Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district} for Talos.  Rhogar even paid for the demolition of the old fountain begin building the new monument. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship Silvanus and want to put their own stature. They are working behind the scenes to put up a fountain for Silvanus instead.",
+                                {
+                                    "type": "list",
+                                    "name": "Plot Hooks",
+                                    "items": [
+                                        "Beauty Eye's rangers can be caught bribing the City's Planning Director",
+                                        "A plan for a fountain for Silvanus at Knit Park can be spotted within The Vaults Bookstore"
+                                    ]
+                                }
                             ]
                         },
-                        "Beauty Eye will distrust anyone who has/works with Constructs or The Undead"
+                        {
+                            "type": "entries",
+                            "name": "Beauty Eye does not like artificial life",
+                            "entries": [
+                                "Beauty Eye will distrust anyone who has/works with Constructs or The Undead"
+                            ]
+                        }
                     ]
                 }
             ]
