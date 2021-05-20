@@ -1,0 +1,92 @@
+{
+    "name": "Vault Assassin",
+    "size": "M",
+    "type": "humanoid",
+    "source": "domule",
+    "alignment": [
+        "L",
+        "E"
+    ],
+    "ac": [
+        {
+            "ac": 16,
+            "from": [
+                "{@item glamoured studded leather}"
+            ]
+        },
+        {
+            "ac": 13,
+            "condition": "Unarmored"
+        }
+    ],
+    "hp": {
+        "formula": "10d8 + 10",
+        "average": 55
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 9,
+    "dex": 16,
+    "con": 12,
+    "int": 14,
+    "wis": 10,
+    "cha": 15,
+    "passive": 12,
+    "cr": "3",
+    "level": 6,
+    "senses": [
+        "darkvision 30 ft."
+    ],
+    "senseTags": [
+        "D"
+    ],
+    "languages": [
+        "Common",
+        "Elvish"
+    ],
+    "languageTags": [
+        "C",
+        "E"
+    ],
+    "save": {
+        "int": "+4",
+        "dex": "+5"
+    },
+    "skill": {
+        "stealth": "+5",
+        "sleight of hand": "+5",
+        "acrobatics": "+5",
+        "perception": "+2"
+    },
+    "trait": [
+        {
+            "name": "Features",
+            "entries": [
+                "{@classFeature Cunning Action|Rogue|PHB|2}, {@classFeature Sneak Attack|Rogue|PHB|1} ({@damage 4d6}), {@subclassFeature Assassinate|Rogue||Assassin|PHB|3}, {@item Thieves' Tools|phb}"
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "{@item Dagger|phb}",
+            "entries": [
+                "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage in melee, or 5 ({@damage 1d4 + 3}) piercing damage at range."
+            ]
+        },
+        {
+            "name": "{@item Dagger of Venom|dmg}",
+            "entries": [
+                "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage in melee, or 6 ({@damage 1d4 + 4}) piercing damage at range."
+            ]
+        }
+    ],
+    "damageTags": [
+        "P"
+    ],
+    "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+    ]
+}
