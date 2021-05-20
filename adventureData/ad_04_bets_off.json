@@ -134,7 +134,19 @@
                             "type": "entries",
                             "name": "Beauty Eye does not like artificial life",
                             "entries": [
-                                "Beauty Eye will distrust anyone who has/works with Constructs or The Undead"
+                                "Beauty Eye will distrust anyone who has/works with Constructs or The Undead",
+                                "Meanwhile, Rhogar has acquired a broken {@creature Shield Guardian|mm} and has commissioned Celaena to restore and build a new amulet",
+                                {
+                                    "type" : "list",
+                                    "name" : "Plot Hooks",
+                                    "items" : [
+                                        "Celaena was seen purchasing a platinum amulet and spent over 1000 GP on a rubies. While Celaena is known for having expensive tastes, this was an excitedly large purchase.",
+                                        "Rhogar has been supplying Celaena with rare toxic and poisons plants and animals... but no one can recall Celaena actually paying him. Perhaps there trading something other than gold?",
+                                        "Celaena has a artificer named Rowan who has been seen visiting Rhogar's warehouse daily",
+                                        "Rhogar's {@creature Shield Guardian|mm} is hidden in plain sight as a ornamental stature"
+                                    ]
+                                },
+                                "Beauty Eye will consider the construct an affront to nature break relationships with Rhogar if he finds out he has a construct."
                             ]
                         }
                     ]
