@@ -1,0 +1,97 @@
+{
+    "name": "Korred Sailor",
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "bard"
+        ]
+    },
+    "source": "domule",
+    "alignment": [
+        "C",
+        "E"
+    ],
+    "ac": [
+        {
+            "ac": 13,
+            "from": [
+                "{@item leather}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "6d8 + 6",
+        "average": 33
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 10,
+    "dex": 14,
+    "con": 13,
+    "int": 12,
+    "wis": 10,
+    "cha": 16,
+    "passive": 10,
+    "cr": "3",
+    "level": 6,
+    "senses": [
+        "darkvision 30 ft."
+    ],
+    "senseTags": [
+        "D"
+    ],
+    "languages": [
+        "Common",
+        "Draconic",
+        "Infernal"
+    ],
+    "languageTags": [
+        "C",
+        "DR",
+        "I"
+    ],
+    "trait": [
+        {
+            "name": "Features",
+            "entries": [
+                "{@subclassFeature Fighting Style|bard|phb|swords|3|xge}",
+                "{@subclassFeature Fighting Style|bard|phb|swords|xge|3}",
+                "https://5e.tools/classes.html#bard_phb,state:feature=s2-0~ishideoutline=b1~sub-swords-xge=b1",
+                "Swords Bard 3; Fighting Style"
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "{@item Dagger|phb}",
+            "entries": [
+                "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage in melee, or 5 ({@damage 1d4 + 3}) piercing damage at range."
+            ]
+        },
+        {
+            "name": "{@item Dagger of Venom|dmg}",
+            "entries": [
+                "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage in melee, or 6 ({@damage 1d4 + 4}) piercing damage at range."
+            ]
+        }
+    ],
+    "damageTags": [
+        "P"
+    ],
+    "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+    ],
+    "save": {
+        "cha": "+5",
+        "con": "+3"
+    },
+    "skill": {
+        "deception": "+5",
+        "insight": "+2",
+        "performance": "+5"
+    }
+}
