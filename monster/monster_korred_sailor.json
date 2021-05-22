@@ -36,12 +36,6 @@
     "passive": 10,
     "cr": "3",
     "level": 6,
-    "senses": [
-        "darkvision 30 ft."
-    ],
-    "senseTags": [
-        "D"
-    ],
     "languages": [
         "Common",
         "Draconic",
@@ -56,34 +50,13 @@
         {
             "name": "Features",
             "entries": [
-                "{@subclassFeature Fighting Style|bard|phb|swords|3|xge}",
-                "{@subclassFeature Fighting Style|bard|phb|swords|xge|3}",
-                "https://5e.tools/classes.html#bard_phb,state:feature=s2-0~ishideoutline=b1~sub-swords-xge=b1",
-                "Swords Bard 3; Fighting Style"
-            ]
-        }
-    ],
-    "action": [
-        {
-            "name": "{@item Dagger|phb}",
-            "entries": [
-                "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage in melee, or 5 ({@damage 1d4 + 3}) piercing damage at range."
-            ]
-        },
-        {
-            "name": "{@item Dagger of Venom|dmg}",
-            "entries": [
-                "{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage in melee, or 6 ({@damage 1d4 + 4}) piercing damage at range."
+                "{@optfeature Dueling|phb}, {@subclassFeature Extra Attack|bard|phb|swords|xge|6}"
             ]
         }
     ],
     "damageTags": [
-        "P"
-    ],
-    "miscTags": [
-        "RW",
-        "MW",
-        "THW"
+        "P",
+        "S"
     ],
     "save": {
         "cha": "+5",
@@ -93,5 +66,52 @@
         "deception": "+5",
         "insight": "+2",
         "performance": "+5"
-    }
+    },
+    "spellcasting": [
+        {
+            "name": "Spellcasting",
+            "headerEntries": [
+                "Spell DC = 13"
+            ],
+            "spells": {
+                "0": {
+                    "spells": [
+                        "{@spell vicious mockery}"
+                    ]
+                },
+                "1": {
+                    "spells": [
+                        "{@spell command}",
+                        "{@spell sleep}"
+                    ],
+                    "slots": 2
+                },
+                "2": {
+                    "spells": [
+                        "{@spell hold person}"
+                    ],
+                    "slots": 1
+                }
+            },
+            "type": "spellcasting"
+        }
+    ],
+    "action": [
+        {
+            "name": "{@item Pistol}",
+            "entries": [
+                "{@atk rw} {@hit 4} to hit, range 30/90 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+            ]
+        },
+        {
+            "name": "{@item Scimitar}",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 4}) slashing damage."
+            ]
+        }
+    ],
+    "miscTags": [
+        "RW",
+        "MW"
+    ]
 }
