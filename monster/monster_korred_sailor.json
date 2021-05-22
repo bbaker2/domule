@@ -104,9 +104,9 @@
             ]
         },
         {
-            "name": "{@item Scimitar}",
+            "name": "{@item Scimitar|phb}",
             "entries": [
-                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 4}) slashing damage."
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 6}) slashing damage."
             ]
         }
     ],
