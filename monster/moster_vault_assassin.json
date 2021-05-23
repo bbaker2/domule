@@ -1,7 +1,12 @@
 {
     "name": "Vault Assassin",
     "size": "M",
-    "type": "humanoid",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "rogue"
+        ]
+    },
     "source": "domule",
     "alignment": [
         "L",
