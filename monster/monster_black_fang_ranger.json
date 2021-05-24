@@ -4,7 +4,7 @@
     "type": {
         "type": "humanoid",
         "tags": [
-            "bard"
+            "ranger"
         ]
     },
     "source": "domule",
@@ -21,8 +21,8 @@
         }
     ],
     "hp": {
-        "formula": "6d8 + 6",
-        "average": 33
+        "formula": "8d10 + 8",
+        "average": 52
     },
     "speed": {
         "walk": 30
@@ -50,12 +50,11 @@
         {
             "name": "Features",
             "entries": [
-                "{@optfeature Archery|phb}, {@subclassFeature Extra Attack|bard|phb|swords|xge|6}, {@classFeature Favored Enemy|ranger|phb|1}"
+                "{@optfeature Archery|phb}, {@classFeature Extra Attack|ranger|phb|5}, {@classFeature Favored Enemy|ranger|phb|1} ({@filter undead|bestiary|flsttype=undead} & {@filter construct|bestiary|flsttype=construct}), {@subclassFeature Colossus Slayer|ranger|phb|hunter|phb|3}"
             ]
         }
     ],
     "damageTags": [
-        "P",
         "S"
     ],
     "save": {
@@ -90,24 +89,6 @@
             },
             "type": "spellcasting"
         }
-    ],
-    "action": [
-        {
-            "name": "{@item Pistol}",
-            "entries": [
-                "{@atk rw} {@hit 4} to hit, range 30/90 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
-            ]
-        },
-        {
-            "name": "{@item Scimitar|phb}",
-            "entries": [
-                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 6}) slashing damage."
-            ]
-        }
-    ],
-    "miscTags": [
-        "RW",
-        "MW"
     ],
     "skill": {
         "survival": "+4",
