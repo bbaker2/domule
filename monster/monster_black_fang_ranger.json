@@ -1,0 +1,98 @@
+{
+    "name": "Black Fang Ranger",
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "ranger"
+        ]
+    },
+    "source": "domule",
+    "alignment": [
+        "N",
+        "E"
+    ],
+    "ac": [
+        {
+            "ac": 13,
+            "from": [
+                "{@item leather}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "8d10 + 8",
+        "average": 52
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 12,
+    "dex": 16,
+    "con": 13,
+    "int": 12,
+    "wis": 14,
+    "cha": 8,
+    "passive": 14,
+    "cr": "3",
+    "level": 8,
+    "languages": [
+        "Common",
+        "Draconic",
+        "Infernal"
+    ],
+    "languageTags": [
+        "C",
+        "DR",
+        "I"
+    ],
+    "trait": [
+        {
+            "name": "Features",
+            "entries": [
+                "{@optfeature Archery|phb}, {@classFeature Extra Attack|ranger|phb|5}, {@classFeature Favored Enemy|ranger|phb|1} ({@filter undead|bestiary|flsttype=undead} & {@filter construct|bestiary|flsttype=construct}), {@subclassFeature Colossus Slayer|ranger|phb|hunter|phb|3}"
+            ]
+        }
+    ],
+    "damageTags": [
+        "S"
+    ],
+    "save": {
+        "wis": "+4",
+        "dex": "+5"
+    },
+    "spellcasting": [
+        {
+            "name": "Spellcasting",
+            "headerEntries": [
+                "Spell DC = 13"
+            ],
+            "spells": {
+                "0": {
+                    "spells": [
+                        "{@spell vicious mockery}"
+                    ]
+                },
+                "1": {
+                    "spells": [
+                        "{@spell command}",
+                        "{@spell sleep}"
+                    ],
+                    "slots": 2
+                },
+                "2": {
+                    "spells": [
+                        "{@spell hold person}"
+                    ],
+                    "slots": 1
+                }
+            },
+            "type": "spellcasting"
+        }
+    ],
+    "skill": {
+        "survival": "+4",
+        "perception": "+4",
+        "athletics": "+3"
+    }
+}
