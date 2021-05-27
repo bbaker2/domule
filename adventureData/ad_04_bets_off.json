@@ -156,7 +156,11 @@
         {
             "type": "section",
             "name": "Chapter 2 - Fairkeep Reconnaissance",
-            "entries": []
+            "entries": [{
+                "type" : "entries",
+                "name" : "The shopkeeper's husband",
+                "entries" : "The shopkeeper, Madam Gladdington, thinks highly of Celaena since she is somewhat responsible for finding her current husband; Kenny. Kenny was a former slave that was noticed by one of Celaena's librarians and was personally rescued by Celaena herself."
+            }]
         },
         {
             "type": "section",
