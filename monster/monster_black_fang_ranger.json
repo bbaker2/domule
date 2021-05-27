@@ -14,9 +14,9 @@
     ],
     "ac": [
         {
-            "ac": 13,
+            "ac": 14,
             "from": [
-                "{@item leather}"
+                "{@item Leather Armor|phb}"
             ]
         }
     ],
@@ -39,22 +39,25 @@
     "languages": [
         "Common",
         "Draconic",
-        "Infernal"
+        "Infernal",
+        "Giant"
     ],
     "languageTags": [
         "C",
         "DR",
-        "I"
+        "I",
+        "GI"
     ],
     "trait": [
         {
             "name": "Features",
             "entries": [
-                "{@optfeature Archery|phb}, {@classFeature Extra Attack|ranger|phb|5}, {@classFeature Favored Enemy|ranger|phb|1} ({@filter undead|bestiary|flsttype=undead} & {@filter construct|bestiary|flsttype=construct}), {@subclassFeature Colossus Slayer|ranger|phb|hunter|phb|3}"
+                "{@optfeature Archery|phb}, {@classFeature Extra Attack|ranger|phb|5}, {@classFeature Favored Enemy|ranger|phb|1} ({@filter undead|bestiary|flsttype=undead} & {@filter construct|bestiary|flsttype=construct}), {@subclassFeature Horde Breaker|ranger|phb|hunter|phb|3}, {@subclassFeature Escape the Horde|ranger|phb|hunter|phb|7}"
             ]
         }
     ],
     "damageTags": [
+        "P",
         "S"
     ],
     "save": {
@@ -65,24 +68,19 @@
         {
             "name": "Spellcasting",
             "headerEntries": [
-                "Spell DC = 13"
+                "Spell DC = 12"
             ],
             "spells": {
-                "0": {
-                    "spells": [
-                        "{@spell vicious mockery}"
-                    ]
-                },
                 "1": {
                     "spells": [
-                        "{@spell command}",
-                        "{@spell sleep}"
+                        "{@spell ensnaring strike}"
                     ],
                     "slots": 2
                 },
                 "2": {
                     "spells": [
-                        "{@spell hold person}"
+                        "{@spell healing spirit|XGE}",
+                        "{@spell silence}"
                     ],
                     "slots": 1
                 }
@@ -94,5 +92,31 @@
         "survival": "+4",
         "perception": "+4",
         "athletics": "+3"
-    }
+    },
+    "action": [
+        {
+            "name": "{@item Longbow|phb}",
+            "entries": [
+                "{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage. {@subclassFeature Horde Breaker|ranger|phb|hunter|phb|3} & {@classFeature Extra Attack|ranger|phb|5}"
+            ]
+        },
+        {
+            "name": "{@item Net|phb}",
+            "entries": [
+                "{@atk rw} {@hit 5} to hit, range 5/15 ft., one target. {@dc 10} Strength; else {@condition restrained}."
+            ]
+        },
+        {
+            "name": "{@item Handaxe|phb}",
+            "entries": [
+                "{@atk mw,rw} {@hit 3}/{@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage in melee, or 4 ({@damage 1d6 + 1}) slashing damage at range."
+            ]
+        }
+    ],
+    "miscTags": [
+        "RW",
+        "RNG",
+        "THW",
+        "MW"
+    ]
 }
