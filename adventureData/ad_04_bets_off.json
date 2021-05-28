@@ -40,7 +40,7 @@
                                         "He is officially a merchant, but in some circles, he is known for acquiring and selling exotic and illegal beasts and plants",
                                         "Rhogar is surrounded by his crew. Unlike the typical sailor, his crew is well dressed and remarkably calm and civil",
                                         "All of Rhogar's crew have matching rapiers with a blue sapphire on the pommel",
-                                        "Rhogar is a devout follower of Talos, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
+                                        "Rhogar is a devout follower of {@diety Talos}, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
                                         "The Black Fang has been hiring the Korred rangers to capture debtors, and sells them into slavery at the Endove Islands"
                                     ]
                                 }
@@ -117,15 +117,15 @@
                             "type": "entries",
                             "name": "Rhogar is surprisingly religious",
                             "entries": [
-                                "Rhogar is a diviout follower of Talos, God of Storms. He is constantly wearing a large amulet with three lightning bolts radiating from a central point",
-                                "Rhogar will dislike anyone who insults Talos or anyone who worships Talos's enemies: Chauntea, Eldath, Lathander, Mystra, Sune, Deneir, Gond, Helm, Mielikki, Oghma, Shiallia, Silvanus, or Tyr.",
-                                "Rhogar is campaigning to install a monument at Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district} for Talos.  Rhogar even paid for the demolition of the old fountain begin building the new monument. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship Silvanus and want to put their own stature. They are working behind the scenes to put up a fountain for Silvanus instead.",
+                                "Rhogar is a diviout follower of {@diety Talos}, God of Storms. He is constantly wearing a large amulet with three lightning bolts radiating from a central point",
+                                "Rhogar will dislike anyone who insults {@diety Talos} or anyone who worships Talos's enemies",
+                                "Rhogar is campaigning to install a monument at Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district} for {@diety Talos}.  Rhogar even paid for the demolition of the old fountain begin building the new monument. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship {@deity Malar} and want to put their own stature. They are working behind the scenes to put up a fountain for {@deity Malar} instead.",
                                 {
                                     "type": "list",
                                     "name": "Plot Hooks",
                                     "items": [
                                         "Beauty Eye's rangers can be caught bribing the City's Planning Director",
-                                        "A plan for a fountain for Silvanus at Knit Park can be spotted within The Vaults Bookstore"
+                                        "A plan for a fountain for {@deity Malar} at Knit Park can be spotted within The Vaults Bookstore"
                                     ]
                                 }
                             ]
@@ -137,9 +137,9 @@
                                 "Beauty Eye will distrust anyone who has/works with Constructs or The Undead",
                                 "Meanwhile, Rhogar has acquired a broken {@creature Shield Guardian|mm} and has commissioned Celaena to restore and build a new amulet",
                                 {
-                                    "type" : "list",
-                                    "name" : "Plot Hooks",
-                                    "items" : [
+                                    "type": "list",
+                                    "name": "Plot Hooks",
+                                    "items": [
                                         "Celaena was seen purchasing a platinum amulet and spent over 1000 GP on a rubies. While Celaena is known for having expensive tastes, this was an excitedly large purchase.",
                                         "Rhogar has been supplying Celaena with rare toxic and poisons plants and animals... but no one can recall Celaena actually paying him. Perhaps there trading something other than gold?",
                                         "Celaena has a artificer named Rowan who has been seen visiting Rhogar's warehouse daily",
@@ -156,11 +156,33 @@
         {
             "type": "section",
             "name": "Chapter 2 - Fairkeep Reconnaissance",
-            "entries": [{
-                "type" : "entries",
-                "name" : "The shopkeeper's husband",
-                "entries" : "The shopkeeper, Madam Gladdington, thinks highly of Celaena since she is somewhat responsible for finding her current husband; Kenny. Kenny was a former slave that was noticed by one of Celaena's librarians and was personally rescued by Celaena herself."
-            }]
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "The shopkeeper's husband",
+                    "entries": [
+                        "The shopkeeper, Madam Gladdington, thinks highly of Celaena since she is somewhat responsible for finding her current husband; Kenny. Kenny was a former slave that was noticed by one of Celaena's librarians and was personally rescued by Celaena (herself?).",
+                        {
+                            "type": "inset",
+                            "name": "The Story of Kenny",
+                            "entries": [
+                                "Kenny's parents sold him when he was young to pay off some debts. As the years went by, he met other sold-off slaves and realized the lord preyed on poor families and built up a small labor force of slaves.",
+                                "One day, he found the lord assassinated and pinned to his bedroom wall. Celaena was in the kitchen and offered them a new life if they did not peak of this incident. He (and several others) where taken to Fairkeep and given a months salary to get situated.",
+                                "A few years later, he met Gladdinton and a few years after that, got married."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "The delivery",
+                    "entries": [
+                        "The party will notice a {@creature Black Fang Ranger|domule} and a {@creature Vault Assassin|domule} talking with a man wearing a Fairkeep civil servant uniform. It's actually the City's Planning Director. The {@creature Black Fang Ranger|domule} and {@creature Vault Assassin|domule} can be seen bribing the Planning Director and handing him a scroll.",
+                        "The scroll is a plan for a {@deity Malar} fountain for Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district}. A copy of the plans can be found in either The Vault or The Black Fang lodge.",
+                        "They are bribing the Planning Director to block Rhogar's plans for installing a {@diety Talos} fountain at Knit Park."
+                    ]
+                }
+            ]
         },
         {
             "type": "section",
