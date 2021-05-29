@@ -40,7 +40,7 @@
                                         "He is officially a merchant, but in some circles, he is known for acquiring and selling exotic and illegal beasts and plants",
                                         "Rhogar is surrounded by his crew. Unlike the typical sailor, his crew is well dressed and remarkably calm and civil",
                                         "All of Rhogar's crew have matching rapiers with a blue sapphire on the pommel",
-                                        "Rhogar is a devout follower of {@diety Talos}, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
+                                        "Rhogar is a devout follower of {@deity Talos|forgotten realms|phb}, The Storm Lord. He wears a large medallion as a necklace with three lightning bolts radiating from a point",
                                         "The Black Fang has been hiring the Korred rangers to capture debtors, and sells them into slavery at the Endove Islands"
                                     ]
                                 }
@@ -117,9 +117,9 @@
                             "type": "entries",
                             "name": "Rhogar is surprisingly religious",
                             "entries": [
-                                "Rhogar is a diviout follower of {@diety Talos}, God of Storms. He is constantly wearing a large amulet with three lightning bolts radiating from a central point",
-                                "Rhogar will dislike anyone who insults {@diety Talos} or anyone who worships Talos's enemies",
-                                "Rhogar is campaigning to install a monument at Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district} for {@diety Talos}.  Rhogar even paid for the demolition of the old fountain begin building the new monument. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship {@deity Malar} and want to put their own stature. They are working behind the scenes to put up a fountain for {@deity Malar} instead.",
+                                "Rhogar is a diviout follower of {@deity Talos|forgotten realms|phb}, God of Storms. He is constantly wearing a large amulet with three lightning bolts radiating from a central point",
+                                "Rhogar will dislike anyone who insults {@deity Talos|forgotten realms|phb} or anyone who worships Talos's enemies",
+                                "Rhogar is campaigning to install a monument at Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district} for {@deity Talos|forgotten realms|phb}.  Rhogar even paid for the demolition of the old fountain begin building the new monument. But bureaucracy suddenly blocked him. It turns out Beauty Eye and Celaena worship {@deity Malar} and want to put their own stature. They are working behind the scenes to put up a fountain for {@deity Malar} instead.",
                                 {
                                     "type": "list",
                                     "name": "Plot Hooks",
@@ -177,9 +177,9 @@
                     "type": "entries",
                     "name": "The delivery",
                     "entries": [
-                        "The party will notice a {@creature Black Fang Ranger|domule} and a {@creature Vault Assassin|domule} talking with a man wearing a Fairkeep civil servant uniform. It's actually the City's Planning Director. The {@creature Black Fang Ranger|domule} and {@creature Vault Assassin|domule} can be seen bribing the Planning Director and handing him a scroll.",
+                        "The party will notice a {@creature Korred Ranger|domule} and a {@creature Vault Assassin|domule} talking with a man wearing a Fairkeep civil servant uniform. It's actually the City's Planning Director. The {@creature Korred Ranger|domule} and {@creature Vault Assassin|domule} can be seen bribing the Planning Director and handing him a scroll.",
                         "The scroll is a plan for a {@deity Malar} fountain for Knit Park, in {@book The Lanterarius District|dml-book|0|lanternarius district}. A copy of the plans can be found in either The Vault or The Black Fang lodge.",
-                        "They are bribing the Planning Director to block Rhogar's plans for installing a {@diety Talos} fountain at Knit Park."
+                        "They are bribing the Planning Director to block Rhogar's plans for installing a {@deity Talos|forgotten realms|phb} fountain at Knit Park."
                     ]
                 }
             ]
