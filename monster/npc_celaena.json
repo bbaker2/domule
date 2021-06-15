@@ -1,0 +1,61 @@
+{
+    "name": "Celaena Taurus",
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "half-elf",
+            "figher"
+        ]
+    },
+    "source": "domule",
+    "alignment": [
+        "L",
+        "E"
+    ],
+    "ac": [
+        10
+    ],
+    "hp": {
+        "average": 4,
+        "formula": "1d8"
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 12,
+    "dex": 16,
+    "con": 12,
+    "int": 12,
+    "wis": 15,
+    "cha": 10,
+    "passive": 12,
+    "cr": "5",
+    "shortName": "Celaena",
+    "level": 9,
+    "senses": [
+        "darkvision 60 ft."
+    ],
+    "senseTags": [
+        "D"
+    ],
+    "languages": [
+        "Common",
+        "Elvish",
+        "Infernal"
+    ],
+    "languageTags": [
+        "C",
+        "E",
+        "I"
+    ],
+    "save": {
+        "str": "+4",
+        "con": "+4"
+    },
+    "skill": {
+        "acrobatics": "+6",
+        "survival": "+5",
+        "arcana": "+4"
+    }
+}
