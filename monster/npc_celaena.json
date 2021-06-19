@@ -5,7 +5,8 @@
         "type": "humanoid",
         "tags": [
             "half-elf",
-            "figher"
+            "figher",
+            "rune knight"
         ]
     },
     "source": "domule",
@@ -27,9 +28,9 @@
     "dex": 16,
     "con": 12,
     "int": 12,
-    "wis": 15,
+    "wis": 16,
     "cha": 10,
-    "passive": 12,
+    "passive": 13,
     "cr": "5",
     "shortName": "Celaena",
     "level": 9,
@@ -55,7 +56,43 @@
     },
     "skill": {
         "acrobatics": "+6",
-        "survival": "+5",
+        "survival": "+6",
         "arcana": "+4"
-    }
+    },
+    "trait": [
+        {
+            "name": "Fighter",
+            "entries": [
+                "{@optfeature Two-Weapon Fighting}, {@classFeature Second Wind|fighter|phb|1}, {@classFeature Action Surge|fighter|phb|2}, {@classFeature Extra Attack|fighter|phb|5}, {@classFeature Indomitable|fighter|phb|9} "
+            ]
+        },
+        {
+            "name": "Rune Knight",
+            "entries": [
+                "{@optfeature Stone Rune|tce}, {@subclassFeature Giant's Might|fighter|phb|rune knight|tce|3}, {@subclassFeature  Runic Shield|fighter|phb|rune knight|tce|7}"
+            ]
+        },
+        {
+            "name": "Features",
+            "entries": [
+                "{@feat Dual Wielder|phb}, {@feat Telepathic|tce}"
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "{@item +1 Dagger|dmg}",
+            "entries": [
+                "{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage in melee, or 6 ({@damage 1d4 + 4}) piercing damage at range."
+            ]
+        }
+    ],
+    "damageTags": [
+        "P"
+    ],
+    "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+    ]
 }
