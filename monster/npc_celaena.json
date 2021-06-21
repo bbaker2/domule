@@ -15,11 +15,20 @@
         "E"
     ],
     "ac": [
-        10
+        {
+            "ac": 16,
+            "from": [
+                "{@spell mage armor}"
+            ]
+        },
+        {
+            "ac": 13,
+            "condition": "unarmored"
+        }
     ],
     "hp": {
-        "average": 4,
-        "formula": "1d8"
+        "formula": "9d10 + 9",
+        "average": 58
     },
     "speed": {
         "walk": 30
@@ -114,5 +123,14 @@
             "Leader of The Vaults"
         ]
     },
-    "isNpc": true
+    "isNpc": true,
+    "spellcasting": [
+        {
+            "name": "Fey Lineage",
+            "will": [
+                "{@spell mage armor}"
+            ],
+            "type": "spellcasting"
+        }
+    ]
 }
