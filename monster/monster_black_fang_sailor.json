@@ -4,55 +4,53 @@
     "type": {
         "type": "humanoid",
         "tags": [
-            "ranger"
+            "bard"
         ]
     },
     "source": "domule",
     "alignment": [
-        "N",
+        "C",
         "E"
     ],
     "ac": [
         {
-            "ac": 14,
+            "ac": 13,
             "from": [
-                "{@item Leather Armor|phb}"
+                "{@item leather}"
             ]
         }
     ],
     "hp": {
-        "formula": "8d10 + 8",
-        "average": 52
+        "formula": "6d8 + 6",
+        "average": 33
     },
     "speed": {
         "walk": 30
     },
-    "str": 12,
-    "dex": 16,
+    "str": 10,
+    "dex": 14,
     "con": 13,
     "int": 12,
-    "wis": 14,
-    "cha": 8,
-    "passive": 14,
+    "wis": 10,
+    "cha": 16,
+    "passive": 10,
     "cr": "3",
-    "level": 8,
+    "level": 6,
     "languages": [
         "Common",
         "Draconic",
-        "Infernal",
-        "Giant"
+        "Infernal"
     ],
     "languageTags": [
         "C",
         "DR",
-        "I",
-        "GI"
+        "I"
     ],
     "trait": [
         {
             "name": "Features",
             "entries": [
-                "{@optfeature Archery|phb}, {@classFeature Extra Attack|ranger|phb|5}, {@classFeature Favored Enemy|ranger|phb|1} ({@filter undead|bestiary|flsttype=undead} & {@filter construct|bestiary|flsttype=construct}), {@subclassFeature Horde Breaker|ranger|phb|hunter|phb|3}, {@subclassFeature Escape the Horde|ranger|phb|hunter|phb|7}"
+                "{@optfeature Dueling|phb}, {@subclassFeature Extra Attack|bard|phb|swords|xge|6}"
             ]
         }
     ],
@@ -61,26 +59,36 @@
         "S"
     ],
     "save": {
-        "wis": "+4",
-        "dex": "+5"
+        "cha": "+5",
+        "con": "+3"
+    },
+    "skill": {
+        "deception": "+5",
+        "insight": "+2",
+        "performance": "+5"
     },
     "spellcasting": [
         {
             "name": "Spellcasting",
             "headerEntries": [
-                "Spell DC = 12"
+                "Spell DC = 13"
             ],
             "spells": {
+                "0": {
+                    "spells": [
+                        "{@spell vicious mockery}"
+                    ]
+                },
                 "1": {
                     "spells": [
-                        "{@spell ensnaring strike}"
+                        "{@spell command}",
+                        "{@spell sleep}"
                     ],
                     "slots": 2
                 },
                 "2": {
                     "spells": [
-                        "{@spell healing spirit|XGE}",
-                        "{@spell silence}"
+                        "{@spell hold person}"
                     ],
                     "slots": 1
                 }
@@ -88,35 +96,22 @@
             "type": "spellcasting"
         }
     ],
-    "skill": {
-        "survival": "+4",
-        "perception": "+4",
-        "athletics": "+3"
-    },
     "action": [
         {
-            "name": "{@item Longbow|phb}",
+            "name": "{@item Pistol}",
             "entries": [
-                "{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage. {@subclassFeature Horde Breaker|ranger|phb|hunter|phb|3} & {@classFeature Extra Attack|ranger|phb|5}"
+                "{@atk rw} {@hit 4} to hit, range 30/90 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
             ]
         },
         {
-            "name": "{@item Net|phb}",
+            "name": "{@item Scimitar|phb}",
             "entries": [
-                "{@atk rw} {@hit 5} to hit, range 5/15 ft., one target. {@dc 10} Strength; else {@condition restrained}."
-            ]
-        },
-        {
-            "name": "{@item Handaxe|phb}",
-            "entries": [
-                "{@atk mw,rw} {@hit 3}/{@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage in melee, or 4 ({@damage 1d6 + 1}) slashing damage at range."
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 6}) slashing damage."
             ]
         }
     ],
     "miscTags": [
         "RW",
-        "RNG",
-        "THW",
         "MW"
     ]
 }
