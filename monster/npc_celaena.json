@@ -63,7 +63,7 @@
         {
             "name": "Fighter",
             "entries": [
-                "{@optfeature Two-Weapon Fighting}, {@classFeature Second Wind|fighter|phb|1}, {@classFeature Action Surge|fighter|phb|2}, {@classFeature Extra Attack|fighter|phb|5}, {@classFeature Indomitable|fighter|phb|9} "
+                "{@optfeature Two-Weapon Fighting}, {@classFeature Extra Attack|fighter|phb|5}, {@classFeature Indomitable|fighter|phb|9} "
             ]
         },
         {
@@ -77,13 +77,19 @@
             "entries": [
                 "{@feat Dual Wielder|phb}, {@feat Telepathic|tce}"
             ]
+        },
+        {
+            "name": "Hidden Daggers",
+            "entries": [
+                "Celaena always four additional daggers hidden on her body. {@dc 15} finds two of them strapped to her arm. {@dc 20} also finds the two hidden in her boots"
+            ]
         }
     ],
     "action": [
         {
             "name": "{@item +1 Dagger|dmg}",
             "entries": [
-                "{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage in melee, or 6 ({@damage 1d4 + 4}) piercing damage at range."
+                "{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 7}) piercing damage in melee, or 6 ({@damage 1d4 + 7}) piercing damage at range."
             ]
         }
     ],
@@ -94,5 +100,19 @@
         "RW",
         "MW",
         "THW"
-    ]
+    ],
+    "bonus": [
+        {
+            "name": "Fighter",
+            "entries": [
+                "{@classFeature Action Surge|fighter|phb|2}, {@classFeature Second Wind|fighter|phb|1}"
+            ]
+        }
+    ],
+    "fluff": {
+        "entries": [
+            "Leader of The Vaults"
+        ]
+    },
+    "isNpc": true
 }
