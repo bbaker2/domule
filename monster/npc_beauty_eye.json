@@ -1,0 +1,109 @@
+{
+    "name": "Beauty Eye",
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "tabaxi",
+            "ranger",
+            "fey wanderer"
+        ]
+    },
+    "source": "domule",
+    "alignment": [
+        "N",
+        "E"
+    ],
+    "ac": [
+        {
+            "ac": 13,
+            "from": [
+                "{@item leather armor|phb}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "9d10 + 9",
+        "average": 58
+    },
+    "speed": {
+        "walk": 30,
+        "climb": 20
+    },
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 12,
+    "wis": 17,
+    "cha": 12,
+    "passive": 21,
+    "cr": "5",
+    "level": 9,
+    "senses": [
+        "darkvision 60 ft."
+    ],
+    "senseTags": [
+        "D"
+    ],
+    "languages": [
+        "Common",
+        "Gnomish",
+        "Draconic"
+    ],
+    "languageTags": [
+        "C",
+        "G",
+        "DR"
+    ],
+    "skill": {
+        "nature": "+4",
+        "investigation": "+4",
+        "deception": "+3",
+        "perception": "+6"
+    },
+    "trait": [
+        {
+            "name": "Ranger",
+            "entries": [
+                "{@optfeature Archery|phb}, {@classFeature Extra Attack|ranger|phb|5}, {@classFeature Favored Enemy|ranger|phb|1} ({@filter undead|bestiary|flsttype=undead} & {@filter construct|bestiary|flsttype=construct}), {@classFeature Primeval Awareness|ranger|phb|3}, {@classFeature Natural Explorer|ranger|phb|1} (urban, coast), {@feat Observant}, {@classFeature Land's Stride|ranger|phb|8}"
+            ]
+        },
+        {
+            "name": "Fey Wanderer",
+            "entries": [
+                "{@subclassFeature  Dreadful Strikes|ranger|phb|Fey Wanderer|tce|3}, {@subclassFeature Otherworldly Glamour|ranger|phb|Fey Wanderer|tce|3}"
+            ]
+        },
+        {
+            "name": "Feywild Gifts",
+            "entries": [
+                "Beauty Eye's shadow matches mimics his real emotions."
+            ]
+        }
+    ],
+    "damageTags": [
+        "P"
+    ],
+    "fluff": {
+        "entries": [
+            "Leader of The Korreds"
+        ]
+    },
+    "isNpc": true,
+    "save": {
+        "str": "+3",
+        "dex": "+6"
+    },
+    "reaction": [
+        {
+            "name": "{@subclassFeature Beguiling Twist|ranger|phb|Fey Wanderer|tce|7}",
+            "entries": [
+                "Whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against being {@condition charmed} or {@condition frightened}, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. If the save fails, the target is {@condition charmed} or {@condition frightened} by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save."
+            ]
+        }
+    ],
+    "conditionInflict": [
+        "charmed",
+        "frightened"
+    ]
+}
