@@ -37,15 +37,11 @@
         "wis": "+4",
         "cha": "+8"
     },
-    "skill": {
-        "perception": "+8",
-        "stealth": "+4"
-    },
     "senses": [
         "blindsight 30 ft.",
         "darkvision 120 ft."
     ],
-    "passive": 18,
+    "passive": 10,
     "immune": [
         "fire"
     ],
@@ -280,6 +276,30 @@
                 "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
                 "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
                 "(See {@spell Shapechange} for interactions. Assume this is not a concentration spell with no duration limit)"
+            ]
+        }
+    ],
+    "mythicHeader": [
+        "Choose one trait to apply to your dragon"
+    ],
+    "mythic": [
+        {
+            "name": "Magic Weaver",
+            "entries": [
+                "You get +6 Spell Points and you can select {@filter spells up to 4th level|spells|level=0;1;2;3;4}"
+            ]
+        },
+        {
+            "name": "Expirenced",
+            "entries": [
+                "You gain proficiency in any combination of four skills or tools of your choice.",
+                "If you select a skill you are already proficient in, you become expert at that skill."
+            ]
+        },
+        {
+            "name": "Blessed by Tiamat",
+            "entries": [
+                "Tiamat favors you. You gain the {@feat Lucky} feat."
             ]
         }
     ]
