@@ -301,6 +301,12 @@
             "entries": [
                 "Tiamat favors you. You gain the {@feat Lucky} feat."
             ]
+        },
+        {
+            "name": "Warrior's Spirit",
+            "entries": [
+                "Skilled in combat, you gain the {@subclassFeature Superior Critical|Fighter|phb|Champion|phb|15}"
+            ]
         }
     ]
 }
