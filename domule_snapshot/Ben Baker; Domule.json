@@ -129,6 +129,37 @@
       "storyline": [
         "Aggredel's 3rd Renaissance"
       ]
+    },
+    {
+      "name": "Witch One",
+      "id": "06-witch",
+      "source": "domule",
+      "contents": [
+        {
+          "name": "Overview",
+          "headers": [
+            "Quick References",
+            "Summary",
+            "Locations"
+          ]
+        },
+        {
+          "name": "Chapter 1 - The Briefing",
+          "headers": [
+            "Other information Anohi knows",
+            "The Flumph Kit Festival",
+            "Other information Almo knows"
+          ]
+        }
+      ],
+      "level": {
+        "start": 6,
+        "end": 7
+      },
+      "published": "2022-03-22",
+      "storyline": [
+        "Aggredel's 3rd Renaissance"
+      ]
     }
   ],
   "adventureData": [
@@ -852,6 +883,124 @@
           "type": "section",
           "name": "Chapter 3 - The Auction Party",
           "entries": []
+        }
+      ]
+    },
+    {
+      "name": "Witch One",
+      "id": "06-witch",
+      "source": "domule",
+      "data": [
+        {
+          "type": "section",
+          "name": "Overview",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Quick References",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Manon Blackbeak - heir to the Blackbeaks and Crochan clan",
+                    "Almo Blackbeak - the eldest and stewart Matron to the Blackbeaks",
+                    "Drezia - Almo's grandaghter",
+                    "Willa - Almo's first in command",
+                    "Abraxos - Manon's Wyvern mount"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Summary",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "The party is hired to capture a witch, Manon Blackbeak",
+                    "Manon is hiding in the gnome city of Hue",
+                    "Manon is specifically hiding in shop called \"Windy Saddles and Supplies\"",
+                    "The party will be followed by the late Matron's personal coven",
+                    "The shadowing witches will attempt to kill Manon, should they see an opportunity",
+                    "Manon does not wish to return, knowing she will start a civil war"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Locations",
+              "entries": [
+                {
+                  "type": "inset",
+                  "name": "Windy Saddles and Supplies",
+                  "entries": [
+                    "Located in the Nixi Hexagon"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Chapter 1 - The Briefing",
+          "entries": [
+            "One morning the party wakes up to find a letter slipped under the door. It is a summons by Anohi for a mission. You all arrive around the same time to the conference room where Anohi is already waiting for you. Once everyone has gathers, she paces back and forth a few time before resting both hands on the table.",
+            {
+              "type": "inset",
+              "name": "Anohi",
+              "entries": [
+                "Last night I was approached by some clients interested in a standard find-and-return persons job. While these are not uncommon their conditions were unusual. They demanded that anyone who presently in the building at that time could not be hired. The person they are looking for must be important or they have more money than sense, because this job will average 600 GP per person",
+                "The Flumph Kite Festival is happening right now and our clients requested that you meet them on a hill, just west of the festival grounds. You are looking for three youngish human women."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Other information Anohi knows",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "The client were abrupt. She thinks they would prefer if you are direct when talking with them",
+                    "Anohi had a hard time sensing their motives. By default, she would appreciate it if the party could confirm that they are not engaging in the slave trade. If the party thinks they are, they have permission to break the contract and Anohi will support them in any fallout.",
+                    "Anohi is uncertain if they are entirely human"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "The Flumph Kit Festival",
+              "entries": [
+                "You approaches the hill on the west side of the festival you see three women in leather riding leathers, even though no horse is present. As you get close, one of the women holds up a hand stopping you. A particularly strong gust of wind blows past you and you see the witches inhale deeply through the nose as the air continues past them. A few moments later, the women lowers her hand."
+              ]
+            },
+            {
+              "type": "inset",
+              "name": "Almo",
+              "entries": [
+                "That is close enough, stay where you are. You are Anohi's guild members. Let us get straight to business.",
+                "I am Almo Blackbeak, along with me are Drezia and Willa Blackbeak. And we are members of the Blackbeak Witch Clan. For the better part of nine months we have been tracking one of our own, Manon Blackbeak. We tracked her to this content to this city. We lost her trail when we used the Tri-Citadel's portal. After inquiring around we believe she took the portal that goes to the city of Hue. We want you to find her and bring her to us. Alive."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Other information Almo knows",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "They all have the same last name because they are part of the same clan. Not because they are related by blood (though some are)",
+                    "Manon killed their leader, the Matron Blackbeak",
+                    "Witches have a heighten sense of smell. Given our long history with Manon, she will be able to recognize our scent easily.  While we too can track her by scent, she has been on this continent for months longer than us and now has an advantage over us. We have our pride but we are not stupid. Commissioning resources is not beneath us.",
+                    "Manon escaped on her mount. She has historically shown an attachment to her mount and we doubt she will abandon it"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -3628,6 +3777,318 @@
           "entries": [
             "As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any effects triggered by a critical hit are canceled.",
             "You can use this feature a number of times equal to your Wisdom modifier (+4). You regain all expended uses when you finish a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tiamat's Red Dragon",
+      "source": "domule",
+      "page": 98,
+      "size": "L",
+      "type": "dragon",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 178,
+        "formula": "17d10 + 85"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40,
+        "fly": 80
+      },
+      "str": 23,
+      "dex": 10,
+      "con": 21,
+      "int": 14,
+      "wis": 11,
+      "cha": 19,
+      "save": {
+        "dex": "+4",
+        "con": "+9",
+        "wis": "+4",
+        "cha": "+8"
+      },
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "fire"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "cr": "10",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage plus 3 ({@damage 1d6}) fire damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Fire Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 56 ({@damage 16d6}) fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "environment": [
+        "hill",
+        "mountain"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/red-dragon.mp3?v=1.131.6"
+      },
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "damageTags": [
+        "P",
+        "F",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "tokenUrl": "https://5e.tools/img/MM/Young Red Dragon.png?v=1.131.6",
+      "fluff": {
+        "name": "Young Red Dragon",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "The most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards. They are exceptionally vain, even for dragons, and their conceit is reflected in their proud bearing and their disdain for other creatures. The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. Its beaked snout vents smoke at all times, and its eyes dance with flame when it is angry. Its wings are the longest of any chromatic dragon, and have a blue-black tint along the trailing edge that resembles metal burned blue by fire.",
+                  "The scales of a red dragon wyrmling are a bright glossy scarlet, turning a dull, deeper red and becoming as thick and strong as metal as the dragon ages. Its pupils also fade as it ages, and the oldest red dragons have eyes that resemble molten lava orbs.",
+                  {
+                    "name": "Mountain Masters",
+                    "type": "entries",
+                    "entries": [
+                      "Red dragons prefer mountainous terrain, badlands, and any other locale where they can perch high and survey their domain. Their preference for mountains brings them into conflict with the hill-dwelling copper dragons from time to time."
+                    ]
+                  },
+                  {
+                    "name": "Arrogant Tyrants",
+                    "type": "entries",
+                    "entries": [
+                      "Red dragons fly into destructive rages and act on impulse when angered. They are so ferocious and vengeful that they are regarded as the archetypical evil dragon by many cultures.",
+                      "No other dragon comes close to the arrogance of the red dragon. These creatures see themselves as kings and emperors, and view the rest of dragonkind as inferior. Believing that they are chosen by Tiamat to rule in her name, red dragons consider the world and every creature in it as theirs to command."
+                    ]
+                  },
+                  {
+                    "name": "Status and Slaves",
+                    "type": "entries",
+                    "entries": [
+                      "Red dragons are fiercely territorial and isolationist. However, they yearn to know about events in the wider world, and they make use of lesser creatures as informants, messengers, and spies. They are most interested in news about other red dragons, with which they compete constantly for status.",
+                      "When it requires servants, a red dragon demands fealty from chaotic evil humanoids. If allegiance isn't forthcoming, it slaughters a tribe's leaders and claims lordship over the survivors. Creatures serving a red dragon live in constant terror of being roasted and eaten for displeasing it. They spend most of their time fawning over the creature in an attempt to stay alive."
+                    ]
+                  },
+                  {
+                    "name": "Obsessive Collectors",
+                    "type": "entries",
+                    "entries": [
+                      "Red dragons value wealth above all else, and their treasure hoards are legendary. They covet anything of monetary value, and can often judge the worth of a bauble to within a copper piece at a glance. A red dragon has a special affection for treasure claimed from powerful enemies it has slain, exhibiting that treasure to prove its superiority.",
+                      "A red dragon knows the value and provenance of every item in its hoard, along with each item's exact location. It might notice the absence of a single coin, igniting its rage as it tracks down and slays the thief without mercy. If the thief can't be found, the dragon goes on a rampage, laying waste to towns and villages in an attempt to sate its wrath."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "A Red Dragon's Lair",
+                    "entries": [
+                      "Red dragons lair in high mountains or hills, dwelling in caverns under snow-capped peaks, or within the deep halls of abandoned mines and dwarven strongholds. Caves with volcanic or geothermal activity are the most highly prized red dragon lairs, creating hazards that hinder intruders and letting searing heat and volcanic gases wash over a dragon as it sleeps. With its hoard well protected deep within the lair, a red dragon spends as much of its time outside the mountain as in it. For a red dragon, the great heights of the world are the throne from which it can look out to survey all it controls-and the wider world it seeks to control.",
+                      "Throughout the lair complex, servants erect monuments to the dragon's power, telling the grim story of its life, the enemies it has slain, and the nations it has conquered."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Chromatic Dragons",
+            "entries": [
+              "The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
+              {
+                "name": "Driven by Greed",
+                "entries": [
+                  " Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
+                ],
+                "type": "entries"
+              },
+              {
+                "name": "Creatures of Ego",
+                "type": "entries",
+                "entries": [
+                  "Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
+                ]
+              },
+              {
+                "name": "Dangerous Lairs",
+                "type": "entries",
+                "entries": [
+                  "A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
+                  "Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
+                ]
+              },
+              {
+                "name": "Queen of Evil Dragons",
+                "type": "entries",
+                "entries": [
+                  "Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
+                  "Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
+                  "Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
+                ]
+              }
+            ]
+          },
+          "True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+          "Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+          "Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+          "True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+          "Dragon Age Categories",
+          {
+            "type": "table",
+            "colLabels": [
+              "Category",
+              "Size",
+              "Age Range"
+            ],
+            "colStyles": [
+              "col-4",
+              "col-4",
+              "col-4"
+            ],
+            "rows": [
+              [
+                "Wyrmling",
+                "Medium",
+                "5 years or less"
+              ],
+              [
+                "Young",
+                "Large",
+                "6–100 years"
+              ],
+              [
+                "Adult",
+                "Huge",
+                "101–800 years"
+              ],
+              [
+                "Ancient",
+                "Gargantuan",
+                "801 years or more"
+              ]
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MM/Red Dragon.jpg"
+            }
+          }
+        ]
+      },
+      "group": "Chromatic Dragon",
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasters",
+          "headerEntries": [
+            "As Tiamet's favored, this dragon knows six spells, requiring no material components. {@filter Each spell's level can be no higher than 3rd|spells|level=0;1;2;3}. The dragon's spell save DC is 16, and it has {@dice 1d20+8|+8|Dragons as Innate Spellcasters} to hit with spell attacks. See the spell page for a list of spells the dragon is capable of casting. A selection of examples are shown below:"
+          ],
+          "footerEntries": [
+            "To cast spells, this dragon uses {@variantrule Spell Points|dmg}. This dragon has {@b 27 points} to spend. See {@table Variant: Spell Points; Spell Point Cost|dmg} for spending your spell points. ",
+            "This dragon regains all their spell points after a long rest. "
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "trait": [
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+            "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+            "(See {@spell Shapechange} for interactions. Assume this is not a concentration spell with no duration limit)"
+          ]
+        }
+      ],
+      "mythicHeader": [
+        "Choose one trait to apply to your dragon"
+      ],
+      "mythic": [
+        {
+          "name": "Magic Weaver",
+          "entries": [
+            "You get +6 Spell Points and you can select {@filter spells up to 4th level|spells|level=0;1;2;3;4}"
+          ]
+        },
+        {
+          "name": "Expirenced",
+          "entries": [
+            "You gain proficiency in any combination of four skills or tools of your choice.",
+            "If you select a skill you are already proficient in, you become expert at that skill."
+          ]
+        },
+        {
+          "name": "Blessed by Tiamat",
+          "entries": [
+            "Tiamat favors you. You gain the {@feat Lucky} feat."
+          ]
+        },
+        {
+          "name": "Warrior's Spirit",
+          "entries": [
+            "Skilled in combat, you gain the {@subclassFeature Superior Critical|Fighter|phb|Champion|phb|15}"
           ]
         }
       ]
