@@ -1,0 +1,14 @@
+{
+    "name": "Witch One",
+    "id": "06-witch",
+    "source": "domule",
+    "contents": [],
+    "level": {
+        "start": 6,
+        "end": 7
+    },
+    "published": "2022-03-22",
+    "storyline": [
+        "Aggredel's 3rd Renaissance"
+    ]
+}

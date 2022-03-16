@@ -1,0 +1,134 @@
+{
+    "name": "Witch One",
+    "id": "06-witch",
+    "source": "domule",
+    "data":
+    [
+        {
+            "type": "section",
+            "name": "Overview",
+            "entries":
+            [
+                {
+                    "type": "entries",
+                    "name": "Quick References",
+                    "entries":
+                    [
+                        {
+                            "type": "list",
+                            "items":
+                            [
+                                "Manon Blackbeak - heir to the Blackbeaks and Crochan clan",
+                                "Almo Blackbeak - the eldest and stewart Matron to the Blackbeaks",
+                                "Drezia - Almo's grandaghter",
+                                "Willa - Almo's first in command",
+                                "Abraxos - Manon's Wyvern mount"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Summary",
+                    "entries":
+                    [
+                        {
+                            "type": "list",
+                            "items":
+                            [
+                                "The party is hired to capture a witch, Manon Blackbeak",
+                                "Manon is hiding in the gnome city of Hue",
+                                "Manon is specifically hiding in shop called \"Windy Saddles and Supplies\"",
+                                "The party will be followed by the late Matron's personal coven",
+                                "The shadowing witches will attempt to kill Manon, should they see an opportunity",
+                                "Manon does not wish to return, knowing she will start a civil war"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Locations",
+                    "entries":
+                    [
+                        {
+                            "type": "inset",
+                            "name": "Windy Saddles and Supplies",
+                            "entries":
+                            [
+                                "Located in the Nixi Hexagon"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Chapter 1 - The Briefing",
+            "entries":
+            [
+                "One morning the party wakes up to find a letter slipped under the door. It is a summons by Anohi for a mission. You all arrive around the same time to the conference room where Anohi is already waiting for you. Once everyone has gathers, she paces back and forth a few time before resting both hands on the table.",
+                {
+                    "type": "inset",
+                    "name": "Anohi",
+                    "entries":
+                    [
+                        "Last night I was approached by some clients interested in a standard find-and-return persons job. While these are not uncommon their conditions were unusual. They demanded that anyone who presently in the building at that time could not be hired. The person they are looking for must be important or they have more money than sense, because this job will average 600 GP per person",
+                        "The Flumph Kite Festival is happening right now and our clients requested that you meet them on a hill, just west of the festival grounds. You are looking for three youngish human women."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Other information Anohi knows",
+                    "entries":
+                    [
+                        {
+                            "type": "list",
+                            "items":
+                            [
+                                "The client were abrupt. She thinks they would prefer if you are direct when talking with them",
+                                "Anohi had a hard time sensing their motives. By default, she would appreciate it if the party could confirm that they are not engaging in the slave trade. If the party thinks they are, they have permission to break the contract and Anohi will support them in any fallout.",
+                                "Anohi is uncertain if they are entirely human"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "The Flumph Kit Festival",
+                    "entries":
+                    [
+                        "You approaches the hill on the west side of the festival you see three women in leather riding leathers, even though no horse is present. As you get close, one of the women holds up a hand stopping you. A particularly strong gust of wind blows past you and you see the witches inhale deeply through the nose as the air continues past them. A few moments later, the women lowers her hand."
+                    ]
+                },
+                {
+                    "type": "inset",
+                    "name": "Almo",
+                    "entries":
+                    [
+                        "That is close enough, stay where you are. You are Anohi's guild members. Let us get straight to business.",
+                        "I am Almo Blackbeak, along with me are Drezia and Willa Blackbeak. And we are members of the Blackbeak Witch Clan. For the better part of nine months we have been tracking one of our own, Manon Blackbeak. We tracked her to this content to this city. We lost her trail when we used the Tri-Citadel's portal. After inquiring around we believe she took the portal that goes to the city of Hue. We want you to find her and bring her to us. Alive."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Other information Almo knows",
+                    "entries":
+                    [
+                        {
+                            "type": "list",
+                            "items":
+                            [
+                                "They all have the same last name because they are part of the same clan. Not because they are related by blood (though some are)",
+                                "Manon killed their leader, the Matron Blackbeak",
+                                "Witches have a heighten sense of smell. Given our long history with Manon, she will be able to recognize our scent easily.  While we too can track her by scent, she has been on this continent for months longer than us and now has an advantage over us. We have our pride but we are not stupid. Commissioning resources is not beneath us.",
+                                "Manon escaped on her mount. She has historically shown an attachment to her mount and we doubt she will abandon it"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
