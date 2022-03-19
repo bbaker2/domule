@@ -921,6 +921,7 @@
                     "The party is hired to capture a witch, Manon Blackbeak",
                     "Manon is hiding in the gnome city of Hue",
                     "Manon is specifically hiding in shop called \"Windy Saddles and Supplies\"",
+                    "Manon was hiding her Wyvern in a {@creature hippogriff} stable behind Windy Saddles and Supplies",
                     "The party will be followed by the late Matron's personal coven",
                     "The shadowing witches will attempt to kill Manon, should they see an opportunity",
                     "Manon does not wish to return, knowing she will start a civil war"
@@ -936,7 +937,9 @@
                   "type": "inset",
                   "name": "Windy Saddles and Supplies",
                   "entries": [
-                    "Located in the Nixi Hexagon"
+                    "Run by a female gnome named Taphina Fiddlefront.",
+                    "Taphina hired a human girl named Tracy Marsh two months ago to help out with the store",
+                    "The store sells {@filter all saddles|items|type=tack and harness}"
                   ]
                 }
               ]
