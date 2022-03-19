@@ -1,5 +1,5 @@
 {
-    "name": "Blackbeak Witch: Coven",
+    "name": "Blackbeak Witch",
     "size": "M",
     "type": "humanoid",
     "source": "domule",
@@ -9,8 +9,10 @@
     ],
     "ac": [
         {
-            "ac": 15,
-            "condition": "Unarmored Defense"
+            "ac": 14,
+            "from": [
+                "{@item leather armor|phb}"
+            ]
         }
     ],
     "hp": {
@@ -18,7 +20,7 @@
         "average": 66
     },
     "speed": {
-        "walk": 50
+        "walk": 40
     },
     "str": 16,
     "dex": 16,
@@ -60,16 +62,16 @@
                 "When a witch is reduced to 0 hit pints, before fading to unconsciousness they can choose to undergo The Yielding. If so, all creatures within 30 feet must make a Dexterity saving throw, taking 54 ({@damage 12d8}) Necrotic damage on a failure, or half a much as a success.",
                 "If an Irontooth Witch undergoes The Yielding then they no longer make Death Saving Throws and are instantly dead and cannot be revived. Their body instantly turns to ash upon completion."
             ]
+        },
+        {
+            "name": "Witch's Keen Smell",
+            "entries": [
+                "The blackbeak witch has advantage on Wisdom ({@skill Perception}).",
+                "Furthermore, if The blackbeak witch can smell the target, they have advantage on Wisdom ({@skill Insight}) checks."
+            ]
         }
     ],
     "action": [
-        {
-            "name": "Multiattack",
-            "entries": [
-                "The Blackbeak Witch may perform two attacks. The second attack must be a Bite or Slash attack.",
-                "If the first attack was a two-handed attack, the second attach must be a Bite on the same target. "
-            ]
-        },
         {
             "name": "Bite",
             "entries": [
@@ -97,7 +99,13 @@
     "miscTags": [
         "MW"
     ],
-    "actionTags": [
-        "Multiattack"
+    "bonus": [
+        {
+            "name": "Witches Strike",
+            "entries": [
+                "When you use the Attack action, you may perform a Slash or Bite as a Bonus Action. ",
+                "You may only perform a Slash if you did not use a two-handed weapon."
+            ]
+        }
     ]
 }
