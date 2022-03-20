@@ -107,5 +107,9 @@
                 "You may only perform a Slash if you did not use a two-handed weapon."
             ]
         }
-    ]
+    ],
+    "save": {
+        "con": "+5",
+        "wis": "+6"
+    }
 }
