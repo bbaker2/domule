@@ -6,9 +6,8 @@
     "rarity": "rare",
     "ammunition": false,
     "weaponCategory": "Simple",
-    "dmg1": "1d8",
-    "dmg2": "1d10",
-    "dmgType": "B",
+    "dmg1": "1d10",    
+    "dmgType": "P",
     "charges": 1,
     "property": [
         "V"

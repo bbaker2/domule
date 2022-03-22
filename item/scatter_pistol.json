@@ -1,0 +1,30 @@
+{
+    "name": "Scatter Pistol",
+    "source": "domule",
+    "page": "200",
+    "type": "M",
+    "rarity": "rare",
+    "ammunition": true,
+    "weaponCategory": "Firearm",
+    "dmg1": "1d10",    
+    "dmgType": "B",    
+    "property": [
+        "A",
+        "LD",
+        "RLD",
+        "BF"
+    ],
+    "reload" : 4,    
+    "weight": 8,
+    "entries": [
+        "This four barreled Pistol can either solve one small group of problems or four separate ones",
+        {
+            "type": "list",
+            "items": [
+                "While you have at least one round of ammunition, you may ignore the {@b Loading} property.",
+                "If you Scatter Pistol is loaded with all four rounds, you may perform a {@b Burst Fire} attack except it is constrained to a 5x10-foot rectangle instead of a 10-foot cube."
+            ]
+        },
+        "{@Reload} on your turn only loads a single round of ammunition. Not all four."
+    ]
+}
