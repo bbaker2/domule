@@ -1,0 +1,115 @@
+{
+    "name": "Hue Guard",
+    "source": "domule",
+    "page": 226,
+    "size": "M",
+    "type": {
+        "type": "humanoid",
+        "tags": [
+            "gnome"
+        ]
+    },
+    "alignment": [
+        "L",
+        "G"
+    ],
+    "ac": [
+        {
+            "ac": 14,
+            "from": [
+                "{@item studded leather armor|phb}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "4d10 + 8",
+        "average": 30
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 13,
+    "dex": 15,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 8,
+    "passive": 10,
+    "languages": [
+        "any one language (usually Common)"
+    ],
+    "cr": "4",
+    "trait": [
+        {
+            "name": "Formation Tactics",
+            "entries": [
+                "The soldier has advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition grappled}, or {@condition restrained} while it is within 5 feet of at least one ally."
+            ]
+        },
+        {
+            "name": "Gnome Cunning",
+            "entries": [
+                "The hue guard has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "{@item Rapier|phb}",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+            ]
+        },
+        {
+            "name": "{@item Hand Crossbow|phb}",
+            "entries": [
+                "{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+            ]
+        }
+    ],
+    "languageTags": [
+        "C",
+        "X"
+    ],
+    "damageTags": [
+        "P"
+    ],
+    "hasFluff": true,
+    "tokenUrl": "https://5e.tools/img/GGR/Soldier.png",
+    "fluff": {
+        "name": "Soldier",
+        "source": "GGR",
+        "entries": [
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "Soldiers are found in many of Ravnica's guilds. The soldier stat block represents a typical member of the rank and file, though weaponry and armor can vary."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "level": 4,
+    "save": {
+        "wis": "+2",
+        "int": "+3"
+    },
+    "skill": {
+        "investigation": "+3",
+        "insight": "+2"
+    },
+    "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+    ]
+}
