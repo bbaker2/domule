@@ -1020,7 +1020,8 @@
         {
           "name": "Major Cities",
           "headers": [
-            "Fairkeep"
+            "Fairkeep",
+            "Hue"
           ],
           "ordinal": {
             "type": "chapter",
@@ -1149,6 +1150,44 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "section",
+              "name": "Hue",
+              "entries": [
+                {
+                  "type": "section",
+                  "name": "Blue Hexona",
+                  "entries": [
+                    "A richer, affluent zone. No one is denied entry here but the goods and services here are more expensive.",
+                    {
+                      "type": "inset",
+                      "name": "Windy Saddles and Supplies",
+                      "entries": [
+                        "Run by a female gnome named Taphina Fiddlefront.",
+                        "Taphina hired a human girl named Tracy Marsh two months ago to help out with the store",
+                        "The store sells {@filter all saddles|items|type=tack and harness}",
+                        "The store does custom fittings and has a stable in the back where they can keep {@creature riding horse} and {@creature hippogriff} overnight"
+                      ]
+                    },
+                    {
+                      "type": "inset",
+                      "name": "The Bull's Eye",
+                      "entries": [
+                        "Owned and run by Amen Wright, the Second",
+                        "The store sells {@filter black powered weapons and accessories|items|type=firearm;renaissance}, but you must have a Hue License or a Voucher of Competency",
+                        "This store also sells some specialty items, only sold here.",
+                        {
+                          "type": "list",
+                          "entries": [
+                            "{@item Scatter Pistol|domule} for 500GP"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1160,21 +1199,26 @@
       "name": "Scatter Pistol",
       "source": "domule",
       "page": "200",
-      "type": "R",
       "rarity": "rare",
+      "type": "R",
+      "weaponCategory": "martial",
+      "weapon": true,
+      "firearm": true,
       "ammunition": true,
-      "weaponCategory": "Firearm",
+      "ammoType": "renaissance bullet",
+      "reload": 4,
+      "age": "renaissance",
       "dmg1": "1d10",
-      "dmgType": "B",
+      "dmgType": "P",
+      "range": "30/90",
       "property": [
         "A",
         "LD",
         "RLD",
         "BF"
       ],
-      "reload": 4,
-      "range": "30/90",
       "weight": 10,
+      "value": 50000,
       "entries": [
         "A single pistol with four barrels. Thanks to this design, this pistol has the following customization:",
         {
@@ -1422,121 +1466,6 @@
       "senseTags": [
         "D"
       ]
-    },
-    {
-      "name": "Blackbeak Witch",
-      "size": "M",
-      "type": "humanoid",
-      "source": "domule",
-      "alignment": [
-        "L",
-        "E"
-      ],
-      "ac": [
-        {
-          "ac": 14,
-          "from": [
-            "{@item leather armor|phb}"
-          ]
-        }
-      ],
-      "hp": {
-        "formula": "12d8 + 12",
-        "average": 66
-      },
-      "speed": {
-        "walk": 40
-      },
-      "str": 16,
-      "dex": 16,
-      "con": 12,
-      "int": 12,
-      "wis": 15,
-      "cha": 9,
-      "passive": 12,
-      "cr": "12",
-      "languages": [
-        "Common",
-        "Infernal",
-        "Elvish"
-      ],
-      "languageTags": [
-        "C",
-        "I",
-        "E"
-      ],
-      "skill": {
-        "insight": "+6",
-        "stealth": "+7"
-      },
-      "level": 12,
-      "conditionImmune": [
-        "frightened"
-      ],
-      "trait": [
-        {
-          "name": "Slasher",
-          "entries": [
-            "Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.",
-            "When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
-          ]
-        },
-        {
-          "name": "The Yielding",
-          "entries": [
-            "When a witch is reduced to 0 hit pints, before fading to unconsciousness they can choose to undergo The Yielding. If so, all creatures within 30 feet must make a Dexterity saving throw, taking 54 ({@damage 12d8}) Necrotic damage on a failure, or half a much as a success.",
-            "If an Irontooth Witch undergoes The Yielding then they no longer make Death Saving Throws and are instantly dead and cannot be revived. Their body instantly turns to ash upon completion."
-          ]
-        },
-        {
-          "name": "Witch's Keen Smell",
-          "entries": [
-            "The blackbeak witch has advantage on Wisdom ({@skill Perception}).",
-            "Furthermore, if The blackbeak witch can smell the target, they have advantage on Wisdom ({@skill Insight}) checks."
-          ]
-        }
-      ],
-      "action": [
-        {
-          "name": "Bite",
-          "entries": [
-            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
-            "If the attack hits, you may enter a {@classFeature Rage|Barbarian||1}. If so, you get advantage when attacking the last target you bite."
-          ]
-        },
-        {
-          "name": "Slash",
-          "entries": [
-            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 3}) slashing damage."
-          ]
-        },
-        {
-          "name": "Longsword",
-          "entries": [
-            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with both hands."
-          ]
-        }
-      ],
-      "damageTags": [
-        "P",
-        "S"
-      ],
-      "miscTags": [
-        "MW"
-      ],
-      "bonus": [
-        {
-          "name": "Witches Strike",
-          "entries": [
-            "When you use the Attack action, you may perform a Slash or Bite as a Bonus Action. ",
-            "You may only perform a Slash if you did not use a two-handed weapon."
-          ]
-        }
-      ],
-      "save": {
-        "con": "+5",
-        "wis": "+6"
-      }
     },
     {
       "name": "Black Fang Sailor",
@@ -1977,6 +1906,121 @@
         "D",
         "U"
       ]
+    },
+    {
+      "name": "Blackbeak Witch",
+      "size": "M",
+      "type": "humanoid",
+      "source": "domule",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d8 + 12",
+        "average": 66
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 16,
+      "dex": 16,
+      "con": 12,
+      "int": 12,
+      "wis": 15,
+      "cha": 9,
+      "passive": 12,
+      "cr": "12",
+      "languages": [
+        "Common",
+        "Infernal",
+        "Elvish"
+      ],
+      "languageTags": [
+        "C",
+        "I",
+        "E"
+      ],
+      "skill": {
+        "insight": "+6",
+        "stealth": "+7"
+      },
+      "level": 12,
+      "conditionImmune": [
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Slasher",
+          "entries": [
+            "Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.",
+            "When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
+          ]
+        },
+        {
+          "name": "The Yielding",
+          "entries": [
+            "When a witch is reduced to 0 hit pints, before fading to unconsciousness they can choose to undergo The Yielding. If so, all creatures within 30 feet must make a Dexterity saving throw, taking 54 ({@damage 12d8}) Necrotic damage on a failure, or half a much as a success.",
+            "If an Irontooth Witch undergoes The Yielding then they no longer make Death Saving Throws and are instantly dead and cannot be revived. Their body instantly turns to ash upon completion."
+          ]
+        },
+        {
+          "name": "Witch's Keen Smell",
+          "entries": [
+            "The blackbeak witch has advantage on Wisdom ({@skill Perception}).",
+            "Furthermore, if The blackbeak witch can smell the target, they have advantage on Wisdom ({@skill Insight}) checks."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+            "If the attack hits, you may enter a {@classFeature Rage|Barbarian||1}. If so, you get advantage when attacking the last target you bite."
+          ]
+        },
+        {
+          "name": "Slash",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with both hands."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "bonus": [
+        {
+          "name": "Witches Strike",
+          "entries": [
+            "When you use the Attack action, you may perform a Slash or Bite as a Bonus Action. ",
+            "You may only perform a Slash if you did not use a two-handed weapon."
+          ]
+        }
+      ],
+      "save": {
+        "con": "+5",
+        "wis": "+6"
+      }
     },
     {
       "name": "Gourd Sprout",

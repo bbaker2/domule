@@ -2,30 +2,38 @@
     "name": "Scatter Pistol",
     "source": "domule",
     "page": "200",
-    "type": "R",
     "rarity": "rare",
+    "type": "R",
+    "weaponCategory": "martial",
+    "weapon": true,
+    "firearm": true,
     "ammunition": true,
-    "weaponCategory": "Firearm",
+    "ammoType": "renaissance bullet",
+    "reload": 4,
+    "age": "renaissance",
     "dmg1": "1d10",
-    "dmgType": "B",
-    "property": [
+    "dmgType": "P",
+    "range": "30/90",
+    "property":
+    [
         "A",
         "LD",
         "RLD",
         "BF"
     ],
-    "reload" : 4,
-    "range": "30/90",
     "weight": 10,
-    "entries": [
+    "value": 50000,
+    "entries":
+    [
         "A single pistol with four barrels. Thanks to this design, this pistol has the following customization:",
         {
             "type": "list",
-            "items": [
+            "items":
+            [
                 "While your Scatter Pistol have at least one round of ammunition, you may ignore the {@b Loading} property.",
                 "If your Scatter Pistol is loaded with all four rounds, you may perform a {@b Burst Fire} attack except it is constrained to a 5 by 10-foot rectangle instead of a 10-foot cube. This will consume all four rounds.",
                 "{@b Reload} on your turn only loads a single round of ammunition. Not all four."
             ]
-        }        
+        }
     ]
 }
