@@ -1,0 +1,32 @@
+{
+    "name": "Thunder Shot",
+    "source": "domule",
+    "page": 268,
+    "type": "R",
+    "rarity": "none",
+    "weight": 10,
+    "value": 100000,
+    "weaponCategory": "martial",
+    "age": "renaissance",
+    "property":
+    [
+        "AF",
+        "LD",
+        "2H"
+    ],
+    "range": "40/120",
+    "charges" : 4,
+    "recharge" : "restLong",
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "renaissance bullet",
+    "entries":
+    [
+        "You have a +1 bonus to attack and damage rolls made with this weapon.",
+        "This weapon has 4 charges and regains {@dice 1d4|1d4|charges} after a long rest.",
+        "{@bold Thunder Shot} While performing an attack with this weapon you may spend one charge to infuse your bullet with lightning. If the attack hits, add an additional {@damage 1d8|1d8|lightning} lightning damage.",
+        "{@bold Lightning Conductor} When you take lightning damage you may spend a reaction to refill one or more empty charges. For each charge you refill, you may negate 8 lightning damage (until you cannot negate any more lightning damage)."
+    ]
+}
