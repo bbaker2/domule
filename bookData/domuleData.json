@@ -162,14 +162,25 @@
                                     "entries":
                                     [
                                         "Owned and run by Amen Wright, the Second",
+                                        "A stone brick building within a small courtyard. The entire courtyard is surrounded by a four foot thick wall with a heavy iron gate.",
                                         "The store sells {@filter black powered weapons and accessories|items|type=firearm;renaissance}, but you must have a Hue License or a Voucher of Competency",
                                         "This store also sells some specialty items, only sold here.",
                                         {
-                                            "type":"list",
-                                            "entries" : [
-                                                "{@item Scatter Pistol|domule} for 500GP"
+                                            "type": "list",
+                                            "items":
+                                            [
+                                                "{@item Scatter Pistol|domule} for 500GP",
+                                                "{@item Thunder Shot|domule} for 1000GP"
                                             ]
                                         }
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Mundane to Magical",
+                                    "entries" : [
+                                        "The shop is run by a very young looking gnome girl named Mayfi. She is actually 200+ years old but recently blew herself up while attempting to invent a new spell. Luckily she had a {@spell Clone} spell and is currently regrowing.",
+                                        "The store sells scrolls for all {@filter Necromancy spells 0 thru 5|spells|source=ftd;phb;tce;xge;scag;vgm|level=0;1;2;3;4;5|school=n}"
                                     ]
                                 }
                             ]
