@@ -16,12 +16,6 @@
             "from": [
                 "natural armor"
             ]
-        },
-        {
-            "ac": 13,
-            "from": [
-                "{@item chain shirt|phb} Gith Only"
-            ]
         }
     ],
     "hp": {
@@ -84,12 +78,6 @@
             ]
         },
         {
-            "name": "Quarterstaff (Gith Only)",
-            "entries": [
-                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, or 10 ({@damage 1d8 + 6}) bludgeoning damage if used with both hands."
-            ]
-        },
-        {
             "name": "Eversmoking Bottle",
             "entries": [
                 "Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.",
@@ -118,7 +106,6 @@
         "DR"
     ],
     "damageTags": [
-        "B",
         "F",
         "P",
         "S"
@@ -341,5 +328,6 @@
             ]
         }
     ],
-    "isNamedCreature": true
+    "isNamedCreature": true,
+    "shortName": "Seernalken"
 }
