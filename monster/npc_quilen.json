@@ -126,6 +126,32 @@
             "entries": [
                 "You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
             ]
+        },
+        {
+            "name": "Sorcery Points",
+            "entries": [
+                "You have 7 Sorcery Points"
+            ]
+        },
+        {
+            "name": "Flexible Casting",
+            "entries": [
+                "1st=2, 2nd= 3, 3rd=5, 4th=6"
+            ]
+        },
+        {
+            "name": "Twinned Spell",
+            "entries": [
+                "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).",
+                "To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost and chromatic orb are."
+            ]
+        },
+        {
+            "name": "Distant Spell",
+            "entries": [
+                "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
+                "When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+            ]
         }
     ],
     "languages": [
@@ -139,5 +165,23 @@
         "E",
         "GI",
         "GTH"
+    ],
+    "reaction": [
+        {
+            "name": "Restore Balance",
+            "entries": [
+                "Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of you is about to roll a {@dice d20} with advantage or disadvantage, you can use your reaction to prevent the roll from being affected by advantage and disadvantage.",
+                "You can use this feature a number of times equal to your proficiency bonus (3), and you regain all expended uses when you finish a long rest."
+            ]
+        }
+    ],
+    "action": [
+        {
+            "name": "Bastion of Law",
+            "entries": [
+                "You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As an action, you can expend 1 to 5 sorcery points to create a magical ward around yourself or another creature you can see within 30 feet of you. The ward lasts until you finish a long rest or until you use this feature again.",
+                "The ward is represented by a number of d8s equal to the number of sorcery points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice."
+            ]
+        }
     ]
 }
