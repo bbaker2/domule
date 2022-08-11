@@ -1,0 +1,94 @@
+{
+    "name": "Daw the Maw",
+    "size": [
+        "M"
+    ],
+    "type": "aberration",
+    "source": "domule",
+    "alignment": [
+        "L",
+        "G"
+    ],
+    "ac": [
+        {
+            "ac": 14,
+            "from": [
+                "unarmored defense (monk)"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "11d10 + 7d8 + 3d12",
+        "average": 111
+    },
+    "speed": {
+        "walk": 30
+    },
+    "str": 18,
+    "dex": 14,
+    "con": 12,
+    "int": 9,
+    "wis": 14,
+    "cha": 10,
+    "passive": 10,
+    "cr": "12",
+    "level": 20,
+    "save": {
+        "str": "+10",
+        "con": "+7"
+    },
+    "skill": {
+        "acrobatics": "+8",
+        "athletics": "+10"
+    },
+    "resist": [
+        {
+            "resist": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+            ],
+            "note": "(while raging)"
+        }
+    ],
+    "trait": [
+        {
+            "name": "Great Weapon Master",
+            "entries": [
+                "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+                "Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+            ]
+        },
+        {
+            "name": "Lucky",
+            "entries": [
+                "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional {@dice d20}. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.",
+                "You can also spend one luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
+                "You regain your expended luck points when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Action Surge",
+            "entries": [
+                "On your turn, you can take one additional action.",
+                "Once you use this feature, you must finish a short or long rest before you can use it again."
+            ]
+        },
+        {
+            "name": "Maneuvers",
+            "entries": [
+                "Five {@dice d10|d10|Superiority Dice} Superiority Dice, Maneuver {@dc 18}",
+                "{@optfeature Disarming Attack}, {@optfeature Lunging Attack}, {@optfeature Menacing Attack}, {@optfeature Parry}, {@optfeature Precision Attack}, {@optfeature Riposte}, {@optfeature Trip Attack}"
+            ]
+        }
+    ],
+    "bonus": [
+        {
+            "name": "Second Wind",
+            "entries": [
+                "Regain hit points equal to {@dice 1d10 + 11}",
+                "Once you use this feature, you must finish a short or long rest before you can use it again."
+            ]
+        }
+    ]
+}
