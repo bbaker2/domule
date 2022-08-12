@@ -31,7 +31,7 @@
     "wis": 14,
     "cha": 10,
     "passive": 10,
-    "cr": "12",
+    "cr": "18",
     "level": 20,
     "save": {
         "str": "+10",
@@ -78,7 +78,20 @@
             "name": "Maneuvers",
             "entries": [
                 "Five {@dice d10|d10|Superiority Dice} Superiority Dice, Maneuver {@dc 18}",
-                "{@optfeature Disarming Attack}, {@optfeature Lunging Attack}, {@optfeature Menacing Attack}, {@optfeature Parry}, {@optfeature Precision Attack}, {@optfeature Riposte}, {@optfeature Trip Attack}"
+                "{@optfeature Brace|TCE}, {@optfeature Disarming Attack}, {@optfeature Lunging Attack}, {@optfeature Menacing Attack}, {@optfeature Precision Attack}, {@optfeature Riposte}, {@optfeature Trip Attack}"
+            ]
+        },
+        {
+            "name": "Indomitable",
+            "entries": [
+                "You can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Ki",
+            "entries": [
+                "5 {@dice d6|d6|Martial Arts Dice} Martial Arts Dice",
+                "Ki {@dc 16}"
             ]
         }
     ],
@@ -89,6 +102,34 @@
                 "Regain hit points equal to {@dice 1d10 + 11}",
                 "Once you use this feature, you must finish a short or long rest before you can use it again."
             ]
+        },
+        {
+            "name": "Flurry of Blows",
+            "entries": [
+                "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.",
+                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. ({@damage 1d6 + 4}) bludgeoning damage."
+            ]
         }
+    ],
+    "damageTags": [
+        "B"
+    ],
+    "isNpc": true,
+    "action": [
+        {
+            "name": "Extra Attack",
+            "entries": [
+                "You can attack three times whenever you take the {@action Attack} action on your turn."
+            ]
+        },
+        {
+            "name": "{@item Shortsword|phb}",
+            "entries": [
+                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. ({@damage 1d6 + 4}) bludgeoning damage."
+            ]
+        }
+    ],
+    "miscTags": [
+        "MW"
     ]
 }
