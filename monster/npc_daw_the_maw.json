@@ -22,7 +22,7 @@
         "average": 111
     },
     "speed": {
-        "walk": 30
+        "walk": 50
     },
     "str": 18,
     "dex": 14,
@@ -53,10 +53,10 @@
     ],
     "trait": [
         {
-            "name": "Great Weapon Master",
+            "name": "Mobile",
             "entries": [
-                "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
-                "Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+                "When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.",
+                "When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
             ]
         },
         {
@@ -93,6 +93,30 @@
                 "5 {@dice d6|d6|Martial Arts Dice} Martial Arts Dice",
                 "Ki {@dc 16}"
             ]
+        },
+        {
+            "name": "Dueling",
+            "entries": [
+                "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+            ]
+        },
+        {
+            "name": "Stunning Strike",
+            "entries": [
+                "When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw ({@dc 16}) or be {@condition stunned} until the end of your next turn."
+            ]
+        },
+        {
+            "name": "Danger Sense",
+            "entries": [
+                "You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be {@condition blinded}, {@condition deafened}, or {@condition incapacitated}."
+            ]
+        },
+        {
+            "name": "Reckless Attack",
+            "entries": [
+                "You can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
+            ]
         }
     ],
     "bonus": [
@@ -106,8 +130,32 @@
         {
             "name": "Flurry of Blows",
             "entries": [
+                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. ({@damage 1d6 + 4}) bludgeoning damage. ({@damage 1d6 + 4 + 2}) while raging.",
                 "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.",
-                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. ({@damage 1d6 + 4}) bludgeoning damage."
+                "{@b Drunken Technique}: Whenever you use Flurry of Blows, you gain the benefit of the {@action Disengage} action, and your walking speed increases by 10 feet until the end of the current turn."
+            ]
+        },
+        {
+            "name": "Patient Defense",
+            "entries": [
+                "You can spend 1 ki point to take the Dodge action as a bonus action on your turn."
+            ]
+        },
+        {
+            "name": "Step of the Wind",
+            "entries": [
+                "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
+            ]
+        },
+        {
+            "name": "Rage",
+            "entries": [
+                "On your turn, you can enter a rage as a bonus action.",
+                "While raging, you gain the following benefits if you aren't wearing heavy armor:",
+                "- You have advantage on Strength checks and Strength saving throws.",
+                "- When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll.",
+                "- You have resistance to bludgeoning, piercing, and slashing damage.",
+                "- Roll the {@subclassFeature Wild Surge|Barbarian||Wild Magic|TCE|3} Table with a {@dc 15}"
             ]
         }
     ],
@@ -125,11 +173,41 @@
         {
             "name": "{@item Shortsword|phb}",
             "entries": [
-                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. ({@damage 1d6 + 4}) bludgeoning damage."
+                "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. ({@damage 1d6 + 6}) bludgeoning damage. ({@damage 1d6 + 6 +2}) while raging."
+            ]
+        },
+        {
+            "name": "Magic Awareness (x6)",
+            "entries": [
+                "s an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to."
             ]
         }
     ],
     "miscTags": [
         "MW"
+    ],
+    "reaction": [
+        {
+            "name": "Brace",
+            "entries": [
+                "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's "
+            ]
+        },
+        {
+            "name": "Riposte",
+            "entries": [
+                "When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+            ]
+        },
+        {
+            "name": "Deflect Missiles",
+            "entries": [
+                "Rou can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by {@dice 1d10+7}",
+                "If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack (range 20/60 feet) with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack."
+            ]
+        }
+    ],
+    "conditionInflict": [
+        "stunned"
     ]
 }
