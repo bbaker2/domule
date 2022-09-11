@@ -1,0 +1,96 @@
+{
+    "name": "Tabaxi Sorcerer",
+    "size": [
+        "M"
+    ],
+    "type": "humanoid",
+    "source": "domule",
+    "alignment": [
+        "C",
+        "N"
+    ],
+    "ac": [
+        {
+            "ac": 15,
+            "from": [
+                "Draconic Resilience"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "10d6 + 3",
+        "average": 38
+    },
+    "speed": {
+        "walk": 30,
+        "climb": 20
+    },
+    "str": 14,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 18,
+    "passive": 14,
+    "cr": "10",
+    "level": 10,
+    "page": 25,
+    "skill": {
+        "perception": "+4",
+        "stealth": "+6",
+        "arcana": "+4",
+        "religion": "+4"
+    },
+    "languages": [
+        "Common",
+        "Primordial"
+    ],
+    "languageTags": [
+        "C",
+        "P"
+    ],
+    "save": {
+        "con": "+6",
+        "cha": "+8"
+    },
+    "action": [
+        {
+            "name": "Cat's Claws",
+            "entries": [
+                "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+            ]
+        }
+    ],
+    "damageTags": [
+        "S"
+    ],
+    "miscTags": [
+        "MW"
+    ],
+    "trait": [
+        {
+            "name": "Feline Agility",
+            "entries": [
+                "Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+            ]
+        },
+        {
+            "name": "Darkvision",
+            "entries": [
+                "You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+            ]
+        }
+    ],
+    "spellcasting": [
+        {
+            "name": "Spellcasting",
+            "headerEntries": [
+                "You have 10 Sorcerer Points to Spend"
+            ],
+            "type": "spellcasting"
+        }
+    ],
+    "spellcastingTags": [
+        "CS"
+    ]
+}
